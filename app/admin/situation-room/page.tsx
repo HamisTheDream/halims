@@ -10,7 +10,7 @@ interface PUResult {
     ward: string;
     polling_unit_code: string;
     polling_unit_name: string;
-    apc_score: number;
+    sdp_score: number;
     apc_score: number;
     pdp_score: number;
     lp_score: number;
@@ -37,7 +37,7 @@ export default function SituationRoomPage() {
     const [showSubmitForm, setShowSubmitForm] = useState(false);
     const [form, setForm] = useState({
         lga: "", ward: "", polling_unit_code: "", polling_unit_name: "",
-        apc_score: 0, apc_score: 0, pdp_score: 0, lp_score: 0,
+        sdp_score: 0, apc_score: 0, pdp_score: 0, lp_score: 0,
         accredited_voters: 0, void_votes: 0, agent_name: "",
     });
     const [saving, setSaving] = useState(false);
@@ -86,14 +86,14 @@ export default function SituationRoomPage() {
     const handleSubmitResult = async () => {
         if (!form.lga || !form.ward || !form.polling_unit_code) return;
         setSaving(true);
-        const totalVotes = form.apc_score + form.apc_score + form.pdp_score + form.lp_score;
+        const totalVotes = form.sdp_score + form.apc_score + form.pdp_score + form.lp_score;
 
         await supabase.from("election_results").insert({
             lga: form.lga,
             ward: form.ward,
             polling_unit_code: form.polling_unit_code,
             polling_unit_name: form.polling_unit_name,
-            apc_score: form.apc_score,
+            sdp_score: form.sdp_score,
             apc_score: form.apc_score,
             pdp_score: form.pdp_score,
             lp_score: form.lp_score,
@@ -103,7 +103,7 @@ export default function SituationRoomPage() {
             agent_name: form.agent_name || null,
         });
 
-        setForm({ lga: "", ward: "", polling_unit_code: "", polling_unit_name: "", apc_score: 0, apc_score: 0, pdp_score: 0, lp_score: 0, accredited_voters: 0, void_votes: 0, agent_name: "" });
+        setForm({ lga: "", ward: "", polling_unit_code: "", polling_unit_name: "", sdp_score: 0, apc_score: 0, pdp_score: 0, lp_score: 0, accredited_voters: 0, void_votes: 0, agent_name: "" });
         setShowSubmitForm(false);
         setSaving(false);
         fetchResults();
@@ -129,7 +129,7 @@ export default function SituationRoomPage() {
 
     // Collation
     const collation = {
-        apc: filtered.reduce((s, r) => s + r.apc_score, 0),
+        sdp: filtered.reduce((s, r) => s + r.sdp_score, 0),
         apc: filtered.reduce((s, r) => s + r.apc_score, 0),
         pdp: filtered.reduce((s, r) => s + r.pdp_score, 0),
         lp: filtered.reduce((s, r) => s + r.lp_score, 0),
@@ -146,12 +146,12 @@ export default function SituationRoomPage() {
     const reportPercentage = totalPUs > 0 ? Math.round((collation.pusReported / totalPUs) * 100) : 0;
 
     // Ward-level collation
-    const wardCollation = new Map<string, { apc: number; apc: number; pdp: number; lp: number; total: number; pus: number }>();
+    const wardCollation = new Map<string, { sdp: number; apc: number; pdp: number; lp: number; total: number; pus: number }>();
     for (const r of filtered) {
         const key = `${r.lga}|${r.ward}`;
-        if (!wardCollation.has(key)) wardCollation.set(key, { apc: 0, apc: 0, pdp: 0, lp: 0, total: 0, pus: 0 });
+        if (!wardCollation.has(key)) wardCollation.set(key, { sdp: 0, apc: 0, pdp: 0, lp: 0, total: 0, pus: 0 });
         const wc = wardCollation.get(key)!;
-        wc.apc += r.apc_score;
+        wc.sdp += r.sdp_score;
         wc.apc += r.apc_score;
         wc.pdp += r.pdp_score;
         wc.lp += r.lp_score;
@@ -160,7 +160,7 @@ export default function SituationRoomPage() {
     }
 
     const parties = [
-        { key: "apc", label: "APC", color: "#1D7A50", score: collation.apc },
+        { key: "sdp", label: "SDP", color: "#1D7A50", score: collation.sdp },
         { key: "apc", label: "APC", color: "#0066B3", score: collation.apc },
         { key: "pdp", label: "PDP", color: "#e53e3e", score: collation.pdp },
         { key: "lp", label: "LP", color: "#C9A227", score: collation.lp },
@@ -231,7 +231,7 @@ export default function SituationRoomPage() {
                             </div>
                             <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14, marginBottom: 14 }}>
                                 {[
-                                    { label: "APC Score", key: "apc_score" as const, color: "#1D7A50" },
+                                    { label: "SDP Score", key: "sdp_score" as const, color: "#1D7A50" },
                                     { label: "APC Score", key: "apc_score" as const, color: "#0066B3" },
                                     { label: "PDP Score", key: "pdp_score" as const, color: "#e53e3e" },
                                     { label: "LP Score", key: "lp_score" as const, color: "#C9A227" },
@@ -332,7 +332,7 @@ export default function SituationRoomPage() {
                         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
                             <thead>
                                 <tr style={{ borderBottom: "2px solid var(--admin-border)" }}>
-                                    {["LGA", "Ward", "PUs", "APC", "APC", "PDP", "LP", "Total"].map(h => (
+                                    {["LGA", "Ward", "PUs", "SDP", "APC", "PDP", "LP", "Total"].map(h => (
                                         <th key={h} style={{ textAlign: h === "LGA" || h === "Ward" ? "left" : "center", padding: "10px 8px", fontWeight: 700, fontSize: 10, letterSpacing: 1, textTransform: "uppercase", color: "var(--admin-text-muted)" }}>{h}</th>
                                     ))}
                                 </tr>
@@ -340,13 +340,13 @@ export default function SituationRoomPage() {
                             <tbody>
                                 {Array.from(wardCollation.entries()).map(([key, wc]) => {
                                     const [lga, ward] = key.split("|");
-                                    const leading = Math.max(wc.apc, wc.apc, wc.pdp, wc.lp);
+                                    const leading = Math.max(wc.sdp, wc.apc, wc.pdp, wc.lp);
                                     return (
                                         <tr key={key} style={{ borderBottom: "1px solid var(--admin-border)" }}>
                                             <td style={{ padding: "8px", fontWeight: 600, color: "var(--admin-text)" }}>{lga}</td>
                                             <td style={{ padding: "8px", color: "var(--admin-text)" }}>{ward}</td>
                                             <td style={{ padding: "8px", textAlign: "center", color: "var(--admin-text-muted)" }}>{wc.pus}</td>
-                                            <td style={{ padding: "8px", textAlign: "center", fontWeight: wc.apc === leading ? 900 : 400, color: wc.apc === leading ? "#1D7A50" : "var(--admin-text)" }}>{wc.apc}</td>
+                                            <td style={{ padding: "8px", textAlign: "center", fontWeight: wc.sdp === leading ? 900 : 400, color: wc.sdp === leading ? "#1D7A50" : "var(--admin-text)" }}>{wc.sdp}</td>
                                             <td style={{ padding: "8px", textAlign: "center", fontWeight: wc.apc === leading ? 900 : 400, color: wc.apc === leading ? "#0066B3" : "var(--admin-text)" }}>{wc.apc}</td>
                                             <td style={{ padding: "8px", textAlign: "center", fontWeight: wc.pdp === leading ? 900 : 400, color: wc.pdp === leading ? "#e53e3e" : "var(--admin-text)" }}>{wc.pdp}</td>
                                             <td style={{ padding: "8px", textAlign: "center", fontWeight: wc.lp === leading ? 900 : 400, color: wc.lp === leading ? "#C9A227" : "var(--admin-text)" }}>{wc.lp}</td>
@@ -391,7 +391,7 @@ export default function SituationRoomPage() {
                                             </div>
                                         </div>
                                         <div style={{ display: "flex", gap: 16, marginTop: 8, fontSize: 11 }}>
-                                            <span style={{ color: "#1D7A50", fontWeight: 700 }}>APC: {r.apc_score}</span>
+                                            <span style={{ color: "#1D7A50", fontWeight: 700 }}>SDP: {r.sdp_score}</span>
                                             <span style={{ color: "#0066B3", fontWeight: 700 }}>APC: {r.apc_score}</span>
                                             <span style={{ color: "#e53e3e", fontWeight: 700 }}>PDP: {r.pdp_score}</span>
                                             <span style={{ color: "#C9A227", fontWeight: 700 }}>LP: {r.lp_score}</span>

@@ -18,7 +18,7 @@ interface AgentData {
 
 interface Result {
     id: string;
-    apc_score: number;
+    sdp_score: number;
     apc_score: number;
     pdp_score: number;
     lp_score: number;
@@ -33,7 +33,7 @@ export default function PUAgentPage() {
     const router = useRouter();
     const [agent, setAgent] = useState<AgentData | null>(null);
     const [existingResult, setExistingResult] = useState<Result | null>(null);
-    const [form, setForm] = useState({ apc: 0, apc: 0, pdp: 0, lp: 0, accredited: 0, void_votes: 0 });
+    const [form, setForm] = useState({ sdp: 0, apc: 0, pdp: 0, lp: 0, accredited: 0, void_votes: 0 });
     const [file, setFile] = useState<File | null>(null);
     const [filePreview, setFilePreview] = useState<string | null>(null);
 
@@ -85,7 +85,7 @@ export default function PUAgentPage() {
                         setExistingResult(result);
                         if (!draft) {
                             setForm({
-                                apc: result.apc_score,
+                                sdp: result.sdp_score,
                                 apc: result.apc_score,
                                 pdp: result.pdp_score,
                                 lp: result.lp_score,
@@ -137,14 +137,14 @@ export default function PUAgentPage() {
         setError("");
         setSuccess("");
 
-        const totalVotes = form.apc + form.apc + form.pdp + form.lp;
+        const totalVotes = form.sdp + form.apc + form.pdp + form.lp;
 
         let resultId = existingResult?.id;
 
         if (existingResult) {
             // Update existing
             const { error: updateErr } = await supabase.from("election_results").update({
-                apc_score: form.apc,
+                sdp_score: form.sdp,
                 apc_score: form.apc,
                 pdp_score: form.pdp,
                 lp_score: form.lp,
@@ -162,7 +162,7 @@ export default function PUAgentPage() {
                 ward: agent!.ward,
                 polling_unit_code: agent!.polling_unit_code,
                 polling_unit_name: agent!.polling_unit_name,
-                apc_score: form.apc,
+                sdp_score: form.sdp,
                 apc_score: form.apc,
                 pdp_score: form.pdp,
                 lp_score: form.lp,
@@ -217,7 +217,7 @@ export default function PUAgentPage() {
 
     if (!agent) return <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#0A3020", color: "#C9A227" }}>Loading...</div>;
 
-    const totalVotes = form.apc + form.apc + form.pdp + form.lp;
+    const totalVotes = form.sdp + form.apc + form.pdp + form.lp;
 
     const inputStyle: React.CSSProperties = {
         width: "100%", padding: "12px 14px", borderRadius: 10, fontSize: 16, fontWeight: 700, textAlign: "center",
@@ -283,7 +283,7 @@ export default function PUAgentPage() {
 
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                         {[
-                            { label: "APC", key: "apc" as const, color: "#1D7A50" },
+                            { label: "SDP", key: "sdp" as const, color: "#1D7A50" },
                             { label: "APC", key: "apc" as const, color: "#0066B3" },
                             { label: "PDP", key: "pdp" as const, color: "#e53e3e" },
                             { label: "LP", key: "lp" as const, color: "#C9A227" },

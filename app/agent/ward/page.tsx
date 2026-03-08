@@ -26,7 +26,7 @@ interface PUAgent {
 interface PUResult {
     polling_unit_code: string;
     polling_unit_name: string;
-    apc_score: number;
+    sdp_score: number;
     apc_score: number;
     pdp_score: number;
     lp_score: number;
@@ -89,7 +89,7 @@ export default function WardAgentPage() {
 
     // Collation
     const collation = {
-        apc: results.reduce((s, r) => s + r.apc_score, 0),
+        sdp: results.reduce((s, r) => s + r.sdp_score, 0),
         apc: results.reduce((s, r) => s + r.apc_score, 0),
         pdp: results.reduce((s, r) => s + r.pdp_score, 0),
         lp: results.reduce((s, r) => s + r.lp_score, 0),
@@ -100,7 +100,7 @@ export default function WardAgentPage() {
     };
 
     const parties = [
-        { key: "apc", label: "APC", color: "#1D7A50", score: collation.apc },
+        { key: "sdp", label: "SDP", color: "#1D7A50", score: collation.sdp },
         { key: "apc", label: "APC", color: "#0066B3", score: collation.apc },
         { key: "pdp", label: "PDP", color: "#e53e3e", score: collation.pdp },
         { key: "lp", label: "LP", color: "#C9A227", score: collation.lp },
@@ -204,7 +204,7 @@ export default function WardAgentPage() {
                                                     {r.is_verified && <span style={{ fontSize: 9, padding: "2px 6px", borderRadius: 4, background: "rgba(29,122,80,0.1)", color: "#1D7A50", fontWeight: 700 }}>✓ Verified</span>}
                                                 </div>
                                                 <div style={{ display: "flex", gap: 10, fontSize: 10, fontWeight: 600 }}>
-                                                    <span style={{ color: "#1D7A50" }}>APC:{r.apc_score}</span>
+                                                    <span style={{ color: "#1D7A50" }}>SDP:{r.sdp_score}</span>
                                                     <span style={{ color: "#0066B3" }}>APC:{r.apc_score}</span>
                                                     <span style={{ color: "#e53e3e" }}>PDP:{r.pdp_score}</span>
                                                     <span style={{ color: "#C9A227" }}>LP:{r.lp_score}</span>
