@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <div className={styles.photoContainer}>
                     <div className={styles.photoMain}>
                         <Image
-                            src="/images/halims-2.png"
+                            src="/images/halims2.png"
                             alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims)"
                             width={480}
                             height={600}
@@ -62,7 +62,7 @@ export default function HeroSection() {
                     </div>
                     <div className={styles.partyBadge} aria-label="Party information">
                         <div className={styles.partyLogoSlot}>
-                            <Image src="/images/apc-logo-1.png" alt="APC Logo" width={36} height={36} style={{ objectFit: "contain" }} />
+                            <Image src="/images/apc-logo.png" alt="APC Logo" width={36} height={36} style={{ objectFit: "contain" }} />
                         </div>
                         <div className={styles.partyNameArea}>
                             <span className={styles.partyNameLabel}>Running under</span>

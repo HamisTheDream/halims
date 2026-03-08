@@ -1,6 +1,6 @@
 .section {
     padding: var(--section-pad);
-    background: var(--green-deep);
+    background: var(--blue-deep);
 }
 
 .header {
@@ -18,7 +18,7 @@
 }
 
 .title em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .item {
-    background: var(--green-mid);
+    background: var(--blue-mid);
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: linear-gradient(135deg, var(--green-mid), var(--green-deep));
+    background: linear-gradient(135deg, var(--blue-mid), var(--blue-deep));
     border: 1px solid rgba(201, 162, 39, 0.1);
 }
 
@@ -85,11 +85,11 @@
 .overlayIcon {
     width: 48px;
     height: 48px;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--apc-red);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold);
+    color: var(--apc-red);
     font-size: 20px;
 }
 

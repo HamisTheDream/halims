@@ -45,7 +45,7 @@ export default function BlogSection() {
                         <p className="section-label" aria-hidden="true">Campaign Updates</p>
                         <h2 className={`${styles.title} reveal`} id="blog-heading">Latest <em>News &amp; Updates</em></h2>
                     </div>
-                    <a href="/news" className="btn-outline reveal" style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>View All News →</a>
+                    <a href="/news" className="btn-outline reveal" style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>View All News →</a>
                 </header>
 
                 {loading ? (

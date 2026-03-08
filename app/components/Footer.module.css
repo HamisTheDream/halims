@@ -39,7 +39,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
 }
 
@@ -71,9 +71,9 @@
 }
 
 .socialLink:hover {
-    background: var(--gold);
-    color: var(--green-deep);
-    border-color: var(--gold);
+    background: var(--apc-red);
+    color: var(--blue-deep);
+    border-color: var(--apc-red);
 }
 
 .colTitle {
@@ -82,7 +82,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 24px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -114,7 +114,7 @@
 
 .contact span {
     font-size: 14px;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-top: 2px;
     flex-shrink: 0;
 }
@@ -144,7 +144,7 @@
 }
 
 .copyright strong {
-    color: var(--gold);
+    color: var(--apc-red);
     font-weight: 600;
 }
 
@@ -156,7 +156,7 @@
 
 .greenBar {
     height: 4px;
-    background: linear-gradient(to right, var(--green-deep), var(--gold), var(--green-deep));
+    background: linear-gradient(to right, var(--blue-deep), var(--apc-red), var(--blue-deep));
 }
 
 @media (max-width: 1024px) {

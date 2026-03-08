@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .heroTitle em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
     display: block;
 }
@@ -95,8 +95,8 @@
 .stepNum {
     width: 36px;
     height: 36px;
-    background: var(--gold);
-    color: var(--green-deep);
+    background: var(--apc-red);
+    color: var(--blue-deep);
     font-family: var(--font-heading), sans-serif;
     font-size: 16px;
     font-weight: 800;
@@ -112,7 +112,7 @@
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 /* Upload Area */
@@ -130,7 +130,7 @@
 }
 
 .uploadArea:hover {
-    border-color: var(--gold);
+    border-color: var(--apc-red);
     background: rgba(201, 162, 39, 0.04);
 }
 
@@ -153,7 +153,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 8px;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .input:focus {
-    border-color: var(--gold);
+    border-color: var(--apc-red);
     background: var(--white);
     box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
 }
@@ -248,7 +248,7 @@
 }
 
 .templateActive {
-    border-color: var(--gold) !important;
+    border-color: var(--apc-red) !important;
     background: rgba(201, 162, 39, 0.08);
 }
 
@@ -282,7 +282,7 @@
 }
 
 .infoBox strong {
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 /* Actions */
@@ -310,11 +310,11 @@
 
 .successMsg {
     background: rgba(29, 122, 80, 0.1);
-    border: 1px solid var(--green-light);
+    border: 1px solid var(--blue-light);
     padding: 16px;
     text-align: center;
     font-size: 14px;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     font-weight: 600;
 }
 
@@ -338,7 +338,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 .previewSize {
@@ -364,7 +364,7 @@
 /* Counter Section */
 .counterSection {
     padding: 48px 0;
-    background: var(--green-deep);
+    background: var(--blue-deep);
 }
 
 .counterInner {
@@ -378,7 +378,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--apc-red);
     display: block;
 }
 

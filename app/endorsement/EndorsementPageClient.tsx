@@ -464,11 +464,11 @@ export default function EndorsementPageClient() {
     useEffect(() => {
         const img1 = new Image();
         img1.onload = () => setChiefPhoto(img1);
-        img1.src = "/images/halims-2.png";
+        img1.src = "/images/halims2.png";
 
         const img2 = new Image();
         img2.onload = () => setAdcLogo(img2);
-        img2.src = "/images/apc-logo-1.png";
+        img2.src = "/images/apc-logo.png";
 
         const bgNig = new Image();
         bgNig.onload = () => setNigeriaBg(bgNig);
@@ -657,7 +657,7 @@ export default function EndorsementPageClient() {
                                 <button className={`btn-primary ${styles.downloadBtn}`} onClick={downloadFlyer} disabled={!userName}>
                                     ⬇️ Download Flyer
                                 </button>
-                                <button className={`btn-outline ${styles.shareBtn}`} onClick={shareFlyer} disabled={!userName} style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>
+                                <button className={`btn-outline ${styles.shareBtn}`} onClick={shareFlyer} disabled={!userName} style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>
                                     📤 Share to Social
                                 </button>
                             </div>

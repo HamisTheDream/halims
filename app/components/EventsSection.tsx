@@ -47,7 +47,7 @@ export default function EventsSection() {
                         <p className="section-label" aria-hidden="true">Upcoming Events</p>
                         <h2 className={`${styles.title} reveal`} id="events-heading">Meet Rt. Hon. Abdullahi Ibrahim Ali<br /><em>In Your Community</em></h2>
                     </div>
-                    <a href="/events" className="btn-outline reveal" style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>Full Schedule →</a>
+                    <a href="/events" className="btn-outline reveal" style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>Full Schedule →</a>
                 </header>
 
                 {loading ? (

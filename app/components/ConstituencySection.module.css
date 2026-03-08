@@ -15,12 +15,12 @@
     font-family: var(--font-display), serif;
     font-size: clamp(30px, 3.5vw, 48px);
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     line-height: 1.2;
 }
 
 .title em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
 }
 
@@ -53,7 +53,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--green-deep);
+    background: var(--blue-deep);
     transform: scaleX(0);
     transform-origin: left;
     transition: var(--transition);
@@ -61,7 +61,7 @@
 
 .card:hover {
     background: var(--white);
-    border-color: var(--green-deep);
+    border-color: var(--blue-deep);
 }
 
 .card:hover::after {
@@ -85,7 +85,7 @@
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 8px;
 }
 
@@ -110,7 +110,7 @@
 .dot {
     width: 6px;
     height: 6px;
-    background: var(--gold);
+    background: var(--apc-red);
     flex-shrink: 0;
 }
 
@@ -124,7 +124,7 @@
 
 .progressFill {
     height: 100%;
-    background: var(--green-light);
+    background: var(--blue-light);
     border-radius: 2px;
     width: 0;
     transition: width 1.5s ease;

@@ -1,5 +1,5 @@
 .hero {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .heroTitle em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
     display: block;
 }
@@ -88,7 +88,7 @@
 }
 
 .infoCard:hover {
-    border-color: var(--gold);
+    border-color: var(--apc-red);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
@@ -103,7 +103,7 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 6px;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .socialCard {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     padding: 28px;
 }
 
@@ -124,7 +124,7 @@
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
 }
 
@@ -146,19 +146,19 @@
 }
 
 .socialLink:hover {
-    background: var(--gold);
-    border-color: var(--gold);
+    background: var(--apc-red);
+    border-color: var(--apc-red);
 }
 
 .socialIcon {
     font-size: 16px;
-    color: var(--gold);
+    color: var(--apc-red);
     width: 24px;
     text-align: center;
 }
 
 .socialLink:hover .socialIcon {
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 .socialName {
@@ -171,7 +171,7 @@
 }
 
 .socialLink:hover .socialName {
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 /* Form Card */
@@ -185,7 +185,7 @@
     font-family: var(--font-display), serif;
     font-size: 28px;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 8px;
 }
 
@@ -233,7 +233,7 @@
 
 .input:focus,
 .textarea:focus {
-    border-color: var(--gold);
+    border-color: var(--apc-red);
     background: var(--white);
     box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
 }
@@ -253,7 +253,7 @@
     font-family: var(--font-display), serif;
     font-size: 28px;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin: 20px 0 12px;
 }
 

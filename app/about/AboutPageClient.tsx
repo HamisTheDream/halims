@@ -78,7 +78,7 @@ export default function AboutPageClient() {
                         <div className={`${styles.bioPhoto} reveal`}>
                             <div className={styles.bioPhotoInner}>
                                 <Image
-                                    src="/images/halims-3.png"
+                                    src="/images/halims3.png"
                                     alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims)"
                                     width={500}
                                     height={640}
@@ -98,7 +98,7 @@ export default function AboutPageClient() {
                             <div className={`${styles.bioText} reveal reveal-delay-2`} dangerouslySetInnerHTML={{ __html: bio }} />
                             <div className={`${styles.bioActions} reveal reveal-delay-3`}>
                                 <a href={manifestoUrl} target={manifestoUrl !== "#" ? "_blank" : undefined} rel="noopener noreferrer" className="btn-primary">📄 Download Full Manifesto</a>
-                                <a href="#timeline" className="btn-outline" style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>View Journey →</a>
+                                <a href="#timeline" className="btn-outline" style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>View Journey →</a>
                             </div>
                         </div>
                     </div>

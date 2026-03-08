@@ -1,6 +1,6 @@
 .bar {
-    background: var(--gold);
-    color: var(--green-deep);
+    background: var(--apc-red);
+    color: var(--blue-deep);
     font-family: var(--font-heading), Impact, sans-serif;
     font-size: 12px;
     font-weight: 700;

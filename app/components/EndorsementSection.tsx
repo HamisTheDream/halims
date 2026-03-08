@@ -61,7 +61,7 @@ export default function EndorsementSection() {
                             </div>
                             <div className={styles.flyerBottom}>APC · House of Representatives · 2027</div>
                             <div className={styles.flyerLogoBadge}>
-                                <Image src="/images/apc-logo-1.png" alt="APC" width={28} height={28} style={{ objectFit: "contain" }} />
+                                <Image src="/images/apc-logo.png" alt="APC" width={28} height={28} style={{ objectFit: "contain" }} />
                             </div>
                         </div>
                         <div className={styles.counter} aria-live="polite">

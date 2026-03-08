@@ -86,7 +86,7 @@ export default function AdminActivityPage() {
                                 <span style={{ fontSize: 22, marginTop: 2 }}>{icon}</span>
                                 <div style={{ flex: 1 }}>
                                     <p style={{ fontSize: 14, fontWeight: 600, color: "var(--admin-text)" }}>
-                                        <span style={{ color: "var(--gold)" }}>{a.admin_name}</span> — {a.action.replace(/_/g, " ")}
+                                        <span style={{ color: "var(--apc-red)" }}>{a.admin_name}</span> — {a.action.replace(/_/g, " ")}
                                     </p>
                                     {a.details && (
                                         <p style={{ fontSize: 12, color: "var(--admin-text-muted)", marginTop: 2 }}>{a.details}</p>

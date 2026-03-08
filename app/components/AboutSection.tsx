@@ -33,7 +33,7 @@ export default function AboutSection() {
                     <div className={`${styles.photoWrap} reveal`}>
                         <div className={styles.photoMain}>
                             <Image
-                                src="/images/halims-3.png"
+                                src="/images/halims3.png"
                                 alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims) speaking at a community event"
                                 width={500}
                                 height={640}
@@ -81,7 +81,7 @@ export default function AboutSection() {
                             >
                                 Download Manifesto
                             </a>
-                            <a href="/about" className="btn-outline" style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>Read Full Bio</a>
+                            <a href="/about" className="btn-outline" style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>Read Full Bio</a>
                         </div>
                     </div>
                 </div>

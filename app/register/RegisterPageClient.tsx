@@ -184,7 +184,7 @@ export default function RegisterPageClient() {
                             <p className={styles.successDesc}>Dear <strong>{form.fullName}</strong>, thank you for supporting Rt. Hon. Abdullahi Ibrahim Ali (Halims) for House of Representatives. Your registration is confirmed. Together, we will transform Ankpa Federal Constituency!</p>
                             <div className={styles.successActions}>
                                 <a href="/endorsement" className="btn-primary">📸 Create Endorsement Flyer</a>
-                                <a href="/" className="btn-outline" style={{ color: "var(--green-deep)", borderColor: "var(--green-deep)" }}>← Back to Home</a>
+                                <a href="/" className="btn-outline" style={{ color: "var(--blue-deep)", borderColor: "var(--blue-deep)" }}>← Back to Home</a>
                             </div>
                         </div>
                     ) : (

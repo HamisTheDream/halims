@@ -1,19 +1,21 @@
 /* ============================================================
-   CSS VARIABLES — IGALA ROYAL PALETTE
+   CSS VARIABLES — APC PREMIUM PALETTE
    ============================================================ */
 :root {
-  --green-deep: #004D25;
-  --green-mid: #007A3D;
-  --green-light: #00B159;
-  --gold: #D32F2F;
-  --gold-light: #E53935;
-  --gold-pale: #FFCDD2;
+  --blue-deep: #002D62;
+  --blue-mid: #0047AB;
+  --blue-light: #0066B3;
+  --apc-red: #E3000F;
+  --apc-red-light: #FF1E27;
+  --apc-red-pale: #FFD1D3;
+  --apc-green: #008751;
+  --apc-green-light: #00B159;
   --ivory: #F7F2E8;
   --white: #FFFFFF;
   --charcoal: #1A1A1A;
   --gray-mid: #5A5A5A;
-  --gray-light: #DCDCDC;
-  --red-accent: #B22222;
+  --gray-light: #ECECEC;
+  --red-accent: #E3000F;
   --section-pad: 100px 0;
   --radius: 4px;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,11 +62,11 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--green-deep);
+  background: var(--blue-deep);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gold);
+  background: var(--apc-red);
   border-radius: 3px;
 }
 
@@ -81,7 +83,7 @@ ul {
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--apc-red);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -93,7 +95,7 @@ ul {
   display: inline-block;
   width: 32px;
   height: 2px;
-  background: var(--gold);
+  background: var(--apc-red);
 }
 
 /* BUTTONS */
@@ -101,8 +103,8 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--gold);
-  color: var(--green-deep);
+  background: var(--apc-red);
+  color: var(--blue-deep);
   font-family: var(--font-heading), sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -116,7 +118,7 @@ ul {
 }
 
 .btn-primary:hover {
-  background: var(--gold-light);
+  background: var(--apc-red-light);
   transform: translateY(-2px);
 }
 
@@ -125,8 +127,8 @@ ul {
   align-items: center;
   gap: 10px;
   background: transparent;
-  color: var(--gold);
-  border: 2px solid var(--gold);
+  color: var(--apc-red);
+  border: 2px solid var(--apc-red);
   font-family: var(--font-heading), sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -138,16 +140,16 @@ ul {
 }
 
 .btn-outline:hover {
-  background: var(--gold);
-  color: var(--green-deep);
+  background: var(--apc-red);
+  color: var(--blue-deep);
 }
 
 .btn-dark {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--green-deep);
-  color: var(--gold);
+  background: var(--blue-deep);
+  color: var(--apc-red);
   font-family: var(--font-heading), sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -160,7 +162,7 @@ ul {
 }
 
 .btn-dark:hover {
-  background: var(--green-mid);
+  background: var(--blue-mid);
   transform: translateY(-2px);
 }
 
@@ -169,8 +171,8 @@ ul {
   align-items: center;
   gap: 10px;
   background: transparent;
-  color: var(--green-deep);
-  border: 2px solid var(--green-deep);
+  color: var(--blue-deep);
+  border: 2px solid var(--blue-deep);
   font-family: var(--font-heading), sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -182,8 +184,8 @@ ul {
 }
 
 .btn-ghost-dark:hover {
-  background: var(--green-deep);
-  color: var(--gold);
+  background: var(--blue-deep);
+  color: var(--apc-red);
 }
 
 /* ANIMATIONS */

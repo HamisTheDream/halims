@@ -1,9 +1,9 @@
 .nav {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 3px solid var(--gold);
+    border-bottom: 3px solid var(--apc-red);
 }
 
 .inner {
@@ -46,7 +46,7 @@
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 3px;
-    color: var(--gold);
+    color: var(--apc-red);
     text-transform: uppercase;
 }
 
@@ -54,8 +54,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--gold);
-    color: var(--green-deep);
+    background: var(--apc-red);
+    color: var(--blue-deep);
     font-family: var(--font-heading), sans-serif;
     font-size: 8px;
     font-weight: 800;
@@ -90,12 +90,12 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--gold);
+    background: var(--apc-red);
     transition: var(--transition);
 }
 
 .links a:hover {
-    color: var(--gold);
+    color: var(--apc-red);
 }
 
 .links a:hover::after {
@@ -103,13 +103,13 @@
 }
 
 .cta {
-    background: var(--gold) !important;
-    color: var(--green-deep) !important;
+    background: var(--apc-red) !important;
+    color: var(--blue-deep) !important;
     padding: 10px 20px !important;
 }
 
 .cta:hover {
-    background: var(--gold-light) !important;
+    background: var(--apc-red-light) !important;
 }
 
 .cta::after {
@@ -130,7 +130,7 @@
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--gold);
+    background: var(--apc-red);
     transition: var(--transition);
 }
 
@@ -139,7 +139,7 @@
     display: none;
     position: fixed;
     inset: 0;
-    background: var(--green-deep);
+    background: var(--blue-deep);
     z-index: 9999;
     flex-direction: column;
     align-items: center;
@@ -160,7 +160,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
 }
 
 .mobileOpen {
@@ -178,7 +178,7 @@
 }
 
 .mobileNav a:hover {
-    color: var(--gold);
+    color: var(--apc-red);
 }
 
 .mobileClose {
@@ -186,7 +186,7 @@
     top: 24px;
     right: 24px;
     font-size: 32px;
-    color: var(--gold);
+    color: var(--apc-red);
     cursor: pointer;
     background: none;
     border: none;

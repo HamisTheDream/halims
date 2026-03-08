@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .heroTitle em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
     display: block;
 }
@@ -80,7 +80,7 @@
 }
 
 .formHeader {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     padding: 32px 40px;
 }
 
@@ -112,7 +112,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     padding-bottom: 12px;
     border-bottom: 1px solid var(--gray-light);
     margin-bottom: 24px;
@@ -159,7 +159,7 @@
 
 .input:focus,
 .select:focus {
-    border-color: var(--gold);
+    border-color: var(--apc-red);
     background: var(--white);
     box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
 }
@@ -207,13 +207,13 @@
 }
 
 .checkbox input:checked~.checkmark {
-    background: var(--gold);
-    border-color: var(--gold);
+    background: var(--apc-red);
+    border-color: var(--apc-red);
 }
 
 .checkbox input:checked~.checkmark::after {
     content: '✓';
-    color: var(--green-deep);
+    color: var(--blue-deep);
     font-size: 14px;
     font-weight: 800;
 }
@@ -471,7 +471,7 @@
     font-family: var(--font-display), serif;
     font-size: 32px;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 16px;
 }
 
@@ -483,7 +483,7 @@
 }
 
 .successDesc strong {
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 .successActions {
@@ -500,7 +500,7 @@
 }
 
 .sidebarCard {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     padding: 32px;
     margin-bottom: 20px;
 }
@@ -511,7 +511,7 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 20px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(201, 162, 39, 0.2);
@@ -537,7 +537,7 @@
 }
 
 .sidebarStat {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     padding: 20px 12px;
     text-align: center;
 }
@@ -546,7 +546,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 28px;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--apc-red);
     display: block;
 }
 
@@ -562,16 +562,16 @@
 }
 
 .sidebarQuote {
-    background: var(--gold);
+    background: var(--apc-red);
     padding: 28px;
-    border-left: 4px solid var(--green-deep);
+    border-left: 4px solid var(--blue-deep);
 }
 
 .sidebarQuote p {
     font-family: var(--font-display), serif;
     font-size: 15px;
     font-style: italic;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     line-height: 1.6;
     margin-bottom: 12px;
 }
@@ -582,7 +582,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--green-mid);
+    color: var(--blue-mid);
 }
 
 @keyframes successPop {

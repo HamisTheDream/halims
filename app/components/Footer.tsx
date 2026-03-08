@@ -52,7 +52,7 @@ export default function Footer() {
                     <div className={styles.grid}>
                         <div>
                             <div className={styles.brandRow}>
-                                <Image src="/images/apc-logo-1.png" alt="All Progressives Congress Logo" width={48} height={48} className={styles.brandLogo} style={{ objectFit: "contain" }} />
+                                <Image src="/images/apc-logo.png" alt="All Progressives Congress Logo" width={48} height={48} className={styles.brandLogo} style={{ objectFit: "contain" }} />
                                 <div>
                                     <p className={styles.brandName}>Rt. Hon. Abdullahi Ibrahim Ali (Halims)</p>
                                     <p className={styles.brandTag}>APC · House of Representatives · 2027</p>

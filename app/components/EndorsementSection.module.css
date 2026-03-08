@@ -6,7 +6,7 @@
 }
 
 .inner {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 500px;
@@ -27,7 +27,7 @@
     right: -2px;
     height: 100%;
     width: 2px;
-    background: linear-gradient(to bottom, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+    background: linear-gradient(to bottom, transparent, var(--apc-red) 30%, var(--apc-red) 70%, transparent);
 }
 
 .title {
@@ -40,7 +40,7 @@
 }
 
 .title em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
 }
 
@@ -68,8 +68,8 @@
 .stepNum {
     width: 32px;
     height: 32px;
-    background: var(--gold);
-    color: var(--green-deep);
+    background: var(--apc-red);
+    color: var(--blue-deep);
     font-family: var(--font-heading), sans-serif;
     font-size: 14px;
     font-weight: 800;
@@ -87,7 +87,7 @@
 }
 
 .stepText strong {
-    color: var(--gold-pale);
+    color: var(--apc-red-pale);
     font-weight: 600;
 }
 
@@ -103,8 +103,8 @@
 
 .flyerMockup {
     width: 280px;
-    background: linear-gradient(135deg, var(--green-mid), var(--green-deep));
-    border: 3px solid var(--gold);
+    background: linear-gradient(135deg, var(--blue-mid), var(--blue-deep));
+    border: 3px solid var(--apc-red);
     padding: 20px;
     position: relative;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(201, 162, 39, 0.2);
@@ -117,7 +117,7 @@
 }
 
 .flyerTop {
-    background: var(--gold);
+    background: var(--apc-red);
     margin: -20px -20px 16px;
     padding: 8px 20px;
     text-align: center;
@@ -126,7 +126,7 @@
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 .flyerPhotoArea {
@@ -141,7 +141,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 3px solid var(--gold);
+    border: 3px solid var(--apc-red);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -157,7 +157,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 3px solid var(--gold);
+    border: 3px solid var(--apc-red);
     background: rgba(201, 162, 39, 0.1);
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@
     font-family: var(--font-display), serif;
     font-size: 14px;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--apc-red);
     line-height: 1.3;
 }
 
@@ -244,7 +244,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 28px;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--apc-red);
 }
 
 .counterLabel {

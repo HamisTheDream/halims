@@ -14,11 +14,11 @@
     font-family: var(--font-display), serif;
     font-size: clamp(28px, 3vw, 40px);
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
 }
 
 .title em {
-    color: var(--gold);
+    color: var(--apc-red);
     font-style: italic;
 }
 
@@ -48,14 +48,14 @@
     top: 0;
     bottom: 0;
     width: 4px;
-    background: var(--gold);
+    background: var(--apc-red);
     transform: scaleY(0);
     transition: var(--transition);
 }
 
 .item:hover {
     background: var(--white);
-    border-color: var(--green-light);
+    border-color: var(--blue-light);
 }
 
 .item:hover::before {
@@ -64,7 +64,7 @@
 
 .dateBlock {
     text-align: center;
-    background: var(--green-deep);
+    background: var(--blue-deep);
     padding: 16px 12px;
 }
 
@@ -72,7 +72,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--apc-red);
     line-height: 1;
 }
 
@@ -92,7 +92,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     margin-bottom: 8px;
 }
 
@@ -100,7 +100,7 @@
     font-family: var(--font-display), serif;
     font-size: 20px;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     margin-bottom: 6px;
 }
 
@@ -118,16 +118,16 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--green-deep);
-    border: 2px solid var(--green-deep);
+    color: var(--blue-deep);
+    border: 2px solid var(--blue-deep);
     padding: 12px 24px;
     transition: var(--transition);
     white-space: nowrap;
 }
 
 .item:hover .rsvp {
-    background: var(--green-deep);
-    color: var(--gold);
+    background: var(--blue-deep);
+    color: var(--apc-red);
 }
 
 @media (max-width: 1024px) {

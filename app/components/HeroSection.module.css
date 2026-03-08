@@ -1,5 +1,5 @@
 .hero {
-    background: var(--green-deep);
+    background: var(--blue-deep);
     min-height: 92vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,7 +22,7 @@
     bottom: 0;
     left: 50%;
     width: 3px;
-    background: linear-gradient(to bottom, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+    background: linear-gradient(to bottom, transparent, var(--apc-red) 20%, var(--apc-red) 80%, transparent);
     transform: skewX(-8deg);
     pointer-events: none;
 }
@@ -50,7 +50,7 @@
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--apc-red);
     display: flex;
     align-items: center;
     gap: 12px;
@@ -62,7 +62,7 @@
 .eyebrowDot {
     width: 6px;
     height: 6px;
-    background: var(--gold);
+    background: var(--apc-red);
     border-radius: 50%;
     animation: pulse 2s ease infinite;
 }
@@ -80,7 +80,7 @@
 
 .title em {
     font-style: italic;
-    color: var(--gold);
+    color: var(--apc-red);
     display: block;
 }
 
@@ -91,7 +91,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--apc-red);
     padding-left: 16px;
     margin-bottom: 40px;
     opacity: 0;
@@ -131,7 +131,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--apc-red);
     line-height: 1;
 }
 
@@ -195,8 +195,8 @@
     right: 16px;
     width: 60%;
     height: 60%;
-    border-top: 2px solid var(--gold);
-    border-right: 2px solid var(--gold);
+    border-top: 2px solid var(--apc-red);
+    border-right: 2px solid var(--apc-red);
 }
 
 .photoFrame::after {
@@ -206,8 +206,8 @@
     left: -16px;
     width: 60%;
     height: 60%;
-    border-bottom: 2px solid var(--gold);
-    border-left: 2px solid var(--gold);
+    border-bottom: 2px solid var(--apc-red);
+    border-left: 2px solid var(--apc-red);
 }
 
 /* Badge */
@@ -217,7 +217,7 @@
     right: 60px;
     width: 110px;
     height: 110px;
-    background: var(--gold);
+    background: var(--apc-red);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,7 +239,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 22px;
     font-weight: 800;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     line-height: 1;
 }
 
@@ -249,7 +249,7 @@
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--green-deep);
+    color: var(--blue-deep);
     text-align: center;
 }
 
@@ -259,7 +259,7 @@
     bottom: 60px;
     right: 60px;
     background: rgba(10, 48, 32, 0.9);
-    border: 2px solid var(--gold);
+    border: 2px solid var(--apc-red);
     padding: 12px 20px;
     display: flex;
     align-items: center;
@@ -271,7 +271,7 @@
     width: 40px;
     height: 40px;
     background: rgba(201, 162, 39, 0.2);
-    border: 1px dashed var(--gold);
+    border: 1px dashed var(--apc-red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -282,7 +282,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 7px;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--apc-red);
     text-align: center;
     letter-spacing: 0.5px;
 }
@@ -305,7 +305,7 @@
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: var(--gold);
+    color: var(--apc-red);
     text-transform: uppercase;
 }
 
@@ -325,7 +325,7 @@
 .scrollLine {
     width: 48px;
     height: 1px;
-    background: linear-gradient(to right, var(--gold), transparent);
+    background: linear-gradient(to right, var(--apc-red), transparent);
     position: relative;
     overflow: hidden;
 }
@@ -337,7 +337,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: var(--gold);
+    background: var(--apc-red);
     animation: scrollPulse 2s ease infinite;
 }
 
