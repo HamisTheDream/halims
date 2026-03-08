@@ -1,0 +1,189 @@
+.section {
+    padding: var(--section-pad);
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: 'HALIMS';
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: var(--font-display), serif;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(10, 48, 32, 0.04);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.photoWrap {
+    position: relative;
+}
+
+.photoMain {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(145deg, var(--green-mid), var(--green-deep));
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.accent {
+    position: absolute;
+    bottom: -24px;
+    right: -24px;
+    width: 60%;
+    height: 60%;
+    background: var(--gold);
+    z-index: -1;
+}
+
+.caption {
+    position: absolute;
+    bottom: 24px;
+    left: -24px;
+    background: var(--green-deep);
+    border-left: 4px solid var(--gold);
+    padding: 16px 24px;
+    color: var(--white);
+}
+
+.captionTitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.captionName {
+    font-family: var(--font-display), serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 4px;
+}
+
+.expBadge {
+    position: absolute;
+    top: 24px;
+    right: -16px;
+    background: var(--gold);
+    padding: 20px;
+    text-align: center;
+    width: 90px;
+}
+
+.expNum {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--green-deep);
+    line-height: 1;
+}
+
+.expLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.title {
+    font-family: var(--font-display), serif;
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 700;
+    color: var(--green-deep);
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.title em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.body {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--gray-mid);
+    margin-bottom: 20px;
+}
+
+.credentials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 32px 0;
+}
+
+.credential {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: var(--ivory);
+    border-left: 3px solid var(--gold);
+}
+
+.credIcon {
+    width: 36px;
+    height: 36px;
+    background: var(--green-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.credText {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .photoWrap {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+    .credentials {
+        grid-template-columns: 1fr;
+    }
+}

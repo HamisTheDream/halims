@@ -1,0 +1,195 @@
+.nav {
+    background: var(--green-deep);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--gold);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1;
+}
+
+.logoImg {
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.logoTextWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoName {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.logoSub {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.logoBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold);
+    color: var(--green-deep);
+    font-family: var(--font-heading), sans-serif;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    margin-top: 4px;
+    width: fit-content;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.links a {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    transition: var(--transition);
+    position: relative;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: var(--transition);
+}
+
+.links a:hover {
+    color: var(--gold);
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+.cta {
+    background: var(--gold) !important;
+    color: var(--green-deep) !important;
+    padding: 10px 20px !important;
+}
+
+.cta:hover {
+    background: var(--gold-light) !important;
+}
+
+.cta::after {
+    display: none !important;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--gold);
+    transition: var(--transition);
+}
+
+/* Mobile Nav */
+.mobileNav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--green-deep);
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.mobileLogo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.mobileLogo span {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.mobileOpen {
+    display: flex !important;
+}
+
+.mobileNav a {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition);
+}
+
+.mobileNav a:hover {
+    color: var(--gold);
+}
+
+.mobileClose {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 32px;
+    color: var(--gold);
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    padding: 8px;
+}

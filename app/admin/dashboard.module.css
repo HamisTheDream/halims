@@ -1,0 +1,247 @@
+.dash {
+    animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-family: var(--font-display), serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--admin-text);
+    margin-bottom: 6px;
+}
+
+.pageDesc {
+    font-size: 13px;
+    color: var(--admin-text-muted);
+}
+
+/* Stats Grid */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.statCard {
+    background: var(--admin-card);
+    border: 1px solid var(--admin-border);
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: 0.2s ease;
+    border-radius: 8px;
+}
+
+.statCard:hover {
+    border-color: var(--admin-gold);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.statLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--admin-text-muted);
+    margin-bottom: 6px;
+}
+
+.statValue {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--admin-text);
+    line-height: 1;
+}
+
+.statChange {
+    font-size: 12px;
+    color: #1D7A50;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+/* Two Column */
+.twoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    background: var(--admin-card);
+    border: 1px solid var(--admin-border);
+    padding: 28px;
+    border-radius: 8px;
+}
+
+.cardTitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--admin-accent);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--admin-border);
+    margin-bottom: 20px;
+}
+
+/* LGA Breakdown */
+.lgaList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lgaItem {
+    display: grid;
+    grid-template-columns: 1fr 200px 40px;
+    gap: 12px;
+    align-items: center;
+}
+
+.lgaInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lgaDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.lgaName {
+    font-size: 13px;
+    color: var(--admin-text-secondary);
+    font-weight: 500;
+}
+
+.lgaCount {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--admin-text-muted);
+    margin-left: auto;
+}
+
+.lgaBar {
+    height: 6px;
+    background: var(--admin-border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.lgaFill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+.lgaPct {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--admin-text-muted);
+    text-align: right;
+}
+
+/* Recent Supporters */
+.supporterList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.supporterItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.supporterAvatar {
+    width: 36px;
+    height: 36px;
+    background: var(--admin-gold-bg);
+    color: var(--admin-gold);
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.supporterInfo {
+    flex: 1;
+}
+
+.supporterName {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--admin-text);
+}
+
+.supporterMeta {
+    font-size: 11px;
+    color: var(--admin-text-muted);
+    margin-top: 2px;
+}
+
+.supporterTime {
+    font-size: 11px;
+    color: var(--admin-text-muted);
+}
+
+@media (max-width: 1024px) {
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .twoCol {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+}

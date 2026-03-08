@@ -1,0 +1,426 @@
+/* Hero */
+.hero {
+    background: var(--green-deep);
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    padding: 100px 24px 60px;
+}
+
+.heroEyebrow {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.heroTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.heroTitle em {
+    color: var(--gold);
+    font-style: italic;
+    display: block;
+}
+
+.heroDesc {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Generator Section */
+.generatorSection {
+    padding: 80px 0;
+    background: var(--ivory);
+}
+
+.generatorGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.step {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    padding: 28px;
+}
+
+.stepHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.stepNum {
+    width: 36px;
+    height: 36px;
+    background: var(--gold);
+    color: var(--green-deep);
+    font-family: var(--font-heading), sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stepTitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+}
+
+/* Upload Area */
+.uploadArea {
+    border: 2px dashed var(--gray-light);
+    background: var(--ivory);
+    cursor: pointer;
+    transition: var(--transition);
+    overflow: hidden;
+    position: relative;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadArea:hover {
+    border-color: var(--gold);
+    background: rgba(201, 162, 39, 0.04);
+}
+
+.fileInput {
+    display: none;
+}
+
+.uploadPlaceholder {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.uploadIcon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.uploadText {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green-deep);
+    margin-bottom: 8px;
+}
+
+.uploadHint {
+    font-size: 12px;
+    color: var(--gray-mid);
+}
+
+.uploadPreview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.removeBtn {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red-accent);
+    background: none;
+    border: 1px solid var(--red-accent);
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.removeBtn:hover {
+    background: var(--red-accent);
+    color: var(--white);
+}
+
+/* Form fields */
+.field {
+    margin-bottom: 16px;
+}
+
+.label {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input {
+    font-family: var(--font-body), sans-serif;
+    font-size: 14px;
+    padding: 14px 16px;
+    border: 1px solid var(--gray-light);
+    background: var(--ivory);
+    color: var(--charcoal);
+    transition: var(--transition);
+    outline: none;
+    width: 100%;
+}
+
+.input:focus {
+    border-color: var(--gold);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+}
+
+/* Template Grid */
+.templateGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.templateBtn {
+    border: 2px solid transparent;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    transition: var(--transition);
+}
+
+.templateBtn:hover {
+    border-color: var(--gray-light);
+}
+
+.templateActive {
+    border-color: var(--gold) !important;
+    background: rgba(201, 162, 39, 0.08);
+}
+
+.templatePreview {
+    width: 100%;
+    aspect-ratio: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 6px;
+}
+
+.templateName {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+}
+
+/* Info Box */
+.infoBox {
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--gray-mid);
+    line-height: 1.6;
+}
+
+.infoBox strong {
+    color: var(--green-deep);
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.downloadBtn {
+    flex: 1;
+    justify-content: center;
+}
+
+.shareBtn {
+    flex: 1;
+    justify-content: center;
+}
+
+.downloadBtn:disabled,
+.shareBtn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.successMsg {
+    background: rgba(29, 122, 80, 0.1);
+    border: 1px solid var(--green-light);
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--green-deep);
+    font-weight: 600;
+}
+
+/* Preview Column */
+.previewCol {
+    position: sticky;
+    top: 100px;
+}
+
+.previewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 4px;
+}
+
+.previewLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+}
+
+.previewSize {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray-mid);
+}
+
+.canvasWrap {
+    background: var(--charcoal);
+    padding: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Counter Section */
+.counterSection {
+    padding: 48px 0;
+    background: var(--green-deep);
+}
+
+.counterInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.counterNum {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--gold);
+    display: block;
+}
+
+.counterLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-top: 4px;
+}
+
+.counterDivider {
+    width: 1px;
+    height: 48px;
+    background: rgba(201, 162, 39, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .generatorGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .previewCol {
+        position: static;
+        order: -1;
+    }
+
+    .templateGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .templateGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}

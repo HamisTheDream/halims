@@ -1,0 +1,514 @@
+/* About Page Hero */
+.hero {
+    background: var(--green-deep);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(201, 162, 39, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(29, 122, 80, 0.12) 0%, transparent 40%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 100px 24px 80px;
+}
+
+.heroEyebrow {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+}
+
+.heroTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.heroTitle em {
+    color: var(--gold);
+    font-style: italic;
+    display: block;
+}
+
+.heroSubtitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 32px;
+}
+
+.heroDivider {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 0 auto 32px;
+}
+
+.heroDesc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* Bio Section */
+.bioSection {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.bioGrid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.bioPhoto {
+    position: relative;
+}
+
+.bioPhotoInner {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(145deg, var(--green-mid), var(--green-deep));
+    overflow: hidden;
+    position: relative;
+}
+
+.photoPlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px dashed rgba(201, 162, 39, 0.3);
+}
+
+.photoIcon {
+    font-size: 48px;
+    opacity: 0.5;
+}
+
+.photoLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(201, 162, 39, 0.5);
+    text-align: center;
+}
+
+.bioPhotoAccent {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 50%;
+    height: 50%;
+    background: var(--gold);
+    z-index: -1;
+}
+
+.bioPhotoTag {
+    position: absolute;
+    top: 24px;
+    right: -24px;
+    background: var(--gold);
+    padding: 20px 16px;
+    text-align: center;
+    width: 100px;
+}
+
+.tagNum {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--green-deep);
+    line-height: 1;
+    display: block;
+}
+
+.tagLabel {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-top: 4px;
+    line-height: 1.3;
+    display: block;
+}
+
+.bioTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(28px, 3vw, 44px);
+    font-weight: 700;
+    color: var(--green-deep);
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.bioTitle em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.bioText {
+    margin-bottom: 36px;
+}
+
+.bioText p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--gray-mid);
+    margin-bottom: 16px;
+}
+
+.bioActions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Values Section */
+.valuesSection {
+    padding: 100px 0;
+    background: var(--ivory);
+}
+
+.valuesHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.valuesTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 900;
+    color: var(--green-deep);
+    margin-bottom: 16px;
+}
+
+.valuesTitle em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.valueCard {
+    background: var(--white);
+    padding: 40px 28px;
+    border: 1px solid var(--gray-light);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.valueCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-color: var(--gold);
+}
+
+.valueIcon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.valueTitle {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-bottom: 12px;
+}
+
+.valueDesc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--gray-mid);
+}
+
+.valueBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.valueCard:hover .valueBar {
+    transform: scaleX(1);
+}
+
+/* Timeline Section */
+.timelineSection {
+    padding: 100px 0;
+    background: var(--green-deep);
+    position: relative;
+    overflow: hidden;
+}
+
+.timelineSection::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+
+.timelineHeader {
+    text-align: center;
+    margin-bottom: 64px;
+    position: relative;
+    z-index: 2;
+}
+
+.timelineTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.timelineTitle em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgba(201, 162, 39, 0.3);
+    transform: translateX(-50%);
+}
+
+.timelineItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    position: relative;
+    padding-left: calc(50% + 40px);
+}
+
+.timelineRight {
+    padding-left: 0;
+    padding-right: calc(50% + 40px);
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.timelineDot {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background: var(--gold);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px var(--green-deep), 0 0 0 6px rgba(201, 162, 39, 0.3);
+    z-index: 3;
+}
+
+.timelineCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 162, 39, 0.15);
+    padding: 28px;
+    transition: var(--transition);
+}
+
+.timelineCard:hover {
+    background: rgba(201, 162, 39, 0.08);
+    border-color: rgba(201, 162, 39, 0.3);
+}
+
+.timelineYear {
+    font-family: var(--font-heading), sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.timelineItemTitle {
+    font-family: var(--font-display), serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 8px 0 12px;
+    line-height: 1.3;
+}
+
+.timelineDesc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 100px 0;
+    background: var(--gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: 'JOIN US';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-display), serif;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(10, 48, 32, 0.06);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.ctaInner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.ctaTitle {
+    font-family: var(--font-display), serif;
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 900;
+    color: var(--green-deep);
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.ctaDesc {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--green-mid);
+    max-width: 520px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.ctaActions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .bioGrid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .bioPhoto {
+        max-width: 400px;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timelineItem {
+        padding-left: 48px;
+    }
+
+    .timelineRight {
+        padding-right: 0;
+        padding-left: 48px;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .timeline::before {
+        left: 16px;
+    }
+
+    .timelineDot {
+        left: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .heroContent {
+        padding: 80px 24px 60px;
+    }
+}

@@ -1,0 +1,29 @@
+.bar {
+    background: var(--gold);
+    color: var(--green-deep);
+    font-family: var(--font-heading), Impact, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    display: inline-block;
+    animation: tickerSlide 30s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes tickerSlide {
+    0% {
+        transform: translateX(60vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

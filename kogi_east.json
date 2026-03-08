@@ -1,0 +1,2532 @@
+{
+  "ANKPA": {
+    "ANKPA TOWNSHIP": [
+      {
+        "name": "IFE STREET O/S",
+        "code": "22/03/01/032"
+      },
+      {
+        "name": "ANKPA, BARRACK 2 OPP. BURIAL GROUND",
+        "code": "22/03/01/005"
+      },
+      {
+        "name": "ANKPA, TAIWO ROAD",
+        "code": "22/03/01/004"
+      },
+      {
+        "name": "ANGWA OGEBE, OGAJI VILLAGE",
+        "code": "22/03/01/003"
+      },
+      {
+        "name": "OKPAKPALA, OPEN SPACE",
+        "code": "22/03/01/002"
+      },
+      {
+        "name": "OPULEGA, BESIDE ROUND ABOUT",
+        "code": "22/03/01/001"
+      },
+      {
+        "name": "ENOKPOLI, OPEN SPACE",
+        "code": "22/03/01/012"
+      },
+      {
+        "name": "OGAJI VILLAGE, L.G.E.A. SCHOOL, OGAJI",
+        "code": "22/03/01/011"
+      },
+      {
+        "name": "OFOKE BY ONU ANKPA PALACE, OPEN SPACE",
+        "code": "22/03/01/049"
+      },
+      {
+        "name": "OFF REFORMED EVER-CHRISTAN HQTRS, OPEN SPACE",
+        "code": "22/03/01/048"
+      },
+      {
+        "name": "OGANE OJUWO, OPEN SPACE",
+        "code": "22/03/01/047"
+      },
+      {
+        "name": "OFODOKOLO BY CENTRA MOSQUE",
+        "code": "22/03/01/046"
+      },
+      {
+        "name": "ANKPA AREA 1, ANGWA IGALA O/S",
+        "code": "22/03/01/045"
+      },
+      {
+        "name": "OLUBOJO DOMAS CLINIC O/S",
+        "code": "22/03/01/044"
+      },
+      {
+        "name": "ANGWA GALA OLUBOJO O/S",
+        "code": "22/03/01/043"
+      },
+      {
+        "name": "OFEJIJI JUNCTION O/S",
+        "code": "22/03/01/042"
+      },
+      {
+        "name": "BACK OF PRISON YARD O/S",
+        "code": "22/03/01/041"
+      },
+      {
+        "name": "ANKPA MARKET LANE O/S",
+        "code": "22/03/01/040"
+      },
+      {
+        "name": "NATO PARK O/S",
+        "code": "22/03/01/039"
+      },
+      {
+        "name": "OJEKO OPEN SPACE",
+        "code": "22/03/01/038"
+      },
+      {
+        "name": "NO.11 MISSION STREET O/S",
+        "code": "22/03/01/037"
+      },
+      {
+        "name": "SANI OGANE STREET O/S",
+        "code": "22/03/01/036"
+      },
+      {
+        "name": "MAKURDI STREET O/S",
+        "code": "22/03/01/035"
+      },
+      {
+        "name": "OGANE GERI O/S",
+        "code": "22/03/01/034"
+      },
+      {
+        "name": "JAMATU JUNCTION, OPEN SPACE",
+        "code": "22/03/01/033"
+      },
+      {
+        "name": "HASHIM ADAJI AREA, OPEN SPACE",
+        "code": "22/03/01/031"
+      },
+      {
+        "name": "ONUH AKOH AREA, OPEN SPACE",
+        "code": "22/03/01/030"
+      },
+      {
+        "name": "LIBERIA I BY AMEH OKPALA O/S",
+        "code": "22/03/01/029"
+      },
+      {
+        "name": "OLD EJEH PALACE O/S",
+        "code": "22/03/01/028"
+      },
+      {
+        "name": "DOWN TAIWO ROAD FRONT OF M. ADAJI ISLAMIC SCHOOL, OPEN SPACE",
+        "code": "22/03/01/027"
+      },
+      {
+        "name": "UP TAIWO ROAD BY A.A NEGEDU OPEN SPACE",
+        "code": "22/03/01/026"
+      },
+      {
+        "name": "ANGWA EDE III BESIDE PETER ACHIMUGU JUNCTION",
+        "code": "22/03/01/025"
+      },
+      {
+        "name": "ANGWA EDE II BY MADUBA O/S",
+        "code": "22/03/01/024"
+      },
+      {
+        "name": "L.G.E.A PRIMARY SCHOOL EBITAKPA",
+        "code": "22/03/01/023"
+      },
+      {
+        "name": "ANGWA OFORO BY AKEDE",
+        "code": "22/03/01/022"
+      },
+      {
+        "name": "ALEKA OPEN SPACE BY MOSQUE",
+        "code": "22/03/01/021"
+      },
+      {
+        "name": "L.G.E.A EFIWO OPULEGA",
+        "code": "22/03/01/020"
+      },
+      {
+        "name": "ANKPA BY MOTOR PARK",
+        "code": "22/03/01/019"
+      },
+      {
+        "name": "OGAJI VILLAGE",
+        "code": "22/03/01/018"
+      },
+      {
+        "name": "ANKPA, OGAJI OJUWO",
+        "code": "22/03/01/017"
+      },
+      {
+        "name": "ANKPA, ANGWA OFODU",
+        "code": "22/03/01/013"
+      },
+      {
+        "name": "OGAJI, BY HASSAN ENAPE'S HOUSE",
+        "code": "22/03/01/014"
+      },
+      {
+        "name": "ANKPA INFRONT OF ANKPA HOTELS, G.R.A.",
+        "code": "22/03/01/016"
+      },
+      {
+        "name": "ANKPA, OTUKPO ROAD BY SLAUGHTER SLAB",
+        "code": "22/03/01/007"
+      },
+      {
+        "name": "ANKPA SABONGARI, L.G.E.A. CENTRAL SCHOOL",
+        "code": "22/03/01/009"
+      },
+      {
+        "name": "ANKPA, ANGWA EDE",
+        "code": "22/03/01/015"
+      },
+      {
+        "name": "ANKPA, R.C.M. SCHOOL",
+        "code": "22/03/01/006"
+      },
+      {
+        "name": "ANKPA, ABOGEDE OGAJI ROAD",
+        "code": "22/03/01/010"
+      },
+      {
+        "name": "ANGWA HAUSAWA, NEAR MARKET OPEN SPACE",
+        "code": "22/03/01/008"
+      }
+    ],
+    "ANKPA SUBURB  I": [
+      {
+        "name": "EMEDO L.G.E.A. SCHOOL",
+        "code": "22/03/02/007"
+      },
+      {
+        "name": "OWELLE",
+        "code": "22/03/02/003"
+      },
+      {
+        "name": "OJACHADU II O/S",
+        "code": "22/03/02/025"
+      },
+      {
+        "name": "EMANYI L.G.E.A. SCHOOL",
+        "code": "22/03/02/006"
+      },
+      {
+        "name": "OJOKODO, OPEN SPACE",
+        "code": "22/03/02/009"
+      },
+      {
+        "name": "OJEDE II BY WATER TANK O/S",
+        "code": "22/03/02/014"
+      },
+      {
+        "name": "OJEDE CENTRE, OPEN SPACE",
+        "code": "22/03/02/002"
+      },
+      {
+        "name": "OGANE EMANYI O/S",
+        "code": "22/03/02/023"
+      },
+      {
+        "name": "OJELANYI L.G.E.A. SCHOOL",
+        "code": "22/03/02/005"
+      },
+      {
+        "name": "OPPOSITE BEN AMEH HOTEL O/S",
+        "code": "22/03/02/015"
+      },
+      {
+        "name": "EGBECHE, L.G.E.A SCHOOL",
+        "code": "22/03/02/001"
+      },
+      {
+        "name": "OJEDE NEW LAYOUT",
+        "code": "22/03/02/013"
+      },
+      {
+        "name": "OPP TEAM GARDEN O/S",
+        "code": "22/03/02/018"
+      },
+      {
+        "name": "EFIWO O/S OJOGOBI",
+        "code": "22/03/02/022"
+      },
+      {
+        "name": "OJOGOBI, L.G.E.A. SCHOOL",
+        "code": "22/03/02/010"
+      },
+      {
+        "name": "OWELLE, ISLAMIC PRIMARY SCHOOL",
+        "code": "22/03/02/004"
+      },
+      {
+        "name": "EBAKPOTI O/S",
+        "code": "22/03/02/021"
+      },
+      {
+        "name": "OPP TIMBER SHADE OJELANYI O/S",
+        "code": "22/03/02/020"
+      },
+      {
+        "name": "OPP. SAMPET FILLING STATION O/S",
+        "code": "22/03/02/016"
+      },
+      {
+        "name": "IMAM'S JUNCTION O/S",
+        "code": "22/03/02/017"
+      },
+      {
+        "name": "ENALEOGO, OPEN SPACE",
+        "code": "22/03/02/011"
+      },
+      {
+        "name": "LOWCOST OPP. WHITE MOSQUE, OPEN SPACE",
+        "code": "22/03/02/019"
+      },
+      {
+        "name": "OJACHADU, OPEN SPACE",
+        "code": "22/03/02/012"
+      },
+      {
+        "name": "ADOGO EGBECHE O/S",
+        "code": "22/03/02/024"
+      },
+      {
+        "name": "UBOKPO OPEN SPACE",
+        "code": "22/03/02/008"
+      }
+    ],
+    "ANKPA SUBURB II": [
+      {
+        "name": "ENALE, L.G.E.A. SCHOOL",
+        "code": "22/03/03/008"
+      },
+      {
+        "name": "AKU, OPEN SPACE",
+        "code": "22/03/03/015"
+      },
+      {
+        "name": "ACHARANE, NEAR MARKET",
+        "code": "22/03/03/010"
+      },
+      {
+        "name": "OGO OJELANYI",
+        "code": "22/03/03/017"
+      },
+      {
+        "name": "OJUWO JUNCTION, BY MARKET SQUARE",
+        "code": "22/03/03/009"
+      },
+      {
+        "name": "OTUKPO OJILLE, L.G.E.A. SCHOOL",
+        "code": "22/03/03/011"
+      },
+      {
+        "name": "ACHIPU OPEN SPACE",
+        "code": "22/03/03/014"
+      },
+      {
+        "name": "IGBALA OPPOSITE CENTRA MOSQUE O/S",
+        "code": "22/03/03/024"
+      },
+      {
+        "name": "ATUMA, L.G.E.A. PRMARY SCHOOL",
+        "code": "22/03/03/003"
+      },
+      {
+        "name": "AKU, NEAR WATER TANK",
+        "code": "22/03/03/001"
+      },
+      {
+        "name": "UJAGBAH VILLAGE SQUARE",
+        "code": "22/03/03/021"
+      },
+      {
+        "name": "LAGOS OCHI, BY MARKET SQUARE",
+        "code": "22/03/03/012"
+      },
+      {
+        "name": "OCHI ATTAH BY U.E.C, OCHI OFAGO, OPEN SPACE",
+        "code": "22/03/03/022"
+      },
+      {
+        "name": "OGODO, BY R.C.M. SCHOOL",
+        "code": "22/03/03/016"
+      },
+      {
+        "name": "OGODO UKPODOGO BY CATHOLIC CHURCH O/S",
+        "code": "22/03/03/025"
+      },
+      {
+        "name": "AKU, L.G.E.A. PRIMARY SCHOOL",
+        "code": "22/03/03/002"
+      },
+      {
+        "name": "OGODO ATTE,OPEN SPACE",
+        "code": "22/03/03/005"
+      },
+      {
+        "name": "OCHI OFAGO, OPEN SPACE",
+        "code": "22/03/03/013"
+      },
+      {
+        "name": "ZARIA LAGOS OCHI BY EBENIZER O/S",
+        "code": "22/03/03/023"
+      },
+      {
+        "name": "OGODO OGANE, OGODO NEAR WATER TANK",
+        "code": "22/03/03/006"
+      },
+      {
+        "name": "OGODO, BY MARKET SQUARE",
+        "code": "22/03/03/004"
+      },
+      {
+        "name": "UKPIDOBIA OGODO",
+        "code": "22/03/03/019"
+      },
+      {
+        "name": "ODO ETO OGODO O/S",
+        "code": "22/03/03/026"
+      },
+      {
+        "name": "OWALA ATEH NEAR MOSQUE",
+        "code": "22/03/03/020"
+      },
+      {
+        "name": "AGUDOKI, OPEN SPACE",
+        "code": "22/03/03/007"
+      },
+      {
+        "name": "ALOKO OFACHE L.G.E.D.",
+        "code": "22/03/03/018"
+      }
+    ],
+    "ANKPA  I": [
+      {
+        "name": "UFERANE, OPEN SPACE",
+        "code": "22/03/04/009"
+      },
+      {
+        "name": "IKEBE, OPEN SPACE",
+        "code": "22/03/04/017"
+      },
+      {
+        "name": "EMERE JUNCTION BY MAKURDI ROAD",
+        "code": "22/03/04/004"
+      },
+      {
+        "name": "OJAPATA L.G.E.A. SCHOOL",
+        "code": "22/03/04/011"
+      },
+      {
+        "name": "EMERE, L.G.E.A. SCHOOL",
+        "code": "22/03/04/003"
+      },
+      {
+        "name": "IKANEKPO ETEKE, BY MARKET SQUARE",
+        "code": "22/03/04/006"
+      },
+      {
+        "name": "EMERE EFEKPO, OPEN SPACE",
+        "code": "22/03/04/020"
+      },
+      {
+        "name": "IKANEKPO OJIMELE, OPEN SPACE",
+        "code": "22/03/04/023"
+      },
+      {
+        "name": "EMEKUTU EFOFE O/S",
+        "code": "22/03/04/021"
+      },
+      {
+        "name": "ALOKOJU, OPEN SPACE",
+        "code": "22/03/04/016"
+      },
+      {
+        "name": "EMERE EFIWO, OPEN SPACE",
+        "code": "22/03/04/026"
+      },
+      {
+        "name": "AGUDOKO IKANEKPO, AGUDOKO OLD MARKET",
+        "code": "22/03/04/007"
+      },
+      {
+        "name": "EJEGBO, L.G.E.A. SCHOOL",
+        "code": "22/03/04/001"
+      },
+      {
+        "name": "EJEGBO, OPEN SPACE",
+        "code": "22/03/04/015"
+      },
+      {
+        "name": "ENEMONA SCHOOL GATE O/S",
+        "code": "22/03/04/024"
+      },
+      {
+        "name": "EMERE ANEKPA, OPEN SPACE",
+        "code": "22/03/04/014"
+      },
+      {
+        "name": "ENIELE, L.G.E.A. SCHOOL",
+        "code": "22/03/04/010"
+      },
+      {
+        "name": "EJEGBO, OPEN SPACE",
+        "code": "22/03/04/002"
+      },
+      {
+        "name": "IKANEKPO OKABO, OPEN SPACE",
+        "code": "22/03/04/005"
+      },
+      {
+        "name": "ETUEKPE, UNDER KOLA NUT TREE IKANEKPO",
+        "code": "22/03/04/012"
+      },
+      {
+        "name": "IKANEKPOATE OTUKPO",
+        "code": "22/03/04/019"
+      },
+      {
+        "name": "OJAPATA I NEAR MOSQUE, OPEN SPACE",
+        "code": "22/03/04/022"
+      },
+      {
+        "name": "UJODO, L.G.E.A. SCHOOL, ALAKA",
+        "code": "22/03/04/018"
+      },
+      {
+        "name": "EMEKUTU, NEAR MIN OF AGRIC &NATURAL RESOURCES",
+        "code": "22/03/04/008"
+      },
+      {
+        "name": "OBEYA, NEAR PRIMARY SCHOOL, IKANEKPO",
+        "code": "22/03/04/013"
+      },
+      {
+        "name": "EJEGBO OFORO O/S",
+        "code": "22/03/04/025"
+      }
+    ],
+    "ANKPA II": [
+      {
+        "name": "ABACHE, L.G.E.A. SCHOOL",
+        "code": "22/03/05/002"
+      },
+      {
+        "name": "ALLOR, COURT PREMISES",
+        "code": "22/03/05/001"
+      },
+      {
+        "name": "AMOKE, L.G.E.A. SCHOOL",
+        "code": "22/03/05/003"
+      },
+      {
+        "name": "OKENYI AMOKPE L.G.E.A SCHOOL",
+        "code": "22/03/05/004"
+      },
+      {
+        "name": "OGBONOKO GTC O/S",
+        "code": "22/03/05/015"
+      },
+      {
+        "name": "OJOGADO OPEN SPACE",
+        "code": "22/03/05/020"
+      },
+      {
+        "name": "EJINYA EHECHE BY MOSQUE, OPEN SPACE",
+        "code": "22/03/05/019"
+      },
+      {
+        "name": "OGALALE OPP. MOSQUE O/S",
+        "code": "22/03/05/018"
+      },
+      {
+        "name": "OMOGWU BY CENTRAL MOSQUE, OPEN SPACE",
+        "code": "22/03/05/017"
+      },
+      {
+        "name": "OCHINOBI ISLAMIYA LGEA SCHOOL",
+        "code": "22/03/05/016"
+      },
+      {
+        "name": "EJINYA EFOFE L.G.E.A. SCHOOL",
+        "code": "22/03/05/009"
+      },
+      {
+        "name": "EHECHO, L.G.E.A. SCHOOL",
+        "code": "22/03/05/011"
+      },
+      {
+        "name": "UGBONOBI, BY MARKET SQUARE",
+        "code": "22/03/05/008"
+      },
+      {
+        "name": "UGOLO L.G.E.A. SCHOOL",
+        "code": "22/03/05/012"
+      },
+      {
+        "name": "UBOJI, L.G.E.A. SCHOOL",
+        "code": "22/03/05/006"
+      },
+      {
+        "name": "OJIBOGO, OJIBOGO VILLAGE",
+        "code": "22/03/05/005"
+      },
+      {
+        "name": "ABAKPA, OPEN SPACE",
+        "code": "22/03/05/010"
+      },
+      {
+        "name": "AGUYAYA, L.G.E.A. SCHOOL",
+        "code": "22/03/05/007"
+      },
+      {
+        "name": "ALLOR LGEA SCHOOL",
+        "code": "22/03/05/014"
+      },
+      {
+        "name": "AGUYAYA BY MARKET SQUARE",
+        "code": "22/03/05/013"
+      }
+    ],
+    "ENJEMA  I": [
+      {
+        "name": "OFEAGO O/S",
+        "code": "22/03/06/023"
+      },
+      {
+        "name": "ODAGBA, ODAGBA EFOKO",
+        "code": "22/03/06/016"
+      },
+      {
+        "name": "ENAGBEDE HEALTH CENTER O/S",
+        "code": "22/03/06/028"
+      },
+      {
+        "name": "ODAGBA AGOJOEJU O/S",
+        "code": "22/03/06/029"
+      },
+      {
+        "name": "ALOFE, OPEN SPACE",
+        "code": "22/03/06/018"
+      },
+      {
+        "name": "UNDER MANGO TREE O/S",
+        "code": "22/03/06/030"
+      },
+      {
+        "name": "ATE OJOGIDI O/S",
+        "code": "22/03/06/021"
+      },
+      {
+        "name": "ENABO, OPEN SPACE III",
+        "code": "22/03/06/003"
+      },
+      {
+        "name": "OKOBO OGANE, OKPIKO CENTRE OPEN SPACE",
+        "code": "22/03/06/013"
+      },
+      {
+        "name": "ENABO, OPEN SPACE II",
+        "code": "22/03/06/002"
+      },
+      {
+        "name": "EMABU, OGANE OPEN SPACE",
+        "code": "22/03/06/015"
+      },
+      {
+        "name": "ATE OJOKWA O/S",
+        "code": "22/03/06/020"
+      },
+      {
+        "name": "ODAGBA, OPEN SPACE",
+        "code": "22/03/06/004"
+      },
+      {
+        "name": "OJIKPADALA O/S",
+        "code": "22/03/06/022"
+      },
+      {
+        "name": "ENABO, OPEN SPACE I",
+        "code": "22/03/06/001"
+      },
+      {
+        "name": "FRONT OF LATE ALHAJI HUSSEINI HOUSE, OPEN SPACE",
+        "code": "22/03/06/031"
+      },
+      {
+        "name": "EGULA OPEN SPACE BY AFFOR ROAD",
+        "code": "22/03/06/027"
+      },
+      {
+        "name": "ALOFE OFEJIJI O/S",
+        "code": "22/03/06/026"
+      },
+      {
+        "name": "OJELANYI O/S",
+        "code": "22/03/06/025"
+      },
+      {
+        "name": "EFU-EPIO O/S",
+        "code": "22/03/06/024"
+      },
+      {
+        "name": "ENAGBEDE, OPEN SPACE",
+        "code": "22/03/06/019"
+      },
+      {
+        "name": "UKPAJA, OPEN SPACE",
+        "code": "22/03/06/017"
+      },
+      {
+        "name": "EGULA, EGULA CENTRE",
+        "code": "22/03/06/014"
+      },
+      {
+        "name": "OKOBO ATTE L.G.E.A. SCHOOL",
+        "code": "22/03/06/012"
+      },
+      {
+        "name": "EMABU, BY OFORO TREE, EMABU",
+        "code": "22/03/06/011"
+      },
+      {
+        "name": "ENJEMA TOWN, OPEN SPACE",
+        "code": "22/03/06/010"
+      },
+      {
+        "name": "ANEDU, BY EFUKPOKA ANEDU",
+        "code": "22/03/06/009"
+      },
+      {
+        "name": "EFOFE, OPEN SPACE",
+        "code": "22/03/06/008"
+      },
+      {
+        "name": "OTAKPA, OPEN SPACE",
+        "code": "22/03/06/007"
+      },
+      {
+        "name": "OGEKPO, OPEN SPACE",
+        "code": "22/03/06/006"
+      },
+      {
+        "name": "ENAGBEDE, UNDER MANGO TREE",
+        "code": "22/03/06/005"
+      }
+    ],
+    "ENJEMA II": [
+      {
+        "name": "ODOBI AFOR O/S",
+        "code": "22/03/07/019"
+      },
+      {
+        "name": "AFOR ETEKE JUNCTION O/S",
+        "code": "22/03/07/018"
+      },
+      {
+        "name": "AFOR OJEGBE CENTRE",
+        "code": "22/03/07/017"
+      },
+      {
+        "name": "FRONT OF CMML CHURCH O/S",
+        "code": "22/03/07/015"
+      },
+      {
+        "name": "ODETO AFOR OFUGO O/S",
+        "code": "22/03/07/016"
+      },
+      {
+        "name": "OFEAGO, OPEN SPACE",
+        "code": "22/03/07/014"
+      },
+      {
+        "name": "BESIDE OKPANACHI HOUSE O/S",
+        "code": "22/03/07/013"
+      },
+      {
+        "name": "EGBOJE, OPEN SPACE",
+        "code": "22/03/07/012"
+      },
+      {
+        "name": "ODOBI/LOKOJA, OPEN SPACE",
+        "code": "22/03/07/011"
+      },
+      {
+        "name": "AFOR, OPEN SPACE",
+        "code": "22/03/07/010"
+      },
+      {
+        "name": "AFOR, BY MOTOR PARK",
+        "code": "22/03/07/009"
+      },
+      {
+        "name": "AFOR, L.G.E.A. SCHOOL AFOR GAM-GAM",
+        "code": "22/03/07/008"
+      },
+      {
+        "name": "OLUFOFO, OPEN SPACE",
+        "code": "22/03/07/007"
+      },
+      {
+        "name": "OLUFOFO, UNDER IROKO TREE",
+        "code": "22/03/07/006"
+      },
+      {
+        "name": "OFUGO ANGWA OPEN SPACE II",
+        "code": "22/03/07/005"
+      },
+      {
+        "name": "OJEKE, OPEN SPACE",
+        "code": "22/03/07/002"
+      },
+      {
+        "name": "UKPOLOBIA/OJEKE",
+        "code": "22/03/07/001"
+      },
+      {
+        "name": "OFUGO, BY AREA DEVELOPMENT OFFICE II",
+        "code": "22/03/07/004"
+      },
+      {
+        "name": "OFUGO, BY AREA DEVELOPMENT OFFICE I",
+        "code": "22/03/07/003"
+      }
+    ],
+    "ENJEMA  III": [
+      {
+        "name": "INYE, OPEN SPACE",
+        "code": "22/03/08/013"
+      },
+      {
+        "name": "EFACHA, OPEN SPACE",
+        "code": "22/03/08/009"
+      },
+      {
+        "name": "INYE, BY INYE MOTOR PARK",
+        "code": "22/03/08/012"
+      },
+      {
+        "name": "UKEGE, OPEN SPACE",
+        "code": "22/03/08/002"
+      },
+      {
+        "name": "UKEGE, ERANE NEAR EDE MARKET",
+        "code": "22/03/08/001"
+      },
+      {
+        "name": "ATE OJUNO, BOB ALFA PRIMARY SCHOOL",
+        "code": "22/03/08/006"
+      },
+      {
+        "name": "ETUTU, OPEN SPACE",
+        "code": "22/03/08/007"
+      },
+      {
+        "name": "UKEGE EFOFE O/S",
+        "code": "22/03/08/017"
+      },
+      {
+        "name": "AGBENEBA, OPEN SPACE",
+        "code": "22/03/08/010"
+      },
+      {
+        "name": "OFOLI BOLOKO O/S",
+        "code": "22/03/08/016"
+      },
+      {
+        "name": "FRONT OF PASTOR ADEHI HOUSE O/S",
+        "code": "22/03/08/014"
+      },
+      {
+        "name": "OGANE INYE, NEAR WATER TANK",
+        "code": "22/03/08/004"
+      },
+      {
+        "name": "AL-HAFFAAZH ACADEMY, OPEN SPACE",
+        "code": "22/03/08/019"
+      },
+      {
+        "name": "EFACHA II O/S",
+        "code": "22/03/08/020"
+      },
+      {
+        "name": "ATE OJUWO II BY TIMBER SHADE",
+        "code": "22/03/08/015"
+      },
+      {
+        "name": "GOV. SEC. SCH. INYE",
+        "code": "22/03/08/022"
+      },
+      {
+        "name": "OGANE INYE, OPEN SPACE",
+        "code": "22/03/08/005"
+      },
+      {
+        "name": "OJUWAKA II BY LATE ALHAJI DOGO OPEN SPACE",
+        "code": "22/03/08/021"
+      },
+      {
+        "name": "ETUTU II ODIDI O/S",
+        "code": "22/03/08/018"
+      },
+      {
+        "name": "UKEGE II OPP. EDE MARKET",
+        "code": "22/03/08/023"
+      },
+      {
+        "name": "ALIBOKO, OPEN SPACE",
+        "code": "22/03/08/003"
+      },
+      {
+        "name": "OJUNAKA, OPEN SPACE",
+        "code": "22/03/08/008"
+      },
+      {
+        "name": "OJAKPALA, OPEN SPACE",
+        "code": "22/03/08/011"
+      }
+    ],
+    "ENJEMA  IV": [
+      {
+        "name": "ALOME LGEA PRI. SCH.",
+        "code": "22/03/09/019"
+      },
+      {
+        "name": "ODOKPODO L.G.E.A. SCHOOL, ODOKPONO",
+        "code": "22/03/09/011"
+      },
+      {
+        "name": "LGEA PRI. SCH. IKA ODOETO",
+        "code": "22/03/09/017"
+      },
+      {
+        "name": "ACHELE, L.G.E.A. SCHOOL, ODOKPONO",
+        "code": "22/03/09/010"
+      },
+      {
+        "name": "OCHEKWU, OPEN SPACE",
+        "code": "22/03/09/013"
+      },
+      {
+        "name": "IKA EFOFE L.G.E.A. SCHOOL",
+        "code": "22/03/09/008"
+      },
+      {
+        "name": "LGEA OJE KWEJE",
+        "code": "22/03/09/016"
+      },
+      {
+        "name": "IKA ILORI L.G.E.A. SCHOOL, ICHALLA",
+        "code": "22/03/09/009"
+      },
+      {
+        "name": "IKA OJAONAGA O/S",
+        "code": "22/03/09/014"
+      },
+      {
+        "name": "MANEJO L.G.E.A. SCHOOL",
+        "code": "22/03/09/003"
+      },
+      {
+        "name": "IKA CENTER, L.G.E.A. SCHOOL",
+        "code": "22/03/09/007"
+      },
+      {
+        "name": "OFAGBA LGEA PRI SCH (AFIBO/AKPANAJI)",
+        "code": "22/03/09/006"
+      },
+      {
+        "name": "OGEDE, L.G.E.A. SCHOOL",
+        "code": "22/03/09/005"
+      },
+      {
+        "name": "AJITATA L.G.E.A. SCHOOL",
+        "code": "22/03/09/004"
+      },
+      {
+        "name": "ICHALA, OPEN SPACE",
+        "code": "22/03/09/012"
+      },
+      {
+        "name": "ANULU, OPEN SPACE",
+        "code": "22/03/09/002"
+      },
+      {
+        "name": "AGUMAGU, L.G.E.A. SCHOOL",
+        "code": "22/03/09/001"
+      },
+      {
+        "name": "IKA ACHARANE O/S",
+        "code": "22/03/09/018"
+      },
+      {
+        "name": "ACHELE MARKET SQUARE",
+        "code": "22/03/09/015"
+      }
+    ],
+    "OJOKU  I": [
+      {
+        "name": "AJOBE ODETO, OPEN SPACE",
+        "code": "22/03/10/006"
+      },
+      {
+        "name": "AJOBE ATTE, BY ROUND ABOUT",
+        "code": "22/03/10/007"
+      },
+      {
+        "name": "ODOGOMO EFOFE BY WATER TANK OPEN SPACE",
+        "code": "22/03/10/014"
+      },
+      {
+        "name": "ODOGOMU CENTRE, NEAR VIGILLANTE OFFICE",
+        "code": "22/03/10/003"
+      },
+      {
+        "name": "AKUNU, L.G.E.A SCHOOL AKUNU",
+        "code": "22/03/10/001"
+      },
+      {
+        "name": "ODOGOMO ATTE OPEN SPACE BY TRANSFORMER",
+        "code": "22/03/10/015"
+      },
+      {
+        "name": "AJOBE ATANEGOMA O/S",
+        "code": "22/03/10/010"
+      },
+      {
+        "name": "AGBODO, OPPOSITE MARKET SQUARE",
+        "code": "22/03/10/005"
+      },
+      {
+        "name": "AGBODO, OPEN SPACE",
+        "code": "22/03/10/008"
+      },
+      {
+        "name": "AGBODO NEW LAYOUT O/S",
+        "code": "22/03/10/011"
+      },
+      {
+        "name": "BAGELE, OPEN SPACE",
+        "code": "22/03/10/004"
+      },
+      {
+        "name": "AKUNU ATE UNDER MANGO TREE O/S",
+        "code": "22/03/10/013"
+      },
+      {
+        "name": "ODOGOMU, MARKET SQUARE",
+        "code": "22/03/10/002"
+      },
+      {
+        "name": "BAGELE OGANE OKPOBIAFURU O/S",
+        "code": "22/03/10/012"
+      },
+      {
+        "name": "LGEA SCHOOL, OFANO, OPEN SPACE",
+        "code": "22/03/10/016"
+      },
+      {
+        "name": "AJOBE EFU OKODU BY MARKET SQUARE",
+        "code": "22/03/10/009"
+      }
+    ],
+    "OJOKU II": [
+      {
+        "name": "UDABA OGANE UKPABA O/S",
+        "code": "22/03/11/016"
+      },
+      {
+        "name": "UKPABA, OPEN SPACE",
+        "code": "22/03/11/007"
+      },
+      {
+        "name": "OKABA MOTOR PARK O/S",
+        "code": "22/03/11/011"
+      },
+      {
+        "name": "OFEAGO OGBAGBALA O/S",
+        "code": "22/03/11/014"
+      },
+      {
+        "name": "OKABA, OPEN SPACE",
+        "code": "22/03/11/002"
+      },
+      {
+        "name": "ODAGBO L.G.E.A. SCHOOL",
+        "code": "22/03/11/004"
+      },
+      {
+        "name": "UKPOKWU, OPEN SPACE",
+        "code": "22/03/11/006"
+      },
+      {
+        "name": "OKABA, L.G.E.A. SCHOOL, OKABA",
+        "code": "22/03/11/001"
+      },
+      {
+        "name": "ONUPI, BY MARKET SQUARE",
+        "code": "22/03/11/008"
+      },
+      {
+        "name": "ODAGBO OGANE O/S",
+        "code": "22/03/11/009"
+      },
+      {
+        "name": "G.G.S.S GATE OKABA O/S",
+        "code": "22/03/11/012"
+      },
+      {
+        "name": "OKABA, NEAR COURT PREMISES",
+        "code": "22/03/11/003"
+      },
+      {
+        "name": "OKABA ALAKU O/S",
+        "code": "22/03/11/010"
+      },
+      {
+        "name": "OKPOKWU OGANE OPEN SPACE",
+        "code": "22/03/11/013"
+      },
+      {
+        "name": "OGBAGBALA, L.G.E.A. SCHOOL",
+        "code": "22/03/11/005"
+      },
+      {
+        "name": "ONUPI ATE OFE AGWU O/S",
+        "code": "22/03/11/015"
+      }
+    ],
+    "OJOKU  III": [
+      {
+        "name": "ETIEKE OGOBA INYOLOGWU O/S",
+        "code": "22/03/12/010"
+      },
+      {
+        "name": "EDIYA, OPEN SPACE",
+        "code": "22/03/12/006"
+      },
+      {
+        "name": "INYOLOGU EGBOJE, MARKET SQUARE",
+        "code": "22/03/12/004"
+      },
+      {
+        "name": "OJEJE ATEKWO, OPEN SPACE",
+        "code": "22/03/12/007"
+      },
+      {
+        "name": "AKATANPIA, MARKET SQUARE",
+        "code": "22/03/12/003"
+      },
+      {
+        "name": "OJEJE EFOFE, OPEN SPACE",
+        "code": "22/03/12/001"
+      },
+      {
+        "name": "INYOLOGWU ALEKWO BY LATE ALHAJI LINCO OCHEJE AREA, OPEN SPACE",
+        "code": "22/03/12/012"
+      },
+      {
+        "name": "OJEPIO OJEJE O/S",
+        "code": "22/03/12/009"
+      },
+      {
+        "name": "INYOLOGWU OGOBA, OPEN SPACE",
+        "code": "22/03/12/005"
+      },
+      {
+        "name": "OJOKU OJEJE, OPEN SPACE",
+        "code": "22/03/12/002"
+      },
+      {
+        "name": "EFAYA OGOBA INYOLOGWU, OPEN SPACE",
+        "code": "22/03/12/011"
+      },
+      {
+        "name": "INYOLOGWU OGOBA, MARKET SQUARE",
+        "code": "22/03/12/008"
+      }
+    ],
+    "OJOKU IV": [
+      {
+        "name": "AWO AKPALI BY MARKET SQUARE",
+        "code": "22/03/13/005"
+      },
+      {
+        "name": "AWO ERECHI OPEN SPACE",
+        "code": "22/03/13/007"
+      },
+      {
+        "name": "AWO AKUKUDA BY MARKET SQUARE",
+        "code": "22/03/13/004"
+      },
+      {
+        "name": "AWO AKPALI LGEA SCHOOL",
+        "code": "22/03/13/001"
+      },
+      {
+        "name": "AWO EFIGA RCM SCHOOL",
+        "code": "22/03/13/003"
+      },
+      {
+        "name": "AWO OJUWO, LGEA SCHOOL",
+        "code": "22/03/13/002"
+      },
+      {
+        "name": "AWO EFAGBO, NEAR PRIMARY SCHOOL",
+        "code": "22/03/13/008"
+      },
+      {
+        "name": "AWO OFU OKUME, OPEN SPACE",
+        "code": "22/03/13/010"
+      },
+      {
+        "name": "AWO ANEKPA, NEAR PRIMARY SCHOOL",
+        "code": "22/03/13/009"
+      },
+      {
+        "name": "AWO UDABA OPEN SPACE",
+        "code": "22/03/13/006"
+      }
+    ]
+  },
+  "OMALA": {
+    "ABEJUKOLO  I": [
+      {
+        "name": "GOVT. SCIENCE SECONDARY SCHOOL, ABEJUKOLO",
+        "code": "22/19/01/022"
+      },
+      {
+        "name": "OPPOSITE FIRST BANK SABONGERI II",
+        "code": "22/19/01/002"
+      },
+      {
+        "name": "OPEN SPACE UNDER ODA TREE, ALONG ISLAMIYA SCHOOL, SABONGARI II",
+        "code": "22/19/01/017"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE EGBACHI/OGWUTU",
+        "code": "22/19/01/012"
+      },
+      {
+        "name": "NEAR AWODI ADEJO'S HOUSE OLEJI IV",
+        "code": "22/19/01/013"
+      },
+      {
+        "name": "OPEN SPACE UNDER MANGO TREE, NEAR OMONOWA'S HOUSE, OLOMALA",
+        "code": "22/19/01/021"
+      },
+      {
+        "name": "UNDER IJIKPI TREE, NEAR LOCAL GOVT. SECRETARIAT, SABONGARI",
+        "code": "22/19/01/016"
+      },
+      {
+        "name": "OPEN SPACE UNDER ODA TREE, OPP. POLICE STATION, OLOMALA",
+        "code": "22/19/01/020"
+      },
+      {
+        "name": "CENTRAL SCHOOL ABEJUKOLO, OLOMALA IV",
+        "code": "22/19/01/008"
+      },
+      {
+        "name": "NEAR OKALE AKOJI'S HOUSE, SABONGERI III",
+        "code": "22/19/01/003"
+      },
+      {
+        "name": "IYADE ROAD (UNDER MANGO TREE) OLEJI II",
+        "code": "22/19/01/010"
+      },
+      {
+        "name": "OPEN SPACE UNDER ODA TREE, NEAR OGAJI HUSSEINI'S HOUSE, OLEJI II",
+        "code": "22/19/01/025"
+      },
+      {
+        "name": "NEAR ADAMA OJEJO'S HOUSE, OLOMALA II",
+        "code": "22/19/01/006"
+      },
+      {
+        "name": "NEAR BABA ANYA'S HOUSE, OLEJI III",
+        "code": "22/19/01/011"
+      },
+      {
+        "name": "OPEN SPACE ALONG ANYANGBA ROAD UNDER MANGO TREE BY MECHANIC SHADE",
+        "code": "22/19/01/015"
+      },
+      {
+        "name": "R.C.M. SCHOOL, ABEJUKOLO, SABONGERI IV",
+        "code": "22/19/01/004"
+      },
+      {
+        "name": "OPPOSITE WATER BOARD SABONGERI I",
+        "code": "22/19/01/001"
+      },
+      {
+        "name": "NEAR ACHENEJE/DUGUMA'S HOUSE OLOMALA I",
+        "code": "22/19/01/005"
+      },
+      {
+        "name": "OPEN SPACE UNDER ODA TREE, OPPOSITE GRACELAND SCIENCE ACADEMY, SABONGARI III",
+        "code": "22/19/01/018"
+      },
+      {
+        "name": "OPEN SPACE UNDER MANGO TREE, OPPOSITE POST OFFICE, SABONGARI IV",
+        "code": "22/19/01/019"
+      },
+      {
+        "name": "OPEN SPACE NEARSAWMILL UNDER MANGO TREE",
+        "code": "22/19/01/014"
+      },
+      {
+        "name": "OPEN SPACE UNDER MANGO TREE OPP. SAWMILL , OLEJI. ABEJUKOLO",
+        "code": "22/19/01/024"
+      },
+      {
+        "name": "NEAR MOTOR PARK, OLEJI I",
+        "code": "22/19/01/009"
+      },
+      {
+        "name": "OPEN SPACE, NEAR GRADE 1 AREA COURT, OLOMALA IV",
+        "code": "22/19/01/023"
+      },
+      {
+        "name": "NEAR USMAN AKUTA'S HOUSE OLOMALA III",
+        "code": "22/19/01/007"
+      }
+    ],
+    "ABEJUKOLO  II": [
+      {
+        "name": "OPEN SPACE, NEAR SOLAR BOREHOLE, OGO",
+        "code": "22/19/02/007"
+      },
+      {
+        "name": "LGEA SCHOOL, ECHIA, OGO/ECHA I",
+        "code": "22/19/02/002"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, AWAWA-IYADE",
+        "code": "22/19/02/006"
+      },
+      {
+        "name": "LGEA SCHOOL IYADE, IYADE",
+        "code": "22/19/02/005"
+      },
+      {
+        "name": "BESIDE OMAKWU'S HOUSE, GAGO AREA I, ECHA",
+        "code": "22/19/02/008"
+      },
+      {
+        "name": "INFRONT OF ALI AKAGU'S HOUSE, ECHA III",
+        "code": "22/19/02/004"
+      },
+      {
+        "name": "NEAR SENIOR MADAKI'S HOUSE, ECHA II",
+        "code": "22/19/02/003"
+      },
+      {
+        "name": "LGEA SCHOOL, IGAH-ONIFE",
+        "code": "22/19/02/001"
+      }
+    ],
+    "OPODA/OFEJIJI": [
+      {
+        "name": "NEAR MADAKI'S HOUSE, IHIAME",
+        "code": "22/19/03/009"
+      },
+      {
+        "name": "NEAR SENIOR MADAKI'S HOUSE, AGBENEMA II",
+        "code": "22/19/03/004"
+      },
+      {
+        "name": "LGEA SCHOOL IKPOBA, IKPOBA",
+        "code": "22/19/03/011"
+      },
+      {
+        "name": "LGEA SCHOOL OPADA, OPADA/AJEDIBALE",
+        "code": "22/19/03/001"
+      },
+      {
+        "name": "LGEA SCHOOL AJIYOLO, AJIYOLO",
+        "code": "22/19/03/008"
+      },
+      {
+        "name": "LGEA SCHOOL OJUWO, OJUWO",
+        "code": "22/19/03/012"
+      },
+      {
+        "name": "LGEA SCHOOL AJODOMA",
+        "code": "22/19/03/010"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OFEJIJI",
+        "code": "22/19/03/005"
+      },
+      {
+        "name": "LGEA SCHOOL AGBENEMA, AGBENEMA/AJEJIMA",
+        "code": "22/19/03/013"
+      },
+      {
+        "name": "LGEA SCHOOL, AGABIFO, AGABIFO",
+        "code": "22/19/03/006"
+      },
+      {
+        "name": "LGEA SCHOOL AGBENEMA, AGBENEMA I/AJEJIMA",
+        "code": "22/19/03/003"
+      },
+      {
+        "name": "LGEA SCHOOL AJEDIBODU, AJEDIBODU",
+        "code": "22/19/03/007"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, AJICHEKPA",
+        "code": "22/19/03/002"
+      }
+    ],
+    "BAGANA": [
+      {
+        "name": "LGEA SCHOOL OGBA, OGBA",
+        "code": "22/19/04/011"
+      },
+      {
+        "name": "OPPOSITE CEFN, ODUMUKPO",
+        "code": "22/19/04/001"
+      },
+      {
+        "name": "NEAR CANTEEN, BAGANA II",
+        "code": "22/19/04/006"
+      },
+      {
+        "name": "NEAR ONUH IYAJI'S HOUSE, OBAKUME II",
+        "code": "22/19/04/013"
+      },
+      {
+        "name": "LGEA SCHOOL AJOMAOJI, AJOMAKOJI",
+        "code": "22/19/04/002"
+      },
+      {
+        "name": "LGEA SCHOOL PATANI, PATANI",
+        "code": "22/19/04/012"
+      },
+      {
+        "name": "NEAR CANTEEN, BAGANA III",
+        "code": "22/19/04/007"
+      },
+      {
+        "name": "NEAR MOTOR PARK BAGANA IV",
+        "code": "22/19/04/008"
+      },
+      {
+        "name": "OPEN SPACE NEAR BREAD BAKERY, ODO-ETO, BAGANA",
+        "code": "22/19/04/014"
+      },
+      {
+        "name": "LGEA SCHOOL AMAGEDE, AMAGEDE",
+        "code": "22/19/04/010"
+      },
+      {
+        "name": "LGEA SCHOOL BAGANA, BAGANA I",
+        "code": "22/19/04/005"
+      },
+      {
+        "name": "NEAR MARKET SQUARE, OBAKUME OFUGOLO",
+        "code": "22/19/04/003"
+      },
+      {
+        "name": "LGEA SCHOOL OBAKUME, OBAKUME I",
+        "code": "22/19/04/004"
+      },
+      {
+        "name": "OPPOSITE GAGO'S HOUSE, BAGANA V",
+        "code": "22/19/04/009"
+      }
+    ],
+    "OKPATALA": [
+      {
+        "name": "NEAR GAGO'S HOUSE, OKPOTALA II",
+        "code": "22/19/05/002"
+      },
+      {
+        "name": "LGEA SCHOOL OLAHIEBA, OLAHIEBA II",
+        "code": "22/19/05/007"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, IMAJENUWE",
+        "code": "22/19/05/009"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, IDRISU I",
+        "code": "22/19/05/004"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, BASSA OFAPO",
+        "code": "22/19/05/003"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OJUWO",
+        "code": "22/19/05/011"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, AJAWODI",
+        "code": "22/19/05/008"
+      },
+      {
+        "name": "Q.I.C. SCHOOL OKPOTALA, OKPOTALA I",
+        "code": "22/19/05/001"
+      },
+      {
+        "name": "LGEA SCHOOL IDRISU, IDRISU II",
+        "code": "22/19/05/005"
+      },
+      {
+        "name": "BESIDE MADAKI'S HOUSE, OLAHIEBA I",
+        "code": "22/19/05/006"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, AJADAMA",
+        "code": "22/19/05/010"
+      }
+    ],
+    "AKPACHA": [
+      {
+        "name": "NEAR SULE IYAJI'S HOUSE, IBADO III",
+        "code": "22/19/06/006"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, AJAJA",
+        "code": "22/19/06/001"
+      },
+      {
+        "name": "NEAR MADAKI AMODU'S HOUSE, IGERI I",
+        "code": "22/19/06/007"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OLIYA",
+        "code": "22/19/06/012"
+      },
+      {
+        "name": "LGEA SCHOOL IGALIWO, IGALIWO",
+        "code": "22/19/06/013"
+      },
+      {
+        "name": "OPPOSITE PREMIER BAR HOUSE, IGERI II",
+        "code": "22/19/06/008"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, EFIWO",
+        "code": "22/19/06/002"
+      },
+      {
+        "name": "IFE COMMUNITY SECONDARY SCHOOL, IBADO AKPACHA",
+        "code": "22/19/06/014"
+      },
+      {
+        "name": "OPPOSITE CMML CHURCH, AKPACHA II",
+        "code": "22/19/06/010"
+      },
+      {
+        "name": "NEAR MARKET SQUARE, IBADO II",
+        "code": "22/19/06/005"
+      },
+      {
+        "name": "LGEA SCHOOL IBADO, IBADO I",
+        "code": "22/19/06/004"
+      },
+      {
+        "name": "LGEA SCHOOL KADUNA, KADUNA",
+        "code": "22/19/06/003"
+      },
+      {
+        "name": "LGEA SCHOOL AKPACHA, AKPACHA I",
+        "code": "22/19/06/009"
+      },
+      {
+        "name": "LGEA SCHOOL OLECHU, OLECHU",
+        "code": "22/19/06/011"
+      }
+    ],
+    "BAGAJI": [
+      {
+        "name": "LGEA SCHOOL AJOKPACHI, AJOKPACHI II",
+        "code": "22/19/07/014"
+      },
+      {
+        "name": "LGEA SCHOOL AJOKPACHI, AJOKPACHI I",
+        "code": "22/19/07/013"
+      },
+      {
+        "name": "NEAR IDOKO AKPA'S HOUSE, BAGAJI III",
+        "code": "22/19/07/004"
+      },
+      {
+        "name": "LGEA SCHOOL AGOJEJU, AGOJEJU II",
+        "code": "22/19/07/008"
+      },
+      {
+        "name": "RCM SCHOOL BAGAJI, BAGAJI II",
+        "code": "22/19/07/003"
+      },
+      {
+        "name": "LGEA SCHOOL ODAMAGWU, ODAMAGWU",
+        "code": "22/19/07/011"
+      },
+      {
+        "name": "BESIDE YUSUFU ATABO'S HOUSE, AGOJEJU III",
+        "code": "22/19/07/009"
+      },
+      {
+        "name": "NEAR ADAJI'S HOUSE, BAGAJI V",
+        "code": "22/19/07/006"
+      },
+      {
+        "name": "NEAR IDOKO AKPA'S HOUSE, BAGAJI IV",
+        "code": "22/19/07/005"
+      },
+      {
+        "name": "BESIDE YUSUFU ATABO'S HOUSE, AGOJEJU IV",
+        "code": "22/19/07/010"
+      },
+      {
+        "name": "VILLAGE SQUARE UDABA, UDABA/AJADOKPOJA",
+        "code": "22/19/07/001"
+      },
+      {
+        "name": "NEAR HARUNA OYIBO'S HOUSE, AJOGILI",
+        "code": "22/19/07/012"
+      },
+      {
+        "name": "RCM SCHOOL BAGAJI, BAGAJI I",
+        "code": "22/19/07/002"
+      },
+      {
+        "name": "LGEA SCHOOL AGOJEJU, AGOJEJU I",
+        "code": "22/19/07/007"
+      }
+    ],
+    "ICHEKE AJOPACHI": [
+      {
+        "name": "NEAR MADAKI'S HOUSE, AJOBE",
+        "code": "22/19/08/013"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, ICHEKE AJOCHOLI",
+        "code": "22/19/08/003"
+      },
+      {
+        "name": "NEAR SENIOR MADAKI'S HOUSE, IGEBIJE",
+        "code": "22/19/08/014"
+      },
+      {
+        "name": "LGEA SCHOOL ICHEKE, ICHEKE OGANE",
+        "code": "22/19/08/004"
+      },
+      {
+        "name": "NEAR GAGO'S HOUSE, OTI I.",
+        "code": "22/19/08/009"
+      },
+      {
+        "name": "LGEA SCHOOL IKEFI, IKEFI",
+        "code": "22/19/08/010"
+      },
+      {
+        "name": "ADANKOLO JUNCTION, OLOKWU",
+        "code": "22/19/08/017"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OKWUGBA",
+        "code": "22/19/08/007"
+      },
+      {
+        "name": "LGEA SCHOOL AJAKAWO, AJAKAWO",
+        "code": "22/19/08/002"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OJUGO",
+        "code": "22/19/08/006"
+      },
+      {
+        "name": "LGEA SCHOOL OLOKWU, OLOKWU",
+        "code": "22/19/08/012"
+      },
+      {
+        "name": "NEAR MARKET SQUARE, OKAKWU",
+        "code": "22/19/08/011"
+      },
+      {
+        "name": "BESIDE MADAKI'S HOUSE, AJEDIBO",
+        "code": "22/19/08/001"
+      },
+      {
+        "name": "LGEA SCHOOL OTI II III",
+        "code": "22/19/08/008"
+      },
+      {
+        "name": "INFRONT OF PRIMARY HEALTH CENTER, AJOKPACHI ACHOGBA",
+        "code": "22/19/08/016"
+      },
+      {
+        "name": "NEAR PRIMARY HEALTH CARE CENTER, ICHEKE OGANE",
+        "code": "22/19/08/015"
+      },
+      {
+        "name": "LGEA SCHOOL AJOKPACHI, AJOKPACHI-ACHOGBA",
+        "code": "22/19/08/005"
+      }
+    ],
+    "OGODU": [
+      {
+        "name": "BESIDE SULE SILAS HOUSE, OGODU II",
+        "code": "22/19/09/012"
+      },
+      {
+        "name": "ALONG ELUBI ROAD, ADUMU OGODU",
+        "code": "22/19/09/001"
+      },
+      {
+        "name": "NEAR SULE SILAS HOUSE, OGODU I",
+        "code": "22/19/09/011"
+      },
+      {
+        "name": "NEAR OCHENI EKPEKO'S HOUSE OJEDA I",
+        "code": "22/19/09/006"
+      },
+      {
+        "name": "OPEN SPACE NEAR MUSA YUNUSA HOUSE, OGODU",
+        "code": "22/19/09/013"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE EFAKWU I",
+        "code": "22/19/09/003"
+      },
+      {
+        "name": "NEAR ABU AKA'S HOUSE, OJEDA III",
+        "code": "22/19/09/008"
+      },
+      {
+        "name": "NEAR AKAWO'S HOUSE, ADUMU",
+        "code": "22/19/09/002"
+      },
+      {
+        "name": "NEAR OMERA'S HOUSE, OJEDA II",
+        "code": "22/19/09/007"
+      },
+      {
+        "name": "NEAR ENERE'S HOUSE, OGODU ERAKWU",
+        "code": "22/19/09/005"
+      },
+      {
+        "name": "LGEA SCHOOL OGODU, ATE OGODU I & II",
+        "code": "22/19/09/009"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE EFAKWU II",
+        "code": "22/19/09/004"
+      },
+      {
+        "name": "NEAR DEVELOPMENT OFFICE, ATE OGODU III",
+        "code": "22/19/09/010"
+      }
+    ],
+    "OJI-AJI": [
+      {
+        "name": "NEAR JIBILI'S HOUSE ATE IGODO",
+        "code": "22/19/10/009"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OGANE IGODO",
+        "code": "22/19/10/010"
+      },
+      {
+        "name": "NEAR ADAMA'S HOUSE, OJI AJI-ACROSS RIVER",
+        "code": "22/19/10/007"
+      },
+      {
+        "name": "LGEA SCHOOL OJI-AJI, OJIAJI I",
+        "code": "22/19/10/002"
+      },
+      {
+        "name": "NEAR QUA IBOE CHURCH, OJIAJI III",
+        "code": "22/19/10/004"
+      },
+      {
+        "name": "NEAR PRAYING CENTRE, OJI AJI",
+        "code": "22/19/10/005"
+      },
+      {
+        "name": "NEAR ADEHI'S HOUSE, EFEKPO OJI AJI I",
+        "code": "22/19/10/006"
+      },
+      {
+        "name": "NEAR ADUKU'S HOUSE, OJIAJI II",
+        "code": "22/19/10/003"
+      },
+      {
+        "name": "NEAR ODIBA HOUSE, OJI-AJI ACROSS RIVER",
+        "code": "22/19/10/008"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, OJE",
+        "code": "22/19/10/001"
+      }
+    ],
+    "OLLA": [
+      {
+        "name": "NEAR MOHAMMED ATACHU'S HOUSE, OJEGBE",
+        "code": "22/19/11/001"
+      },
+      {
+        "name": "NEAR ZEKERI EDIBO'S HOUSE, ATE EBAKPOTI",
+        "code": "22/19/11/009"
+      },
+      {
+        "name": "UNDER OKRO TREE",
+        "code": "22/19/11/005"
+      },
+      {
+        "name": "NEAR AMEH OFEJIJI'S HOUSE, EGBENECHA",
+        "code": "22/19/11/007"
+      },
+      {
+        "name": "NEAR ALH. IBRAHIM'S HOUSE, OJIYELE",
+        "code": "22/19/11/003"
+      },
+      {
+        "name": "NEAR OGOHI'S HOUSE, ATE OLLA",
+        "code": "22/19/11/008"
+      },
+      {
+        "name": "NEAR MARKET SQUARE, AJAKAGWU I",
+        "code": "22/19/11/004"
+      },
+      {
+        "name": "OPPOSITE Q.I.C. ALLA OLLA",
+        "code": "22/19/11/002"
+      },
+      {
+        "name": "ELE UFEDO PRAYING CENTRE, ELE UFEDO CENTRE",
+        "code": "22/19/11/006"
+      }
+    ]
+  },
+  "OLAMABORO": {
+    "IMANE I": [
+      {
+        "name": "VILLAGE SQUARE, OJAMOCHINJI",
+        "code": "22/18/01/011"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFACHIPU II",
+        "code": "22/18/01/022"
+      },
+      {
+        "name": "NEAR MADAKI'S HOUSE, IKPECHI",
+        "code": "22/18/01/017"
+      },
+      {
+        "name": "VILLAGE SQUARE, OJAMOGWUCHEAWUJI",
+        "code": "22/18/01/012"
+      },
+      {
+        "name": "LGEA SCHOOL, ATENE GOMA",
+        "code": "22/18/01/002"
+      },
+      {
+        "name": "LGEA SCHOOL, OJAMAIGBACHU",
+        "code": "22/18/01/018"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFACHIPU I",
+        "code": "22/18/01/013"
+      },
+      {
+        "name": "LGEA SCHOOL, MABENYI ODODA",
+        "code": "22/18/01/025"
+      },
+      {
+        "name": "LGEA MABENYI II, MABENYI II",
+        "code": "22/18/01/019"
+      },
+      {
+        "name": "LGEA PRIMARY SCHOOL, EFOFE",
+        "code": "22/18/01/024"
+      },
+      {
+        "name": "LGEA SCHOOL, AJITATA/ACHIPU/OJUGBO",
+        "code": "22/18/01/020"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFAKPA/OJOKO",
+        "code": "22/18/01/003"
+      },
+      {
+        "name": "VILLAGE SQUARE, OJAMIDOELE",
+        "code": "22/18/01/009"
+      },
+      {
+        "name": "VILLAGE SQUARE, OJAKPAMA",
+        "code": "22/18/01/010"
+      },
+      {
+        "name": "LGEA SCHOOL, BARRACKS I & II",
+        "code": "22/18/01/008"
+      },
+      {
+        "name": "OFUDU MAKT. SQUARE, OFORO/OFUDU",
+        "code": "22/18/01/004"
+      },
+      {
+        "name": "OLD MKT. SQUARE, OGILI",
+        "code": "22/18/01/014"
+      },
+      {
+        "name": "LGEA SCHOOL, ABOOJOCHE I & II",
+        "code": "22/18/01/005"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFOFE",
+        "code": "22/18/01/015"
+      },
+      {
+        "name": "OPEN SPACE, INWA/UTOJE",
+        "code": "22/18/01/021"
+      },
+      {
+        "name": "R.C.M. SCHOOL, OGALOLE I & II",
+        "code": "22/18/01/007"
+      },
+      {
+        "name": "VILLAGE SQUARE EFEKPE, EFEKPE",
+        "code": "22/18/01/006"
+      },
+      {
+        "name": "OPEN SPACE, OJAMODOCHAI",
+        "code": "22/18/01/016"
+      },
+      {
+        "name": "LGEA SCHOOL, ABO OJUWO",
+        "code": "22/18/01/001"
+      },
+      {
+        "name": "LGEA SCHOOL, OFORO",
+        "code": "22/18/01/023"
+      }
+    ],
+    "IMANE II": [
+      {
+        "name": "PRIMARY HEALTH CENTER, ODE-ETO",
+        "code": "22/18/02/016"
+      },
+      {
+        "name": "MKT. SQUARE, ULOKO/OMELEWU",
+        "code": "22/18/02/006"
+      },
+      {
+        "name": "LGEA SCHOOL OKLODODO, OKLODODO",
+        "code": "22/18/02/011"
+      },
+      {
+        "name": "VILLAGE SQUARE, ACHIPU",
+        "code": "22/18/02/001"
+      },
+      {
+        "name": "LGEA PRIMARY SCHOOL, EFABO",
+        "code": "22/18/02/017"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFABO I",
+        "code": "22/18/02/007"
+      },
+      {
+        "name": "OPEN SPACE OKPENENE",
+        "code": "22/18/02/018"
+      },
+      {
+        "name": "MARKET SQUARE, IDEKPA",
+        "code": "22/18/02/012"
+      },
+      {
+        "name": "OPEN SPACE, AMOKE/ENEMONA/AKPOLI II",
+        "code": "22/18/02/013"
+      },
+      {
+        "name": "LGEA SCHOOL ETUKWO, ETUKWO",
+        "code": "22/18/02/002"
+      },
+      {
+        "name": "OPEN SPACE, AKPOLI/EFABACHA I",
+        "code": "22/18/02/010"
+      },
+      {
+        "name": "EPUNOBI-ODO ETO OPEN SPACE",
+        "code": "22/18/02/019"
+      },
+      {
+        "name": "VILLAGE SQUARE, AKPOLOKO I & II",
+        "code": "22/18/02/003"
+      },
+      {
+        "name": "OPEN SPACE, AMOKE ENEMONA",
+        "code": "22/18/02/015"
+      },
+      {
+        "name": "VILLAGE SQUARE, AMOBIA UNYI",
+        "code": "22/18/02/008"
+      },
+      {
+        "name": "OPEN SPACE, AKPALI",
+        "code": "22/18/02/014"
+      },
+      {
+        "name": "LGEA SCHOOL OGENAGO, OGENAGO I & II",
+        "code": "22/18/02/009"
+      },
+      {
+        "name": "MKT. SQUARE OJOKWUNENE/ETEKE",
+        "code": "22/18/02/005"
+      },
+      {
+        "name": "MKT. SQUARE, ADUMU/OJABO",
+        "code": "22/18/02/004"
+      }
+    ],
+    "OGUGU  I": [
+      {
+        "name": "OPEN SPACE, EMAGABA",
+        "code": "22/18/03/007"
+      },
+      {
+        "name": "OPEN SPACE, ICHANGBE",
+        "code": "22/18/03/012"
+      },
+      {
+        "name": "LGEA SCHOOL IKELEKU, IKELEKU EMONOJI",
+        "code": "22/18/03/002"
+      },
+      {
+        "name": "OPEN SPACE, OGODU'ALLOMA",
+        "code": "22/18/03/008"
+      },
+      {
+        "name": "OPEN SPACE, ADUM ETAFOR",
+        "code": "22/18/03/013"
+      },
+      {
+        "name": "MARKET SQUARE, OGBOFE/OTAKPA",
+        "code": "22/18/03/006"
+      },
+      {
+        "name": "OPEN SPACE, OFODE/ADUMU",
+        "code": "22/18/03/003"
+      },
+      {
+        "name": "OPEN SPACE, EMACHADU/UKPALE",
+        "code": "22/18/03/009"
+      },
+      {
+        "name": "OPEN SPACE, OGBODO",
+        "code": "22/18/03/011"
+      },
+      {
+        "name": "LGEA SCHOOL ANYIGBA EMACHANYA/ANYIGBA/IJADO",
+        "code": "22/18/03/004"
+      },
+      {
+        "name": "OPEN SPACE, ILEKE",
+        "code": "22/18/03/014"
+      },
+      {
+        "name": "OPEN SPACE, UKWAJA",
+        "code": "22/18/03/001"
+      },
+      {
+        "name": "OPEN SPACE, IKEM/ANEKPA/OKAKU",
+        "code": "22/18/03/005"
+      },
+      {
+        "name": "OPEN SPACE, ODOANAGBO",
+        "code": "22/18/03/010"
+      },
+      {
+        "name": "GOVERNMENT SCIENCE SCHOOL IKEM",
+        "code": "22/18/03/015"
+      }
+    ],
+    "OGUGU  II": [
+      {
+        "name": "VILLAGE SQUARE, EMAKURACHA",
+        "code": "22/18/04/002"
+      },
+      {
+        "name": "EJULE MKT. SQUARE, ODOGOMU/EJULE",
+        "code": "22/18/04/007"
+      },
+      {
+        "name": "UEC OKPOGA OFANTE",
+        "code": "22/18/04/012"
+      },
+      {
+        "name": "IHILO JUNCTION",
+        "code": "22/18/04/013"
+      },
+      {
+        "name": "ADUPI TOWN HALL",
+        "code": "22/18/04/015"
+      },
+      {
+        "name": "LGEA SCHOOL ADUPI, OBERECHE/ADUPI",
+        "code": "22/18/04/008"
+      },
+      {
+        "name": "LGEA SCHOOL, EMODU I & II",
+        "code": "22/18/04/003"
+      },
+      {
+        "name": "OBERECHI HEALTH CENTER",
+        "code": "22/18/04/016"
+      },
+      {
+        "name": "UEC OGANE OKAI OFANTE",
+        "code": "22/18/04/014"
+      },
+      {
+        "name": "UEC ODOGOMU",
+        "code": "22/18/04/011"
+      },
+      {
+        "name": "OPEN SPACE, EFOFE/EMOJIKU",
+        "code": "22/18/04/009"
+      },
+      {
+        "name": "LGEA AMAKA, AMAKA EJURA/OKPOGA",
+        "code": "22/18/04/006"
+      },
+      {
+        "name": "R.C.M. SCHOOL, OJIRA UNYI OWALLA",
+        "code": "22/18/04/004"
+      },
+      {
+        "name": "OPEN SPACE, ALAFOR",
+        "code": "22/18/04/010"
+      },
+      {
+        "name": "LGEA SCHOOL, IMAJA/ADUPI/EMONONYI",
+        "code": "22/18/04/001"
+      },
+      {
+        "name": "OFANTE MKT. SQUARE, EFOFE I & II/ALAFOR",
+        "code": "22/18/04/005"
+      }
+    ],
+    "OGUGU III": [
+      {
+        "name": "OPEN SPACE ODIDOKO, ODIDOKO",
+        "code": "22/18/05/001"
+      },
+      {
+        "name": "OPEN SPACE UEC OFODE, OGUGU",
+        "code": "22/18/05/022"
+      },
+      {
+        "name": "EMAKPE VILLAGE SQUARE, EMAKPE/IYAGWU",
+        "code": "22/18/05/011"
+      },
+      {
+        "name": "OPEN SPACE EMONOJA/ALUDU/ANKPA",
+        "code": "22/18/05/007"
+      },
+      {
+        "name": "LGEA SCHOOL, ODIDOKO",
+        "code": "22/18/05/020"
+      },
+      {
+        "name": "OPEN SPACE OBODO ALAICHA BESIDE GAGO HOUSE",
+        "code": "22/18/05/017"
+      },
+      {
+        "name": "AREA COURT NEAR OCHOGU PALACE",
+        "code": "22/18/05/018"
+      },
+      {
+        "name": "LGEA SCHOOL, OGOR OCHAJA",
+        "code": "22/18/05/021"
+      },
+      {
+        "name": "OPEN SPACE OGANE/OFORACHI",
+        "code": "22/18/05/006"
+      },
+      {
+        "name": "OPEN SPACE, OKEGBI ATE/ALAGACHA/SGARI",
+        "code": "22/18/05/013"
+      },
+      {
+        "name": "OPEN SPACE, OCHAJA OGO'OCHAJA",
+        "code": "22/18/05/002"
+      },
+      {
+        "name": "OPEN SPACE UEC OROFI",
+        "code": "22/18/05/016"
+      },
+      {
+        "name": "OPEN SPACE, EMAGABA/ITEFI",
+        "code": "22/18/05/010"
+      },
+      {
+        "name": "OGUGU CENTRAL SCHOOL, OGUGU C.S.S.",
+        "code": "22/18/05/012"
+      },
+      {
+        "name": "SABON GARI MOSQUE",
+        "code": "22/18/05/015"
+      },
+      {
+        "name": "RCM PRIMARY SCHOOL, ADUMU ROAD OGUGU",
+        "code": "22/18/05/019"
+      },
+      {
+        "name": "VILLAGE SQUARE, EMAKPE UNYI",
+        "code": "22/18/05/008"
+      },
+      {
+        "name": "MARKET SQUARE ADE-EMAGABA",
+        "code": "22/18/05/014"
+      },
+      {
+        "name": "OPEN SPACE OGUGU, OKEGBIATE/ALAICHA",
+        "code": "22/18/05/005"
+      },
+      {
+        "name": "VILLAGE SQUARE, ORINONO, ORINONO/OKPODU EGA",
+        "code": "22/18/05/009"
+      },
+      {
+        "name": "VILLAGE SQUARE, EFOFE/OGODU",
+        "code": "22/18/05/003"
+      },
+      {
+        "name": "OGUGU CENTRAL SCHOOL, OGUGU C.S.S.",
+        "code": "22/18/05/004"
+      }
+    ],
+    "OLAMABORO I": [
+      {
+        "name": "OPEN SPACE ATE-OGBA",
+        "code": "22/18/06/014"
+      },
+      {
+        "name": "OPEN SPACE IYAYA OGANE",
+        "code": "22/18/06/012"
+      },
+      {
+        "name": "LGEA SCHOOL AGWUBEJE, AGWUBEJE",
+        "code": "22/18/06/007"
+      },
+      {
+        "name": "LGEA SCHOOL EJOKA, EJOKA",
+        "code": "22/18/06/004"
+      },
+      {
+        "name": "OPEN SPACE EFOBO OJAOGU",
+        "code": "22/18/06/013"
+      },
+      {
+        "name": "LGEA SCHOOL IBERI, IBERI",
+        "code": "22/18/06/008"
+      },
+      {
+        "name": "OPEN SPACE, OTAKUHI",
+        "code": "22/18/06/001"
+      },
+      {
+        "name": "OPEN SPACE, EFODO ADEH",
+        "code": "22/18/06/009"
+      },
+      {
+        "name": "LGEA SCHOOL AJUKABU, AJUKABU",
+        "code": "22/18/06/006"
+      },
+      {
+        "name": "LEGA SCHOOL ADEH, ADEH OGO",
+        "code": "22/18/06/003"
+      },
+      {
+        "name": "LGEA SCHOOL UGBAMAKA, UGBAMAKA ADEH",
+        "code": "22/18/06/005"
+      },
+      {
+        "name": "VILLAGE SQUARE, ODEITO/IYAYA",
+        "code": "22/18/06/010"
+      },
+      {
+        "name": "ADE LGEA SCHOOL, ADEH-OGO ODEITO",
+        "code": "22/18/06/011"
+      },
+      {
+        "name": "MKT SQUARE IGOTI, IGOTI",
+        "code": "22/18/06/002"
+      }
+    ],
+    "OLAMABORO II": [
+      {
+        "name": "OPEN SPACE UEC CHURCH, ETUTEKPE",
+        "code": "22/18/07/015"
+      },
+      {
+        "name": "MARKET SQUARE AKPAKPA, AKPAKPA",
+        "code": "22/18/07/005"
+      },
+      {
+        "name": "Q.I.C. SCHOOL, OCHAJA OGO",
+        "code": "22/18/07/010"
+      },
+      {
+        "name": "LGEA SCHOOL AGWODABA, AGWODABA",
+        "code": "22/18/07/004"
+      },
+      {
+        "name": "OPEN SPACE SABON GARI OFEJIJI, ETUTEKPE",
+        "code": "22/18/07/018"
+      },
+      {
+        "name": "ATANIGOMA CENTRE, ATANIGOMA",
+        "code": "22/18/07/012"
+      },
+      {
+        "name": "AGWODABA YOUTH DEVT. BUS-STOP",
+        "code": "22/18/07/017"
+      },
+      {
+        "name": "METHODIST OPEN SPACE, ODEITO",
+        "code": "22/18/07/016"
+      },
+      {
+        "name": "OPEN SPACE ADAMAKU, ADAMAKU I & II",
+        "code": "22/18/07/001"
+      },
+      {
+        "name": "MARKET SQUARE ETUTEKPE",
+        "code": "22/18/07/014"
+      },
+      {
+        "name": "MARKET SQUARE, OFA CENTRE/ODEITO",
+        "code": "22/18/07/002"
+      },
+      {
+        "name": "OPEN SPACE IBANA",
+        "code": "22/18/07/011"
+      },
+      {
+        "name": "LGEA SCHOOL ETUTUKPE, ETUTUKPE",
+        "code": "22/18/07/009"
+      },
+      {
+        "name": "OPEN SPACE EJENUMU ATE",
+        "code": "22/18/07/013"
+      },
+      {
+        "name": "OPEN SPACE AGBADUMA, AGBADUMA",
+        "code": "22/18/07/006"
+      },
+      {
+        "name": "VILLAGE SQUARE, EJENUMU",
+        "code": "22/18/07/008"
+      },
+      {
+        "name": "LGEA SCHOOL IBANA, IBANA",
+        "code": "22/18/07/007"
+      },
+      {
+        "name": "LGEA SCHOOL ETUTEKPE, ETUTEKPE",
+        "code": "22/18/07/003"
+      }
+    ],
+    "OLAMABORO III": [
+      {
+        "name": "CEREMONIAL SQUARE, CEREMONIAL SQUARE",
+        "code": "22/18/08/002"
+      },
+      {
+        "name": "OPEN SPACE OCHEKWU CENTRE",
+        "code": "22/18/08/022"
+      },
+      {
+        "name": "OPEN SPACE, OJAMONOGU",
+        "code": "22/18/08/007"
+      },
+      {
+        "name": "LGEA SCHOOL OGBAGEBE, ODOBU OGBA GEBE",
+        "code": "22/18/08/012"
+      },
+      {
+        "name": "OPEN SPACE OFOBOBO VILLAGE",
+        "code": "22/18/08/017"
+      },
+      {
+        "name": "OPEN SPACE NEAR CENTRAL MOSQUE, IGALAGBO",
+        "code": "22/18/08/023"
+      },
+      {
+        "name": "CEREMONIAL SQUARE, CEREMONIAL SQUARE",
+        "code": "22/18/08/013"
+      },
+      {
+        "name": "ODEITO ALA JUNCTION, ODEITO/ALA",
+        "code": "22/18/08/011"
+      },
+      {
+        "name": "OPEN SPACE BESIDE OKPE MOSQUE",
+        "code": "22/18/08/020"
+      },
+      {
+        "name": "Q.I.C. SCHOOL PREMISES, Q.I.C. SCHOOL OKPO",
+        "code": "22/18/08/003"
+      },
+      {
+        "name": "OPEN SPACE, ALEKWO/OJAMAPUNU",
+        "code": "22/18/08/008"
+      },
+      {
+        "name": "OPPOSITE EID PRAYING GROUND OFUGO, OKPO",
+        "code": "22/18/08/016"
+      },
+      {
+        "name": "OPEN SPACE, SQUARE, ALAGANI",
+        "code": "22/18/08/004"
+      },
+      {
+        "name": "LGEA CENTRAL SCHOOL, OKPO",
+        "code": "22/18/08/019"
+      },
+      {
+        "name": "OPEN SPACE UNDER CASHEW TREE, EFAKWU",
+        "code": "22/18/08/021"
+      },
+      {
+        "name": "LGEA EDUCATION OFFICE, OKPO",
+        "code": "22/18/08/018"
+      },
+      {
+        "name": "OPEN SPACE, OFANWA/UGBOLOGIDI/ADUM",
+        "code": "22/18/08/006"
+      },
+      {
+        "name": "UKO CENTRE, UKO/ONUGBA/ETUKWO OKO",
+        "code": "22/18/08/005"
+      },
+      {
+        "name": "OPEN SPACE ALAGALANI JUNCTION, OKPO",
+        "code": "22/18/08/014"
+      },
+      {
+        "name": "OPEN SPACE BESIDE CENTRAL MOSQUE, OKPO",
+        "code": "22/18/08/015"
+      },
+      {
+        "name": "UGBOGBO LGEA SCHOOL, UGBOUGOJO/OJAMAKOGU",
+        "code": "22/18/08/009"
+      },
+      {
+        "name": "OPEN SPACE OCGS OKPO, OKPO OCGS",
+        "code": "22/18/08/001"
+      },
+      {
+        "name": "LGEA SCHOOL UTOBA, UTOBA/OJAMOCHEBE",
+        "code": "22/18/08/010"
+      }
+    ],
+    "OLAMABORO IV": [
+      {
+        "name": "PRIMARY HEALTH CARE CLINIC AGALA",
+        "code": "22/18/09/014"
+      },
+      {
+        "name": "OPEN SPACE OBELE IGAH",
+        "code": "22/18/09/015"
+      },
+      {
+        "name": "LGEA SCHOOL AGALA, AGALA/UKPABI/AGALA I",
+        "code": "22/18/09/004"
+      },
+      {
+        "name": "OFORO ICHECHELE, OFORO ICHECHELE",
+        "code": "22/18/09/009"
+      },
+      {
+        "name": "OPEN SPACE, OGAJI UGBAMAKA/ODEITO",
+        "code": "22/18/09/010"
+      },
+      {
+        "name": "OPEN SPACE, ODEITO/UGBAMAKA",
+        "code": "22/18/09/011"
+      },
+      {
+        "name": "LGEA EBOYI, EBOYI- IGAH",
+        "code": "22/18/09/005"
+      },
+      {
+        "name": "OPEN SPACE IGHA, OJUWO IGHA",
+        "code": "22/18/09/003"
+      },
+      {
+        "name": "LGEA SCHOOL, SABOGARI UGBAMAKA",
+        "code": "22/18/09/008"
+      },
+      {
+        "name": "LGEA SCHOOL IGAH OCHEBE, IGAH OCHEBE",
+        "code": "22/18/09/001"
+      },
+      {
+        "name": "NEAR MATERNITY CLINIC, IKEJE I & II/OGO IGAH",
+        "code": "22/18/09/006"
+      },
+      {
+        "name": "MARKET SQUARE, OGENE IGAH",
+        "code": "22/18/09/007"
+      },
+      {
+        "name": "AFOR MARKET SQUARE, IGAH GATE",
+        "code": "22/18/09/013"
+      },
+      {
+        "name": "IKEJE MARKET SQUARE",
+        "code": "22/18/09/012"
+      },
+      {
+        "name": "MKT. SQUARE IGAH, IGAH ETUKWO",
+        "code": "22/18/09/002"
+      }
+    ],
+    "OLAMABORO V": [
+      {
+        "name": "LGEA SCHOOL UGOJOUALE, UGOJO UBALU",
+        "code": "22/18/10/004"
+      },
+      {
+        "name": "LGEA SCHOOL INABE, INABE/EFOJA",
+        "code": "22/18/10/001"
+      },
+      {
+        "name": "UNOBE MKT. SQUARE, UNOBE",
+        "code": "22/18/10/003"
+      },
+      {
+        "name": "OPEN SPACE, UJUGBUDU",
+        "code": "22/18/10/006"
+      },
+      {
+        "name": "OPEN SPACE, UKPOKIDO",
+        "code": "22/18/10/005"
+      },
+      {
+        "name": "INELE UGO MARKET SQUARE",
+        "code": "22/18/10/007"
+      },
+      {
+        "name": "LGEA SCHOOL INELE, UGO I & II",
+        "code": "22/18/10/002"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "G-One Campaign App",
+    "short_name": "G-One",
+    "description": "G-One Campaign Management and Field Mobilization",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A3020",
+    "theme_color": "#0A3020",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
