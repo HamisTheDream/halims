@@ -44,9 +44,11 @@ export default function HeroSection() {
                 <div className={styles.photoContainer}>
                     <div className={styles.photoMain}>
                         <Image
-                            src="/images/halims2.png"
-                            alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims)"
-                            fill
+                            src="/images/halims5.png"
+                            alt="Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)"
+                            width={800}
+                            height={950}
+                            style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                             className={styles.candidatePhoto}
                             priority
                             sizes="(max-width: 1024px) 100vw, 50vw"

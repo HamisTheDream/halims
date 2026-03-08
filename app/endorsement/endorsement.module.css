@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-    background: var(--blue-deep);
+    background: #0A0A0A;
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(196, 0, 12, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(196, 0, 12, 0.05) 1px, transparent 1px);
     background-size: 60px 60px;
     pointer-events: none;
 }
@@ -130,8 +130,8 @@
 }
 
 .uploadArea:hover {
-    border-color: var(--apc-red);
-    background: rgba(201, 162, 39, 0.04);
+    border-color: #8B0000;
+    background: rgba(139, 0, 0, 0.04);
 }
 
 .fileInput {
@@ -219,9 +219,9 @@
 }
 
 .input:focus {
-    border-color: var(--apc-red);
+    border-color: #C4000C;
     background: var(--white);
-    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+    box-shadow: 0 0 0 3px rgba(196, 0, 12, 0.15);
 }
 
 /* Template Grid */
@@ -248,8 +248,8 @@
 }
 
 .templateActive {
-    border-color: var(--apc-red) !important;
-    background: rgba(201, 162, 39, 0.08);
+    border-color: #C4000C !important;
+    background: rgba(196, 0, 12, 0.08);
 }
 
 .templatePreview {
@@ -273,8 +273,8 @@
 
 /* Info Box */
 .infoBox {
-    background: rgba(201, 162, 39, 0.08);
-    border: 1px solid rgba(201, 162, 39, 0.2);
+    background: rgba(196, 0, 12, 0.05);
+    border: 1px solid rgba(196, 0, 12, 0.15);
     padding: 16px 20px;
     font-size: 13px;
     color: var(--gray-mid);
@@ -350,9 +350,9 @@
 }
 
 .canvasWrap {
-    background: var(--charcoal);
+    background: #0A0A0A;
     padding: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(139, 0, 0, 0.15);
 }
 
 .canvas {
@@ -364,7 +364,7 @@
 /* Counter Section */
 .counterSection {
     padding: 48px 0;
-    background: var(--blue-deep);
+    background: #0A0A0A;
 }
 
 .counterInner {
@@ -378,7 +378,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: var(--apc-red);
+    color: #C9A227;
     display: block;
 }
 
@@ -396,7 +396,7 @@
 .counterDivider {
     width: 1px;
     height: 48px;
-    background: rgba(201, 162, 39, 0.3);
+    background: rgba(196, 0, 12, 0.3);
 }
 
 /* Responsive */

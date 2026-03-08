@@ -39,27 +39,27 @@ export default function EndorsementSection() {
                     </div>
                     <div className={styles.right}>
                         <div className={styles.flyerMockup} role="img" aria-label="Sample endorsement flyer preview">
-                            <div className={styles.flyerTop}>I Support Rt. Hon. (Dr.) Abdullahi Ibrahim Ali · APC</div>
+                            <div className={styles.flyerTop} style={{ background: '#8B0000', color: 'white' }}>I Support Rt. Hon. (Dr.) Abdullahi Ibrahim Ali · APC</div>
                             <div className={styles.flyerPhotoArea}>
                                 <div className={styles.flyerCandidateWrap}>
                                     <Image
-                                        src="/images/halims-4.png"
-                                        alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims)"
+                                        src="/images/halims5.png"
+                                        alt="Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)"
                                         width={200}
                                         height={200}
                                         className={styles.flyerCandidateImg}
                                         style={{ objectFit: "cover", width: "100%", height: "100%", borderRadius: "50%" }}
                                     />
                                 </div>
-                                <div className={styles.flyerCircle}>
+                                <div className={styles.flyerCircle} style={{ borderColor: '#C9A227', color: '#1A1A1A' }}>
                                     <span className={styles.flyerCircleText}>Your<br />Photo</span>
                                 </div>
                             </div>
                             <div className={styles.flyerText}>
-                                <p className={styles.flyerSupport}>Your Name Here</p>
-                                <p className={styles.flyerCandidate}>Endorses<br />Rt. Hon. (Dr.) Abdullahi Ibrahim<br />Ali (Halims)</p>
+                                <p className={styles.flyerSupport} style={{ color: '#1A1A1A' }}>Your Name Here</p>
+                                <p className={styles.flyerCandidate} style={{ color: '#8B0000' }}>Endorses<br />Rt. Hon. (Dr.) Abdullahi Ibrahim<br />Ali (Halims)</p>
                             </div>
-                            <div className={styles.flyerBottom}>APC · Kogi East Senate · 2027</div>
+                            <div className={styles.flyerBottom} style={{ background: '#1A1A1A', color: 'white' }}>APC · Kogi East Senate · 2027</div>
                             <div className={styles.flyerLogoBadge}>
                                 <Image src="/images/apc-logo.png" alt="APC" width={28} height={28} style={{ objectFit: "contain" }} />
                             </div>
