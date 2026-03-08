@@ -5,10 +5,10 @@ import { supabase } from "../lib/supabase";
 import styles from "./AboutSection.module.css";
 
 const credentials = [
-    { icon: "🏗️", text: "Chairman — G1 Group of Companies" },
-    { icon: "🎓", text: "Development Advocate" },
-    { icon: "🤝", text: "Philanthropist & Community Builder" },
-    { icon: "💡", text: "Youth Empowerment & ICT Advocate" },
+    { icon: "🏛️", text: "Deputy Majority Leader — House of Representatives" },
+    { icon: "🎓", text: "PhD Holder · Hon. Doctorate in Legislative Affairs" },
+    { icon: "⚙️", text: "Former Chairman — House Committee on Steel" },
+    { icon: "🤝", text: "Philanthropist & Grassroots Mobilizer" },
 ];
 
 export default function AboutSection() {
@@ -44,7 +44,7 @@ export default function AboutSection() {
                         <div className={styles.accent} aria-hidden="true" />
                         <div className={styles.caption}>
                             <p className={styles.captionTitle}>Your Candidate</p>
-                            <p className={styles.captionName}>Rt. Hon.<br />Abdullahi Ibrahim Ali</p>
+                            <p className={styles.captionName}>Rt. Hon. (Dr.)<br />Abdullahi Ibrahim Ali</p>
                         </div>
                         <div className={styles.expBadge}>
                             <div className={styles.expNum}>20+</div>
@@ -54,13 +54,13 @@ export default function AboutSection() {
                     <div className={styles.content}>
                         <p className="section-label" aria-hidden="true">About the Candidate</p>
                         <h2 className={`${styles.title} reveal reveal-delay-1`} id="about-heading">
-                            A Leader Forged<br />in <em>Enterprise &amp; Community</em>
+                            A Leader Forged in<br /><em>Legislation & Service</em>
                         </h2>
                         <p className={`${styles.body} reveal reveal-delay-2`}>
-                            Rt. Hon. Abdullahi Ibrahim Ali (Halims) is a distinguished entrepreneur, philanthropist, and visionary leader — deeply rooted in the people and culture of Ankpa Federal Constituency. As Chairman of the G1 Group of Companies, he brings a rare combination of business acumen, grassroots connection, and visionary leadership to this race.
+                            Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims) is the current Deputy Majority Leader of the 10th National House of Representatives, representing Ankpa/Omala/Olamaboro Federal Constituency of Kogi State under the APC. A seasoned grassroots mobilizer with a PhD and an Honorary Doctorate in Legislative Affairs from Prince Abubakar Audu University.
                         </p>
                         <p className={`${styles.body} reveal reveal-delay-2`}>
-                            His unwavering commitment to youth empowerment, enterprise development, digital transformation, and sustainable community building has defined his public life — and will define his service in the House of Representatives. Running under the <strong>All Progressives Congress (APC)</strong>.
+                            From the Kogi State House of Assembly to Chairman of the House Committee on Steel, to his current role as a principal officer of the National Assembly — his political trajectory is a textbook example of methodical growth. Now gearing up for the <strong>Kogi East Senatorial District</strong> in 2027 under the <strong>All Progressives Congress (APC)</strong>.
                         </p>
                         <div className={`${styles.credentials} reveal reveal-delay-3`}>
                             {credentials.map((c, i) => (

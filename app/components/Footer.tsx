@@ -13,7 +13,7 @@ const quickLinks = [
     { label: "Events", href: "/events" },
     { label: "Register Support", href: "/register" },
 ];
-const lgaLinks = ["Ankpa LGA", "Omala LGA", "Olamaboro LGA", "Ward Map", "Polling Unit Directory"];
+const lgaLinks = ["Ankpa LGA", "Omala LGA", "Olamaboro LGA", "Dekina LGA", "Bassa LGA", "Igalamela/Odolu LGA", "Ibaji LGA", "Idah LGA", "Ofu LGA"];
 
 interface SocialLink { label: string; icon: string; key: string; }
 const socialItems: SocialLink[] = [
@@ -54,11 +54,11 @@ export default function Footer() {
                             <div className={styles.brandRow}>
                                 <Image src="/images/apc-logo.png" alt="All Progressives Congress Logo" width={48} height={48} className={styles.brandLogo} style={{ objectFit: "contain" }} />
                                 <div>
-                                    <p className={styles.brandName}>Rt. Hon. Abdullahi Ibrahim Ali (Halims)</p>
-                                    <p className={styles.brandTag}>APC · House of Representatives · 2027</p>
+                                    <p className={styles.brandName}>Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)</p>
+                                    <p className={styles.brandTag}>APC · Kogi East Senate · 2027</p>
                                 </div>
                             </div>
-                            <p className={styles.brandDesc}>Official campaign website for Rt. Hon. Abdullahi Ibrahim Ali (Halims) — contesting under the <strong>All Progressives Congress (APC)</strong> for the Ankpa Federal Constituency seat (Ankpa/Omala/Olamaboro) in the 2027 Nigerian General Elections.</p>
+                            <p className={styles.brandDesc}>Official campaign website for Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims) — Deputy Majority Leader of the House of Representatives, contesting under the <strong>All Progressives Congress (APC)</strong> for the Kogi East Senatorial District seat in the 2027 Nigerian General Elections.</p>
                             <div className={styles.social}>
                                 {socialItems.map((s, i) => {
                                     const url = settings[s.key];
@@ -72,7 +72,7 @@ export default function Footer() {
                             <ul className={styles.linkList}>{quickLinks.map((l, i) => <li key={i}><a href={l.href}>{l.label}</a></li>)}</ul>
                         </div>
                         <div>
-                            <p className={styles.colTitle}>Constituency</p>
+                            <p className={styles.colTitle}>Kogi East LGAs</p>
                             <ul className={styles.linkList}>{lgaLinks.map((l, i) => <li key={i}><a href="#">{l}</a></li>)}</ul>
                         </div>
                         <div>
@@ -88,8 +88,8 @@ export default function Footer() {
             <div className={styles.bottom}>
                 <div className="container">
                     <div className={styles.bottomInner}>
-                        <p className={styles.copyright}>© 2027 <strong>Rt. Hon. Abdullahi Ibrahim Ali (Halims) Campaign</strong> · All Progressives Congress (APC). All Rights Reserved.</p>
-                        <p className={styles.disclaimer}>Paid for by the Campaign Organisation of Rt. Hon. Abdullahi Ibrahim Ali (Halims)</p>
+                        <p className={styles.copyright}>© 2027 <strong>Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims) Campaign</strong> · All Progressives Congress (APC). All Rights Reserved.</p>
+                        <p className={styles.disclaimer}>Paid for by the Campaign Organisation of Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)</p>
                         <p style={{ fontSize: "10px", marginTop: "8px", color: "rgba(255,255,255,0.4)", letterSpacing: "0.5px" }}>
                             Designed &amp; Developed by{" "}
                             <a href="https://hamisahmed.koyeb.com" target="_blank" rel="noopener noreferrer" style={{ color: "#C9A227", fontWeight: 700, textDecoration: "none", borderBottom: "1px solid rgba(201,162,39,0.4)" }}>

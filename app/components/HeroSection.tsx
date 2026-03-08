@@ -18,13 +18,13 @@ export default function HeroSection() {
                     Official Campaign · Kogi East Senatorial District · Kogi State
                 </div>
                 <h1 className={styles.title} id="hero-heading">
-                    Rt. Hon.<br />Abdullahi Ibrahim<em>Ali (Halims)</em>
+                    Rt. Hon. (Dr.)<br />Abdullahi Ibrahim<em>Ali (Halims)</em>
                 </h1>
                 <p className={styles.constituency}>
                     Halims &nbsp;·&nbsp; Kogi East Senate &nbsp;·&nbsp; 2027
                 </p>
                 <p className={styles.desc}>
-                    A distinguished entrepreneur, philanthropist, and visionary leader — bringing enterprise, integrity, and genuine passion for the people of Kogi East to the Nigerian Senate. Together, we build a stronger, more prosperous Kogi East.
+                    Deputy Majority Leader of the House of Representatives, seasoned legislator, and grassroots mobilizer — bringing 17+ years of proven leadership from Kogi State House of Assembly to the National Assembly. Now seeking to represent Kogi East in the Nigerian Senate.
                 </p>
                 <div className={styles.actions}>
                     <a href="/register" className="btn-primary">★ Register Your Support</a>

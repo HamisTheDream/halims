@@ -22,9 +22,9 @@ export default function Navbar() {
                     <a href="/" className={styles.logo}>
                         <Image src="/images/apc-logo.png" alt="APC Logo" width={40} height={40} className={styles.logoImg} priority />
                         <div className={styles.logoTextWrap}>
-                            <span className={styles.logoName}>Rt. Hon. Abdullahi Ibrahim Ali</span>
-                            <span className={styles.logoSub}>Ankpa Federal Constituency</span>
-                            <span className={styles.logoBadge}>APC · House of Reps · 2027</span>
+                            <span className={styles.logoName}>Rt. Hon. (Dr.) Abdullahi Ibrahim Ali</span>
+                            <span className={styles.logoSub}>Kogi East Senatorial District</span>
+                            <span className={styles.logoBadge}>APC · Senate · 2027</span>
                         </div>
                     </a>
                     <ul className={`${styles.links} nav-links`}>
