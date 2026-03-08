@@ -1,6 +1,6 @@
 .section {
     padding: var(--section-pad);
-    background: var(--white);
+    background: var(--bg-light);
 }
 
 .header {
@@ -15,7 +15,7 @@
     font-family: var(--font-display), serif;
     font-size: clamp(30px, 3.5vw, 48px);
     font-weight: 700;
-    color: var(--blue-deep);
+    color: var(--navy);
     line-height: 1.2;
 }
 
@@ -28,22 +28,23 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 1.8;
-    color: var(--gray-mid);
+    color: var(--text-body);
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
+    gap: 16px;
 }
 
 .card {
-    background: var(--ivory);
+    background: var(--white);
     border: 1px solid var(--gray-light);
     padding: 32px 24px;
     position: relative;
     transition: var(--transition);
     overflow: hidden;
+    border-radius: var(--radius-md);
 }
 
 .card::after {
@@ -53,15 +54,18 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--blue-deep);
+    background: linear-gradient(90deg, var(--blue-deep), var(--apc-red));
     transform: scaleX(0);
     transform-origin: left;
     transition: var(--transition);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 .card:hover {
     background: var(--white);
-    border-color: var(--blue-deep);
+    border-color: rgba(0, 45, 98, 0.15);
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .card:hover::after {
@@ -72,7 +76,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 52px;
     font-weight: 800;
-    color: rgba(10, 48, 32, 0.07);
+    color: rgba(0, 45, 98, 0.05);
     position: absolute;
     top: 8px;
     right: 16px;
@@ -85,7 +89,7 @@
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--blue-deep);
+    color: var(--navy);
     margin-bottom: 8px;
 }
 
@@ -101,7 +105,7 @@
     align-items: center;
     gap: 8px;
     font-size: 12px;
-    color: var(--gray-mid);
+    color: var(--text-body);
     font-family: var(--font-heading), sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -112,11 +116,12 @@
     height: 6px;
     background: var(--apc-red);
     flex-shrink: 0;
+    border-radius: 50%;
 }
 
 .progressBar {
     margin-top: 20px;
-    height: 3px;
+    height: 4px;
     background: var(--gray-light);
     border-radius: 2px;
     overflow: hidden;
@@ -124,7 +129,7 @@
 
 .progressFill {
     height: 100%;
-    background: var(--blue-light);
+    background: linear-gradient(90deg, var(--blue-deep), var(--apc-green));
     border-radius: 2px;
     width: 0;
     transition: width 1.5s ease;

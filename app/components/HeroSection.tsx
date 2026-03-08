@@ -15,16 +15,16 @@ export default function HeroSection() {
             <div className={styles.left}>
                 <div className={styles.eyebrow}>
                     <span className={styles.eyebrowDot} />
-                    Official Campaign · Ankpa Federal Constituency · Kogi State
+                    Official Campaign · Kogi East Senatorial District · Kogi State
                 </div>
                 <h1 className={styles.title} id="hero-heading">
-                    Hon. Rt. Hon.<br />Abdullahi Ibrahim<em>Ali</em>
+                    Rt. Hon.<br />Abdullahi Ibrahim<em>Ali (Halims)</em>
                 </h1>
                 <p className={styles.constituency}>
-                    Halims &nbsp;·&nbsp; House of Representatives &nbsp;·&nbsp; 2027
+                    Halims &nbsp;·&nbsp; Kogi East Senate &nbsp;·&nbsp; 2027
                 </p>
                 <p className={styles.desc}>
-                    A distinguished entrepreneur, philanthropist, and visionary leader — bringing enterprise, integrity, and genuine passion for the Igala people to the National Assembly. Together, we build a stronger, more prosperous Ankpa Federal Constituency.
+                    A distinguished entrepreneur, philanthropist, and visionary leader — bringing enterprise, integrity, and genuine passion for the people of Kogi East to the Nigerian Senate. Together, we build a stronger, more prosperous Kogi East.
                 </p>
                 <div className={styles.actions}>
                     <a href="/register" className="btn-primary">★ Register Your Support</a>
@@ -32,7 +32,7 @@ export default function HeroSection() {
                 </div>
                 <div className={styles.stats} ref={counterRef}>
                     <div><div className={styles.statNum}>{count.toLocaleString()}</div><div className={styles.statLabel}>Supporters<br />Registered</div></div>
-                    <div><div className={styles.statNum}>3</div><div className={styles.statLabel}>LGAs<br />Covered</div></div>
+                    <div><div className={styles.statNum}>9</div><div className={styles.statLabel}>LGAs<br />Covered</div></div>
                     <div><div className={styles.statNum}>34</div><div className={styles.statLabel}>Wards<br />Reached</div></div>
                     <div><div className={styles.statNum}>614</div><div className={styles.statLabel}>Polling<br />Units</div></div>
                 </div>

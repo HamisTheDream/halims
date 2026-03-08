@@ -33,7 +33,7 @@ const defaultBio = `<p>Rt. Hon. Abdullahi Ibrahim Ali, fondly known as G1, is a 
 
 export default function AboutPageClient() {
     const revealRef = useRevealOnScroll();
-    const [heroTitle, setHeroTitle] = useState("Hon. Rt. Hon.\nAbdullahi Ibrahim Ali (Halims)");
+    const [heroTitle, setHeroTitle] = useState("Rt. Hon.\nAbdullahi Ibrahim Ali (Halims)");
     const [heroSubtitle, setHeroSubtitle] = useState("Entrepreneur · Philanthropist · Visionary Leader");
     const [heroDesc, setHeroDesc] = useState("A distinguished entrepreneur, philanthropist, and community champion — driven by an unwavering commitment to transform Ankpa Federal Constituency through youth empowerment, enterprise development, and sustainable community building.");
     const [bio, setBio] = useState(defaultBio);

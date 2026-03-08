@@ -14,7 +14,7 @@
     font-family: var(--font-display), serif;
     font-size: clamp(28px, 3vw, 40px);
     font-weight: 700;
-    color: var(--blue-deep);
+    color: var(--navy);
 }
 
 .title em {
@@ -25,7 +25,7 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 12px;
 }
 
 .item {
@@ -33,12 +33,13 @@
     grid-template-columns: 100px 1fr auto;
     gap: 32px;
     align-items: center;
-    padding: 32px;
-    background: var(--ivory);
+    padding: 28px 32px;
+    background: var(--bg-light);
     border: 1px solid var(--gray-light);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    border-radius: var(--radius-md);
 }
 
 .item::before {
@@ -48,14 +49,17 @@
     top: 0;
     bottom: 0;
     width: 4px;
-    background: var(--apc-red);
+    background: linear-gradient(to bottom, var(--apc-red), var(--blue-mid));
     transform: scaleY(0);
     transition: var(--transition);
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 
 .item:hover {
     background: var(--white);
-    border-color: var(--blue-light);
+    border-color: rgba(0, 45, 98, 0.15);
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
 }
 
 .item:hover::before {
@@ -64,15 +68,16 @@
 
 .dateBlock {
     text-align: center;
-    background: var(--blue-deep);
-    padding: 16px 12px;
+    background: linear-gradient(135deg, var(--navy), var(--blue-deep));
+    padding: 18px 14px;
+    border-radius: var(--radius-sm);
 }
 
 .day {
     font-family: var(--font-heading), sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: var(--apc-red);
+    color: var(--white);
     line-height: 1;
 }
 
@@ -82,7 +87,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 4px;
 }
 
@@ -100,13 +105,13 @@
     font-family: var(--font-display), serif;
     font-size: 20px;
     font-weight: 700;
-    color: var(--blue-deep);
+    color: var(--navy);
     margin-bottom: 6px;
 }
 
 .location {
     font-size: 13px;
-    color: var(--gray-mid);
+    color: var(--text-body);
     display: flex;
     align-items: center;
     gap: 6px;
@@ -118,16 +123,18 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--blue-deep);
-    border: 2px solid var(--blue-deep);
+    color: var(--navy);
+    border: 2px solid var(--navy);
     padding: 12px 24px;
     transition: var(--transition);
     white-space: nowrap;
+    border-radius: var(--radius-sm);
 }
 
 .item:hover .rsvp {
-    background: var(--blue-deep);
-    color: var(--apc-red);
+    background: linear-gradient(135deg, var(--navy), var(--blue-deep));
+    color: var(--white);
+    border-color: var(--navy);
 }
 
 @media (max-width: 1024px) {

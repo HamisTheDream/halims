@@ -1,5 +1,5 @@
 .hero {
-    background: var(--blue-deep);
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #0F2847 100%);
     min-height: 92vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,7 +11,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(circle at 20% 50%, rgba(201, 162, 39, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(29, 122, 80, 0.15) 0%, transparent 40%);
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(0, 71, 171, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(227, 0, 15, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 60% 80%, rgba(0, 135, 81, 0.06) 0%, transparent 35%);
     pointer-events: none;
 }
 
@@ -21,16 +24,17 @@
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 3px;
-    background: linear-gradient(to bottom, transparent, var(--apc-red) 20%, var(--apc-red) 80%, transparent);
-    transform: skewX(-8deg);
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.06) 20%, rgba(255, 255, 255, 0.06) 80%, transparent);
     pointer-events: none;
 }
 
 .gridPattern {
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(201, 162, 39, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 162, 39, 0.04) 1px, transparent 1px);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
     background-size: 48px 48px;
     pointer-events: none;
 }
@@ -60,11 +64,12 @@
 }
 
 .eyebrowDot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background: var(--apc-red);
     border-radius: 50%;
     animation: pulse 2s ease infinite;
+    box-shadow: 0 0 12px var(--apc-red-glow);
 }
 
 .title {
@@ -82,6 +87,7 @@
     font-style: italic;
     color: var(--apc-red);
     display: block;
+    text-shadow: 0 0 40px var(--apc-red-glow);
 }
 
 .constituency {
@@ -90,7 +96,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.55);
     border-left: 3px solid var(--apc-red);
     padding-left: 16px;
     margin-bottom: 40px;
@@ -102,7 +108,7 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.65);
     max-width: 480px;
     margin-bottom: 48px;
     opacity: 0;
@@ -119,29 +125,44 @@
 
 .stats {
     display: flex;
-    gap: 40px;
+    gap: 16px;
     margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
     opacity: 0;
     animation: fadeUp 0.8s 1.3s forwards;
 }
 
+.stats>div {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    flex: 1;
+    transition: var(--transition);
+}
+
+.stats>div:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(227, 0, 15, 0.2);
+    transform: translateY(-2px);
+}
+
 .statNum {
     font-family: var(--font-heading), sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
-    color: var(--apc-red);
+    color: var(--white);
     line-height: 1;
 }
 
 .statLabel {
-    font-size: 11px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 /* RIGHT */
@@ -182,7 +203,7 @@
     right: 3%;
     width: 55%;
     height: 80%;
-    border: 1px solid rgba(201, 162, 39, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     pointer-events: none;
     opacity: 0;
     animation: fadeIn 1s 1.5s forwards;
@@ -206,8 +227,8 @@
     left: -16px;
     width: 60%;
     height: 60%;
-    border-bottom: 2px solid var(--apc-red);
-    border-left: 2px solid var(--apc-red);
+    border-bottom: 2px solid rgba(0, 71, 171, 0.5);
+    border-left: 2px solid rgba(0, 71, 171, 0.5);
 }
 
 /* Badge */
@@ -217,7 +238,7 @@
     right: 60px;
     width: 110px;
     height: 110px;
-    background: var(--apc-red);
+    background: linear-gradient(135deg, var(--apc-red), #C4000C);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,6 +246,7 @@
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     animation: rotateBadge 20s linear infinite;
     z-index: 5;
+    box-shadow: 0 8px 32px rgba(227, 0, 15, 0.3);
 }
 
 .badgeInner {
@@ -239,7 +261,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 22px;
     font-weight: 800;
-    color: var(--blue-deep);
+    color: var(--white);
     line-height: 1;
 }
 
@@ -249,7 +271,7 @@
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--blue-deep);
+    color: rgba(255, 255, 255, 0.85);
     text-align: center;
 }
 
@@ -258,20 +280,23 @@
     position: absolute;
     bottom: 60px;
     right: 60px;
-    background: rgba(10, 48, 32, 0.9);
-    border: 2px solid var(--apc-red);
-    padding: 12px 20px;
+    background: rgba(10, 22, 40, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 22px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     z-index: 5;
+    border-radius: var(--radius-md);
 }
 
 .partyLogoSlot {
-    width: 40px;
-    height: 40px;
-    background: rgba(201, 162, 39, 0.2);
-    border: 1px dashed var(--apc-red);
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -296,7 +321,7 @@
     font-family: var(--font-heading), sans-serif;
     font-size: 8px;
     letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.45);
     text-transform: uppercase;
 }
 
@@ -305,7 +330,7 @@
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: var(--apc-red);
+    color: var(--white);
     text-transform: uppercase;
 }
 
@@ -325,7 +350,7 @@
 .scrollLine {
     width: 48px;
     height: 1px;
-    background: linear-gradient(to right, var(--apc-red), transparent);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
     position: relative;
     overflow: hidden;
 }
@@ -347,10 +372,10 @@
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.35);
 }
 
-/* Keyframes — must be local to CSS module */
+/* Keyframes */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -442,8 +467,16 @@
     }
 
     .stats {
-        gap: 24px;
+        gap: 10px;
         flex-wrap: wrap;
+    }
+
+    .stats>div {
+        padding: 14px 16px;
+    }
+
+    .statNum {
+        font-size: 24px;
     }
 
     .badge {
@@ -455,5 +488,11 @@
 
     .badgeYear {
         font-size: 16px;
+    }
+
+    .partyBadge {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 14px;
     }
 }

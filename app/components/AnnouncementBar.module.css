@@ -1,6 +1,6 @@
 .bar {
-    background: var(--apc-red);
-    color: var(--blue-deep);
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue-deep) 100%);
+    color: var(--white);
     font-family: var(--font-heading), Impact, sans-serif;
     font-size: 12px;
     font-weight: 700;

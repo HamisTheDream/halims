@@ -44,7 +44,7 @@ export default function AboutSection() {
                         <div className={styles.accent} aria-hidden="true" />
                         <div className={styles.caption}>
                             <p className={styles.captionTitle}>Your Candidate</p>
-                            <p className={styles.captionName}>Hon. Rt. Hon.<br />Abdullahi Ibrahim Ali</p>
+                            <p className={styles.captionName}>Rt. Hon.<br />Abdullahi Ibrahim Ali</p>
                         </div>
                         <div className={styles.expBadge}>
                             <div className={styles.expNum}>20+</div>

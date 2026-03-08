@@ -1,5 +1,5 @@
 .band {
-    background: var(--apc-red);
+    background: linear-gradient(135deg, var(--apc-red) 0%, #C4000C 50%, #A80009 100%);
     padding: 14px 0;
     overflow: hidden;
     white-space: nowrap;
@@ -33,14 +33,14 @@
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--blue-deep);
+    color: var(--white);
 }
 
 .sep {
     width: 6px;
     height: 6px;
-    background: var(--blue-deep);
-    opacity: 0.4;
+    background: var(--white);
+    opacity: 0.3;
     transform: rotate(45deg);
     display: inline-block;
     flex-shrink: 0;

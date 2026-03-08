@@ -57,7 +57,7 @@ export default function EndorsementSection() {
                             </div>
                             <div className={styles.flyerText}>
                                 <p className={styles.flyerSupport}>Your Name Here</p>
-                                <p className={styles.flyerCandidate}>Endorses<br />Hon. Rt. Hon. Abdullahi Ibrahim<br />Ali (Halims)</p>
+                                <p className={styles.flyerCandidate}>Endorses<br />Rt. Hon. Abdullahi Ibrahim<br />Ali (Halims)</p>
                             </div>
                             <div className={styles.flyerBottom}>APC · House of Representatives · 2027</div>
                             <div className={styles.flyerLogoBadge}>
