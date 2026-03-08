@@ -136,447 +136,514 @@ function renderFlyer(
     canvas.width = W;
     canvas.height = H;
 
-    const { bg, accent, secondary, textPrimary, textSecondary, id } = template;
-    const senateLogo = igalaBg; // Repurposed for Senate Logo
+    const { accent, secondary, id } = template;
+    const senateLogo = igalaBg;
 
-    /* ── BASE BACKGROUNDS ── */
-    if (id === "senate_crimson") {
-        const grad = ctx.createLinearGradient(0, 0, 0, H);
-        grad.addColorStop(0, "#C4000C");
-        grad.addColorStop(1, "#4A0000");
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, W, H);
-    } else if (id === "premium_halims") {
-        const rGrad = ctx.createRadialGradient(W / 2, 300, 100, W / 2, 400, 800);
-        rGrad.addColorStop(0, "#1A1A1A");
-        rGrad.addColorStop(1, "#000000");
-        ctx.fillStyle = rGrad;
-        ctx.fillRect(0, 0, W, H);
-    } else if (id === "glass_chamber" || id === "modern_apc") {
-        const grad = ctx.createLinearGradient(0, 0, W, H);
-        grad.addColorStop(0, bg);
-        grad.addColorStop(1, "#05150E"); // very dark green/blue base
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, W, H);
-    } else {
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, W, H);
-    }
-
-    // Background Image Helper
-    const drawBgImage = (img: HTMLImageElement | null, opacity: number, blendMode: GlobalCompositeOperation = "source-over") => {
+    /* ── Helper: draw photo covering a rectangular area ── */
+    const drawCoverPhoto = (img: HTMLImageElement | null, x: number, y: number, w: number, h: number) => {
         if (!img) return;
         ctx.save();
-        ctx.globalAlpha = opacity;
-        ctx.globalCompositeOperation = blendMode;
-        const imgAspect = img.width / img.height;
-        const canvasAspect = W / H;
-        let dw = W, dh = H;
-        if (imgAspect > canvasAspect) {
-            dh = H; dw = H * imgAspect;
-        } else {
-            dw = W; dh = W / imgAspect;
-        }
-        ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
+        ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+        const aspect = img.width / img.height;
+        let dw = w, dh = h;
+        if (aspect > w / h) { dh = h; dw = h * aspect; } else { dw = w; dh = w / aspect; }
+        ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
         ctx.restore();
     };
 
-    /* ── BACKGROUND OVERLAYS ── */
+    /* ════════════════════════════════════════════════════════════════
+       1. RED CHAMBER — Full-Bleed Candidate Hero
+       Candidate photo fills the entire top 65%, with a dramatic
+       crimson-to-black gradient overlay. Text sits on the overlay.
+       Supporter card floats at the bottom.
+       ════════════════════════════════════════════════════════════════ */
     if (id === "senate_crimson") {
-        drawBgImage(nassBg, 0.25, "multiply");
-        drawBgImage(nigeriaBg, 0.05, "overlay");
-    } else if (id === "nass_prestige") {
-        drawBgImage(nigeriaBg, 0.5, "screen"); // Soft light overlay for prestige
-        drawBgImage(nassBg, 0.1, "multiply");
-    } else if (id === "premium_halims") {
-        drawBgImage(nassBg, 0.15, "screen");
-        drawBgImage(nigeriaBg, 0.08, "screen");
-    } else if (id === "golden_mandate") {
-        drawBgImage(nassBg, 0.1);
-        ctx.fillStyle = "rgba(255,249,230,0.8)";
-        ctx.fillRect(0, 0, W, H);
-    } else {
-        drawBgImage(nassBg, 0.1, "overlay");
-    }
+        // Full-bleed candidate photo
+        drawCoverPhoto(chiefPhoto, 0, 0, W, 900);
+        // Gradient overlay: transparent top → crimson → black bottom
+        const ov = ctx.createLinearGradient(0, 0, 0, 900);
+        ov.addColorStop(0, "rgba(139,0,0,0.15)");
+        ov.addColorStop(0.4, "rgba(139,0,0,0.55)");
+        ov.addColorStop(1, "rgba(0,0,0,0.92)");
+        ctx.fillStyle = ov;
+        ctx.fillRect(0, 0, W, 900);
+        // Dark bottom zone
+        ctx.fillStyle = "#0A0A0A";
+        ctx.fillRect(0, 900, W, H - 900);
 
-    /* ═══════════════════════════════════════════════════════════
-       1. SENATE CRIMSON: The Red Chamber Majesty
-       ═══════════════════════════════════════════════════════════ */
-    if (id === "senate_crimson") {
-        ctx.strokeStyle = "rgba(255,255,255,0.05)";
-        ctx.lineWidth = 1;
-        for (let i = 0; i < W; i += 40) { ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, 200); ctx.stroke(); }
-        for (let i = 0; i < 200; i += 40) { ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(W, i); ctx.stroke(); }
+        // Senate + APC logos (top)
+        drawLogo(ctx, senateLogo, W / 2 - 80, 30, 60);
+        drawLogo(ctx, adcLogo, W / 2 + 80, 35, 55);
 
-        drawLogo(ctx, senateLogo, W / 2 - 100, 40, 80);
-        drawLogo(ctx, adcLogo, W / 2 + 100, 48, 70);
-
-        ctx.font = "800 32px 'Inter', sans-serif";
-        ctx.fillStyle = accent;
+        // Candidate name (over the photo)
         ctx.textAlign = "center";
-        ctx.letterSpacing = "10px";
-        ctx.fillText("NIGERIAN SENATE", W / 2, 170);
-        ctx.font = "500 18px 'Inter', sans-serif";
         ctx.fillStyle = "#FFFFFF";
-        ctx.letterSpacing = "6px";
-        ctx.fillText("KOGI EAST SENATORIAL DISTRICT", W / 2, 205);
-
-        // Candidate Portrait
-        drawCirclePhoto(ctx, chiefPhoto, W / 2, 450, 200, accent, "Halims");
-        ctx.strokeStyle = "rgba(201,162,39,0.3)";
-        ctx.lineWidth = 2;
-        ctx.beginPath(); ctx.arc(W / 2, 450, 215, 0, Math.PI * 2); ctx.stroke();
-
-        ctx.font = "900 italic 52px 'Playfair Display', serif";
-        ctx.fillStyle = "#FFFFFF";
-        ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;
-        let cY = wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 730, W - 160, 60);
+        ctx.font = "900 italic 60px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.7)"; ctx.shadowBlur = 20;
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 720, W - 120, 68);
         ctx.shadowBlur = 0;
 
-        ctx.font = "800 20px 'Inter', sans-serif";
-        ctx.fillStyle = accent;
-        ctx.letterSpacing = "3px";
-        ctx.fillText("THE PEOPLE'S MANDATE • 2027", W / 2, cY + 40);
+        // Gold tagline
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 22px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("KOGI EAST SENATE • 2027", W / 2, 860);
 
-        // Supporter Block (Starts below candidate text dynamically)
-        const blockY = cY + 90;
-        ctx.fillStyle = "rgba(0,0,0,0.5)";
-        roundRect(ctx, 50, blockY, W - 100, 260, 24);
+        // Supporter endorsement card
+        ctx.fillStyle = "rgba(255,255,255,0.06)";
+        roundRect(ctx, 60, 930, W - 120, 280, 20);
         ctx.fill();
-        ctx.strokeStyle = "rgba(201,162,39,0.4)";
-        ctx.lineWidth = 1;
-        ctx.stroke();
+        ctx.strokeStyle = "rgba(201,162,39,0.3)";
+        ctx.lineWidth = 1; ctx.stroke();
 
-        drawCirclePhoto(ctx, supporterPhoto, 180, blockY + 130, 90, accent, "Photo");
-
-        ctx.font = "600 18px 'Inter', sans-serif";
-        ctx.fillStyle = "rgba(255,255,255,0.6)";
-        ctx.textAlign = "left";
-        ctx.letterSpacing = "4px";
-        ctx.fillText("PROUDLY ENDORSED BY", 310, blockY + 90);
-
-        ctx.font = "800 42px 'Playfair Display', serif";
-        ctx.fillStyle = "#FFFFFF";
-        let uY = wrapText(ctx, (userName || "Your Name").toUpperCase(), 310, blockY + 140, W - 400, 50);
-
-        if (userLocation) {
-            ctx.font = "500 20px 'Inter', sans-serif";
-            ctx.fillStyle = accent;
-            ctx.fillText("📍 " + userLocation, 310, uY + 30);
-        }
-    }
-
-    /* ═══════════════════════════════════════════════════════════
-       2. NASS PRESTIGE: Sophisticated Champagne/Gold Editorial
-       ═══════════════════════════════════════════════════════════ */
-    else if (id === "nass_prestige") {
-        ctx.strokeStyle = accent;
-        ctx.lineWidth = 2;
-        ctx.strokeRect(30, 30, W - 60, H - 160);
-        ctx.lineWidth = 1;
-        ctx.strokeRect(40, 40, W - 80, H - 180);
+        drawCirclePhoto(ctx, supporterPhoto, 200, 1070, 95, "#C9A227", "Your\nPhoto");
 
         ctx.textAlign = "left";
-        ctx.fillStyle = accent;
-        ctx.font = "800 58px 'Playfair Display', serif";
-        ctx.fillText("H A L I M S", 80, 110);
-
-        ctx.font = "600 16px 'Inter', sans-serif";
-        ctx.letterSpacing = "4px";
-        ctx.fillText("KOGI EAST SENATORIAL RACE 2027", 80, 145);
-
-        drawLogo(ctx, senateLogo, W - 160, 60, 70);
-        drawLogo(ctx, adcLogo, W - 80, 65, 60);
-
-        drawRectPhoto(ctx, chiefPhoto, W / 2, 200, 460, 550, 0, accent, "Halims");
-
-        ctx.fillStyle = "#FFFFFF";
-        ctx.fillRect(80, 600, 500, 160);
-        ctx.strokeStyle = accent;
-        ctx.strokeRect(70, 590, 500, 160);
-
-        ctx.fillStyle = accent;
-        ctx.textAlign = "center";
-        ctx.font = "900 34px 'Playfair Display', serif";
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 320, 660, 440, 42);
-        ctx.fillStyle = secondary;
+        ctx.fillStyle = "rgba(255,255,255,0.5)";
         ctx.font = "700 16px 'Inter', sans-serif";
-        ctx.letterSpacing = "2px";
-        ctx.fillText("DEPUTY MAJORITY LEADER TO SENATE", 320, 725);
-
-        ctx.textAlign = "left";
-        ctx.font = "italic 700 80px 'Playfair Display', serif";
-        ctx.fillStyle = "rgba(10,48,32,0.15)";
-        ctx.fillText("\"", 80, 860);
-
-        ctx.font = "600 22px 'Inter', sans-serif";
-        ctx.fillStyle = accent;
-        ctx.fillText("I stand with progressive leadership.", 120, 840);
-        ctx.font = "400 18px 'Inter', sans-serif";
-        ctx.fillStyle = "#555";
-        ctx.fillText("Kogi East deserves outstanding representation in the 11th Assembly.", 120, 875);
-
-        drawCirclePhoto(ctx, supporterPhoto, 150, 1020, 75, accent, "Photo");
-        ctx.font = "800 30px 'Playfair Display', serif";
-        ctx.fillStyle = accent;
-        ctx.fillText((userName || "Your Name").toUpperCase(), 250, 1010);
-        ctx.font = "500 16px 'Inter', sans-serif";
-        ctx.fillStyle = secondary;
-        ctx.letterSpacing = "2px";
-        ctx.fillText(`ENDORSED FOR 2027 ${userLocation ? '• ' + userLocation : ''}`, 250, 1045);
-    }
-
-    /* ═══════════════════════════════════════════════════════════
-       3. PREMIUM ONYX: Ultra elite, dark mode, high contrast luxury
-       ═══════════════════════════════════════════════════════════ */
-    else if (id === "premium_halims") {
-        ctx.fillStyle = "#111111";
-        ctx.fillRect(0, 0, W, 120);
-        ctx.strokeStyle = accent;
-        ctx.lineWidth = 1;
-        ctx.beginPath(); ctx.moveTo(0, 120); ctx.lineTo(W, 120); ctx.stroke();
-
-        ctx.textAlign = "center";
-        ctx.font = "500 16px 'Inter', sans-serif";
-        ctx.fillStyle = accent;
-        ctx.letterSpacing = "6px";
-        ctx.fillText("THE SENATORIAL AMBITION", W / 2, 45);
-        ctx.font = "800 30px 'Playfair Display', serif";
-        ctx.fillStyle = "#FFFFFF";
         ctx.letterSpacing = "4px";
-        ctx.fillText("K O G I   E A S T   2 0 2 7", W / 2, 90);
-
-        const pSize = 340;
-        const cy = 350;
-        drawRectPhoto(ctx, chiefPhoto, W / 2 - pSize + 10, cy - pSize / 2, pSize - 20, pSize * 1.2, 16, "#333333", "Halims");
-        drawRectPhoto(ctx, supporterPhoto, W / 2 + 10, cy - pSize / 2, pSize - 20, pSize * 1.2, 16, accent, "Supporter");
-
-        ctx.fillStyle = accent;
-        ctx.beginPath(); ctx.arc(W / 2, cy + pSize / 2 + 30, 45, 0, Math.PI * 2); ctx.fill();
-        ctx.fillStyle = "#000000";
-        ctx.font = "900 20px 'Inter', sans-serif";
-        ctx.fillText("APC", W / 2, cy + pSize / 2 + 38);
+        ctx.fillText("PROUDLY ENDORSED BY", 330, 1010);
+        ctx.letterSpacing = "0px";
 
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 48px 'Playfair Display', serif";
-        let txtY = wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 680, W - 140, 56);
-
-        ctx.fillStyle = accent;
-        ctx.fillRect(W / 2 - 60, txtY + 30, 120, 2);
-
-        ctx.fillStyle = "rgba(255,255,255,0.5)";
-        ctx.font = "600 18px 'Inter', sans-serif";
-        ctx.letterSpacing = "6px";
-        ctx.fillText("PROUDLY ENDORSED BY", W / 2, txtY + 90);
-
-        ctx.fillStyle = accent;
-        ctx.font = "800 46px 'Playfair Display', serif";
-        let finY = wrapText(ctx, (userName || "Your Name").toUpperCase(), W / 2, txtY + 150, W - 140, 52);
+        ctx.font = "800 40px 'Playfair Display', serif";
+        wrapText(ctx, (userName || "Your Name").toUpperCase(), 330, 1060, W - 440, 48, "left");
 
         if (userLocation) {
-            ctx.fillStyle = "rgba(255,255,255,0.7)";
-            ctx.font = "400 20px 'Inter', sans-serif";
-            ctx.fillText(userLocation.toUpperCase(), W / 2, finY + 40);
+            ctx.fillStyle = "#C9A227";
+            ctx.font = "500 18px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, 330, 1140);
         }
-
-        drawLogo(ctx, senateLogo, 100, 1080, 80);
-        drawLogo(ctx, adcLogo, W - 100, 1080, 70);
     }
 
-    /* ═══════════════════════════════════════════════════════════
-       4. MODERN APC: Tech-forward, vibrant, bold blue/red angles
-       ═══════════════════════════════════════════════════════════ */
-    else if (id === "modern_apc") {
+    /* ════════════════════════════════════════════════════════════════
+       2. NASS PRESTIGE — Magazine Cover
+       Full-bleed candidate as background, with warm champagne overlay.
+       Large white text card overlapping from the bottom.
+       ════════════════════════════════════════════════════════════════ */
+    else if (id === "nass_prestige") {
+        // Full-bleed candidate
+        drawCoverPhoto(chiefPhoto, 0, 0, W, 780);
+        // Warm overlay
+        const ov = ctx.createLinearGradient(0, 0, 0, 780);
+        ov.addColorStop(0, "rgba(248,245,238,0.1)");
+        ov.addColorStop(0.6, "rgba(248,245,238,0.3)");
+        ov.addColorStop(1, "rgba(248,245,238,0.95)");
+        ctx.fillStyle = ov;
+        ctx.fillRect(0, 0, W, 780);
+
+        // Bottom section: solid cream
+        ctx.fillStyle = "#F8F5EE";
+        ctx.fillRect(0, 780, W, H - 780);
+
+        // Magazine masthead
+        ctx.textAlign = "left";
         ctx.fillStyle = "#0A0A0A";
-        ctx.beginPath(); ctx.moveTo(0, 550); ctx.lineTo(W, 350); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+        ctx.font = "900 72px 'Playfair Display', serif";
+        ctx.fillText("HALIMS", 70, 100);
+        ctx.fillStyle = "#C4000C";
+        ctx.font = "700 18px 'Inter', sans-serif";
+        ctx.letterSpacing = "3px";
+        ctx.fillText("KOGI EAST SENATE  •  2027", 75, 130);
+        ctx.letterSpacing = "0px";
 
-        ctx.fillStyle = accent;
-        ctx.beginPath(); ctx.moveTo(0, 550); ctx.lineTo(W, 350); ctx.lineTo(W, 380); ctx.lineTo(0, 580); ctx.fill();
+        // Logos top-right
+        drawLogo(ctx, senateLogo, W - 150, 40, 65);
+        drawLogo(ctx, adcLogo, W - 70, 45, 55);
 
-        drawLogo(ctx, senateLogo, 100, 70, 70);
-        ctx.textAlign = "left";
+        // Floating white card
+        ctx.shadowColor = "rgba(0,0,0,0.12)";
+        ctx.shadowBlur = 40; ctx.shadowOffsetY = 10;
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 38px 'Inter', sans-serif";
-        ctx.letterSpacing = "4px";
-        ctx.fillText("SENATE 2027", 180, 95);
-        ctx.fillStyle = "rgba(255,255,255,0.5)";
-        ctx.font = "600 18px 'Inter', sans-serif";
-        ctx.letterSpacing = "2px";
-        ctx.fillText("KOGI EAST SENATORIAL DISTRICT", 180, 125);
-
-        drawLogo(ctx, adcLogo, W - 80, 75, 70);
-
-        drawCirclePhoto(ctx, chiefPhoto, 240, 320, 160, accent, "Halims");
-
-        ctx.textAlign = "right";
-        ctx.font = "900 46px 'Inter', sans-serif";
-        ctx.fillStyle = "#FFFFFF";
-        ctx.fillText("RT. HON. (DR.)", W - 60, 270);
-        ctx.fillStyle = accent;
-        ctx.fillText("ABDULLAHI", W - 60, 325);
-        ctx.fillText("IBRAHIM ALI", W - 60, 380);
-
-        drawCirclePhoto(ctx, supporterPhoto, W - 200, 840, 140, "#FFFFFF", "Photo");
-
-        ctx.textAlign = "left";
-        ctx.fillStyle = "rgba(255,255,255,0.4)";
-        ctx.font = "800 20px 'Inter', sans-serif";
-        ctx.letterSpacing = "6px";
-        ctx.fillText("100% SUPPORTER", 60, 740);
-
-        ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 50px 'Inter', sans-serif";
-        // Manual wrapping logic for left alignment
-        const words = (userName || "Your Name").toUpperCase().split(" ");
-        let line = "";
-        let lineY = 800;
-        for (let i = 0; i < words.length; i++) {
-            const testLine = line + words[i] + " ";
-            if (ctx.measureText(testLine).width > (W - 380) && i > 0) {
-                ctx.fillText(line, 60, lineY);
-                line = words[i] + " ";
-                lineY += 55;
-            } else {
-                line = testLine;
-            }
-        }
-        ctx.fillText(line, 60, lineY);
-
-        if (userLocation) {
-            ctx.fillStyle = secondary;
-            ctx.font = "600 20px 'Inter', sans-serif";
-            ctx.fillText(userLocation.toUpperCase(), 60, lineY + 60);
-        }
-    }
-
-    /* ═══════════════════════════════════════════════════════════
-       5. GOLDEN MANDATE: Bright, approachable, community focused
-       ═══════════════════════════════════════════════════════════ */
-    else if (id === "golden_mandate") {
-        ctx.fillStyle = accent;
-        ctx.beginPath();
-        ctx.moveTo(0, 0); ctx.lineTo(W, 0); ctx.lineTo(W, 280);
-        ctx.arcTo(W / 2, 380, 0, 280, 1000); ctx.lineTo(0, 280); ctx.fill();
-
-        ctx.textAlign = "center";
-        ctx.fillStyle = "#FFFFFF";
-        ctx.font = "800 30px 'Inter', sans-serif";
-        ctx.letterSpacing = "6px";
-        ctx.fillText("ALL PROGRESSIVES CONGRESS", W / 2, 60);
-
-        drawRectPhoto(ctx, chiefPhoto, 120, 150, 380, 480, 24, "#FFFFFF", "Halims");
-        drawRectPhoto(ctx, supporterPhoto, W - 440, 250, 320, 420, 24, "#C9A227", "Photo");
-
-        ctx.shadowColor = "rgba(0,0,0,0.15)";
-        ctx.shadowBlur = 30;
-        ctx.shadowOffsetY = 15;
-        ctx.fillStyle = "#FFFFFF";
-        roundRect(ctx, 60, 750, W - 120, 280, 24);
+        roundRect(ctx, 70, 660, W - 140, 520, 24);
         ctx.fill();
         ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+        // Gold accent line at top of card
+        ctx.fillStyle = "#C9A227";
+        ctx.fillRect(70, 660, W - 140, 5);
 
-        drawLogo(ctx, senateLogo, 160, 890, 120);
+        // Candidate info inside card
+        ctx.textAlign = "center";
+        ctx.fillStyle = "#0A0A0A";
+        ctx.font = "900 italic 46px 'Playfair Display', serif";
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 730, W - 220, 54);
+
+        ctx.fillStyle = "#C4000C";
+        ctx.font = "700 18px 'Inter', sans-serif";
+        ctx.letterSpacing = "2px";
+        ctx.fillText("DEPUTY MAJORITY LEADER → SENATE", W / 2, 850);
+        ctx.letterSpacing = "0px";
+
+        // Divider
+        ctx.fillStyle = "#E8E0D0";
+        ctx.fillRect(200, 890, W - 400, 1);
+
+        // Supporter section inside card
+        drawCirclePhoto(ctx, supporterPhoto, 220, 1010, 75, "#0A0A0A", "Your\nPhoto");
 
         ctx.textAlign = "left";
-        ctx.fillStyle = "#1A1A1A";
-        ctx.font = "900 40px 'Inter', sans-serif";
-        ctx.fillText("Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 280, 820);
-        ctx.fillStyle = accent;
-        ctx.font = "700 20px 'Inter', sans-serif";
-        ctx.letterSpacing = "2px";
-        ctx.fillText("FOR KOGI EAST SENATORIAL DISTRICT 2027", 280, 860);
+        ctx.fillStyle = "rgba(0,0,0,0.4)";
+        ctx.font = "700 15px 'Inter', sans-serif";
+        ctx.letterSpacing = "4px";
+        ctx.fillText("ENDORSED BY", 320, 960);
+        ctx.letterSpacing = "0px";
 
-        ctx.fillStyle = "#666666";
-        ctx.font = "600 18px 'Inter', sans-serif";
-        // Manual wrap for left alignment
-        let textLine = "I, " + (userName || "Your Name") + " stand firmly with HALIMS for Senate.";
-        const metrics = ctx.measureText(textLine);
-        if (metrics.width > (W - 340)) {
-            // Very long text
-            ctx.fillText("I, " + (userName || "Your Name"), 280, 920);
-            ctx.fillText("stand firmly with HALIMS for Senate.", 280, 950);
-            if (userLocation) ctx.fillText("📍 " + userLocation, 280, 990);
-        } else {
-            ctx.fillText(textLine, 280, 920);
-            if (userLocation) ctx.fillText("📍 " + userLocation, 280, 960);
+        ctx.fillStyle = "#0A0A0A";
+        ctx.font = "800 36px 'Playfair Display', serif";
+        wrapText(ctx, (userName || "Your Name").toUpperCase(), 320, 1010, W - 460, 44, "left");
+
+        if (userLocation) {
+            ctx.fillStyle = "#C4000C";
+            ctx.font = "500 18px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, 320, 1085);
         }
-
-        drawLogo(ctx, adcLogo, W - 140, 890, 90);
     }
 
-    /* ═══════════════════════════════════════════════════════════
-       6. GLASS CHAMBER: Frosted glass UI, profound depths, ultra modern
-       ═══════════════════════════════════════════════════════════ */
-    else {
-        ctx.fillStyle = accent;
-        ctx.fillRect(0, 0, W, 10);
+    /* ════════════════════════════════════════════════════════════════
+       3. GOLDEN MANDATE — Diagonal Split
+       A bold diagonal line divides the canvas. Candidate on top-left,
+       supporter on bottom-right. Golden accent stripe in the middle.
+       ════════════════════════════════════════════════════════════════ */
+    else if (id === "golden_mandate") {
+        // Rich warm base
+        ctx.fillStyle = "#FFF9E6";
+        ctx.fillRect(0, 0, W, H);
 
-        ctx.fillStyle = "rgba(255, 255, 255, 0.03)";
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
-        ctx.lineWidth = 1;
-        roundRect(ctx, 50, 60, W - 100, H - 280, 32);
-        ctx.fill(); ctx.stroke();
+        // Candidate photo fills upper-left triangle
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(0, 0); ctx.lineTo(W, 0); ctx.lineTo(0, H); ctx.closePath();
+        ctx.clip();
+        drawCoverPhoto(chiefPhoto, 0, 0, W, H);
+        // Dark overlay on candidate side
+        const ov1 = ctx.createLinearGradient(0, 0, W * 0.7, H * 0.7);
+        ov1.addColorStop(0, "rgba(0,0,0,0.1)");
+        ov1.addColorStop(1, "rgba(0,0,0,0.6)");
+        ctx.fillStyle = ov1;
+        ctx.fillRect(0, 0, W, H);
+        ctx.restore();
 
-        ctx.textAlign = "center";
-        ctx.fillStyle = accent;
-        ctx.font = "800 24px 'Inter', sans-serif";
-        ctx.letterSpacing = "10px";
-        ctx.fillText("OFFICIAL ENDORSEMENT", W / 2, 130);
+        // Supporter photo fills lower-right triangle
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(W, 0); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.closePath();
+        ctx.clip();
+        drawCoverPhoto(supporterPhoto, 0, 0, W, H);
+        const ov2 = ctx.createLinearGradient(W * 0.3, H * 0.3, W, H);
+        ov2.addColorStop(0, "rgba(139,0,0,0.4)");
+        ov2.addColorStop(1, "rgba(139,0,0,0.85)");
+        ctx.fillStyle = ov2;
+        ctx.fillRect(0, 0, W, H);
+        ctx.restore();
 
-        drawLogo(ctx, senateLogo, W / 2, 210, 80);
+        // Gold diagonal stripe
+        ctx.fillStyle = "#C9A227";
+        ctx.beginPath();
+        ctx.moveTo(W + 20, -20); ctx.lineTo(W + 40, -20); ctx.lineTo(-20, H + 40); ctx.lineTo(-40, H + 20);
+        ctx.closePath(); ctx.fill();
+        // Thinner white companion stripe
+        ctx.fillStyle = "rgba(255,255,255,0.5)";
+        ctx.beginPath();
+        ctx.moveTo(W + 45, -20); ctx.lineTo(W + 55, -20); ctx.lineTo(-15, H + 40); ctx.lineTo(-25, H + 30);
+        ctx.closePath(); ctx.fill();
 
+        // Candidate name (upper-left zone)
+        ctx.textAlign = "left";
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 48px 'Playfair Display', serif";
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 330, W - 260, 56);
+        ctx.font = "900 italic 52px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 15;
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 70, 120, 500, 62, "left");
+        ctx.shadowBlur = 0;
 
-        const divG = ctx.createLinearGradient(150, 0, W - 150, 0);
-        divG.addColorStop(0, "rgba(201,162,39,0)");
-        divG.addColorStop(0.5, "#C9A227");
-        divG.addColorStop(1, "rgba(201,162,39,0)");
-        ctx.fillStyle = divG;
-        ctx.fillRect(150, 460, W - 300, 2);
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 20px 'Inter', sans-serif";
+        ctx.letterSpacing = "3px";
+        ctx.fillText("KOGI EAST SENATE • 2027", 70, 320);
+        ctx.letterSpacing = "0px";
+
+        // Logos
+        drawLogo(ctx, senateLogo, 150, 380, 80);
+        drawLogo(ctx, adcLogo, 300, 385, 70);
+
+        // Supporter name (lower-right zone)
+        ctx.textAlign = "right";
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "700 17px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("ENDORSED BY", W - 70, 950);
+        ctx.letterSpacing = "0px";
+
+        ctx.font = "800 48px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;
+        wrapText(ctx, (userName || "Your Name").toUpperCase(), W - 70, 1010, 550, 56, "right");
+        ctx.shadowBlur = 0;
+
+        if (userLocation) {
+            ctx.fillStyle = "#C9A227";
+            ctx.font = "500 20px 'Inter', sans-serif";
+            ctx.textAlign = "right";
+            ctx.fillText("📍 " + userLocation, W - 70, 1130);
+        }
+    }
+
+    /* ════════════════════════════════════════════════════════════════
+       4. GLASS CHAMBER — Cinematic Letterbox
+       Full-bleed candidate photo with a heavy dark overlay.
+       A thick horizontal "letterbox" band across the center contains
+       all text. Supporter circle floats in the lower third.
+       ════════════════════════════════════════════════════════════════ */
+    else if (id === "glass_chamber") {
+        // Full-bleed candidate
+        drawCoverPhoto(chiefPhoto, 0, 0, W, H);
+        // Dark cinematic overlay
+        const ov = ctx.createLinearGradient(0, 0, 0, H);
+        ov.addColorStop(0, "rgba(13,53,36,0.7)");
+        ov.addColorStop(0.5, "rgba(0,0,0,0.85)");
+        ov.addColorStop(1, "rgba(13,53,36,0.95)");
+        ctx.fillStyle = ov;
+        ctx.fillRect(0, 0, W, H);
+
+        // Letterbox band (glassmorphism)
+        ctx.fillStyle = "rgba(255,255,255,0.04)";
+        ctx.fillRect(0, 380, W, 350);
+        ctx.strokeStyle = "rgba(201,162,39,0.3)";
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(0, 380); ctx.lineTo(W, 380); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(0, 730); ctx.lineTo(W, 730); ctx.stroke();
+
+        // Top zone: logos + tagline
+        drawLogo(ctx, senateLogo, W / 2, 60, 100);
+        ctx.textAlign = "center";
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 22px 'Inter', sans-serif";
+        ctx.letterSpacing = "8px";
+        ctx.fillText("NIGERIAN SENATE", W / 2, 200);
+        ctx.fillStyle = "rgba(255,255,255,0.5)";
+        ctx.font = "500 16px 'Inter', sans-serif";
+        ctx.letterSpacing = "4px";
+        ctx.fillText("KOGI EAST SENATORIAL DISTRICT", W / 2, 235);
+        ctx.letterSpacing = "0px";
+        drawLogo(ctx, adcLogo, W / 2, 270, 60);
+
+        // Inside letterbox: candidate name
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 italic 64px 'Playfair Display', serif";
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 460, W - 140, 72);
+
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 24px 'Inter', sans-serif";
+        ctx.letterSpacing = "6px";
+        ctx.fillText("THE PEOPLE'S MANDATE • 2027", W / 2, 680);
+        ctx.letterSpacing = "0px";
+
+        // Supporter zone
+        drawCirclePhoto(ctx, supporterPhoto, W / 2, 880, 100, "#C9A227", "Your\nPhoto");
+        ctx.strokeStyle = "rgba(255,255,255,0.15)";
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.arc(W / 2, 880, 115, 0, Math.PI * 2); ctx.stroke();
 
         ctx.fillStyle = "rgba(255,255,255,0.4)";
-        ctx.font = "600 20px 'Inter', sans-serif";
-        ctx.letterSpacing = "6px";
-        ctx.fillText("PROUDLY ENDORSED BY", W / 2, 530);
-
-        drawCirclePhoto(ctx, supporterPhoto, W / 2, 690, 110, accent, "Photo");
-        ctx.strokeStyle = "rgba(255,255,255,0.2)";
-        ctx.beginPath(); ctx.arc(W / 2, 690, 130, 0, Math.PI * 2); ctx.stroke();
+        ctx.font = "700 16px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("PROUDLY ENDORSED BY", W / 2, 1020);
+        ctx.letterSpacing = "0px";
 
         ctx.fillStyle = "#FFFFFF";
         ctx.font = "800 42px 'Playfair Display', serif";
-        let glasY = wrapText(ctx, (userName || "Your Name").toUpperCase(), W / 2, 880, W - 220, 52);
+        let eY = wrapText(ctx, (userName || "Your Name").toUpperCase(), W / 2, 1070, W - 200, 50);
+
+        if (userLocation) {
+            ctx.fillStyle = "#C9A227";
+            ctx.font = "500 18px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, W / 2, eY + 35);
+        }
+    }
+
+    /* ════════════════════════════════════════════════════════════════
+       5. MODERN APC — Bold Stacked Panels
+       Three horizontal panels stacked vertically:
+       Top panel (blue): Candidate photo + name
+       Mid panel (red accent stripe)
+       Bottom panel (dark): Supporter photo + endorsement
+       ════════════════════════════════════════════════════════════════ */
+    else if (id === "modern_apc") {
+        // Top panel: dark blue-gray with candidate photo
+        const topH = 620;
+        ctx.fillStyle = "#12141C";
+        ctx.fillRect(0, 0, W, topH);
+        // Candidate photo on left half
+        drawCoverPhoto(chiefPhoto, 0, 0, W / 2 + 40, topH);
+        // Gradient fade from photo to dark panel
+        const fadeR = ctx.createLinearGradient(W / 2 - 100, 0, W / 2 + 100, 0);
+        fadeR.addColorStop(0, "rgba(18,20,28,0)");
+        fadeR.addColorStop(1, "rgba(18,20,28,1)");
+        ctx.fillStyle = fadeR;
+        ctx.fillRect(W / 2 - 100, 0, 200, topH);
+        // Right side text
+        ctx.fillStyle = "#12141C";
+        ctx.fillRect(W / 2 + 40, 0, W / 2 - 40, topH);
+
+        // Logos
+        drawLogo(ctx, senateLogo, W - 160, 40, 55);
+        drawLogo(ctx, adcLogo, W - 80, 45, 50);
+
+        // Candidate text on right
+        ctx.textAlign = "left";
+        ctx.fillStyle = accent; // blue
+        ctx.font = "800 18px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("SENATORIAL CANDIDATE", W / 2 + 70, 180);
+        ctx.letterSpacing = "0px";
+
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 italic 48px 'Playfair Display', serif";
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2 + 70, 240, W / 2 - 140, 56, "left");
+
+        ctx.fillStyle = accent;
+        ctx.fillRect(W / 2 + 70, 430, 80, 4);
+
+        ctx.fillStyle = "rgba(255,255,255,0.5)";
+        ctx.font = "600 18px 'Inter', sans-serif";
+        ctx.letterSpacing = "2px";
+        ctx.fillText("KOGI EAST • 2027", W / 2 + 70, 480);
+        ctx.fillText("ALL PROGRESSIVES CONGRESS", W / 2 + 70, 510);
+        ctx.letterSpacing = "0px";
+
+        // Red accent stripe
+        ctx.fillStyle = "#C4000C";
+        ctx.fillRect(0, topH, W, 12);
+
+        // Bottom panel: dark with supporter
+        ctx.fillStyle = "#0A0A0C";
+        ctx.fillRect(0, topH + 12, W, H - topH - 12);
+
+        // Supporter photo on right
+        drawCoverPhoto(supporterPhoto, W / 2 + 40, topH + 12, W / 2 - 40, H - topH - 12 - 100);
+        const fadeL = ctx.createLinearGradient(W / 2 + 140, 0, W / 2 - 20, 0);
+        fadeL.addColorStop(0, "rgba(10,10,12,0)");
+        fadeL.addColorStop(1, "rgba(10,10,12,1)");
+        ctx.fillStyle = fadeL;
+        ctx.fillRect(W / 2 - 20, topH + 12, 200, H - topH - 12 - 100);
+        ctx.fillStyle = "#0A0A0C";
+        ctx.fillRect(0, topH + 12, W / 2 + 40, H - topH - 12 - 100);
+
+        // Supporter text on left of bottom panel
+        ctx.textAlign = "left";
+        ctx.fillStyle = "rgba(255,255,255,0.4)";
+        ctx.font = "700 16px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("ENDORSED BY", 70, topH + 100);
+        ctx.letterSpacing = "0px";
+
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "800 48px 'Inter', sans-serif";
+        let bY = wrapText(ctx, (userName || "Your Name").toUpperCase(), 70, topH + 160, W / 2 - 80, 56, "left");
 
         if (userLocation) {
             ctx.fillStyle = accent;
-            ctx.font = "500 20px 'Inter', sans-serif";
-            ctx.fillText("📍 " + userLocation.toUpperCase(), W / 2, glasY + 40);
+            ctx.font = "600 20px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, 70, bY + 40);
+        }
+    }
+
+    /* ════════════════════════════════════════════════════════════════
+       6. PREMIUM ONYX — Vertical Diptych
+       Two tall vertical panels side by side.
+       Left: Candidate photo (full height) with name overlay at bottom.
+       Right: Dark premium panel with supporter info.
+       A gold vertical accent stripe separates them.
+       ════════════════════════════════════════════════════════════════ */
+    else {
+        const midX = W / 2 + 20; // slightly off-center
+        // Left panel: candidate photo
+        drawCoverPhoto(chiefPhoto, 0, 0, midX, H - 100);
+        // Bottom gradient on left panel
+        const ov = ctx.createLinearGradient(0, H - 500, 0, H - 100);
+        ov.addColorStop(0, "rgba(0,0,0,0)");
+        ov.addColorStop(1, "rgba(0,0,0,0.9)");
+        ctx.fillStyle = ov;
+        ctx.fillRect(0, H - 500, midX, 400);
+
+        // Candidate name on left panel (bottom)
+        ctx.textAlign = "left";
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 italic 42px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.7)"; ctx.shadowBlur = 15;
+        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 40, H - 270, midX - 80, 50, "left");
+        ctx.shadowBlur = 0;
+
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 18px 'Inter', sans-serif";
+        ctx.letterSpacing = "3px";
+        ctx.fillText("KOGI EAST SENATE • 2027", 40, H - 150);
+        ctx.letterSpacing = "0px";
+
+        // Gold vertical stripe
+        ctx.fillStyle = "#C9A227";
+        ctx.fillRect(midX, 0, 6, H - 100);
+
+        // Right panel: dark premium
+        const rGrad = ctx.createLinearGradient(midX, 0, midX, H);
+        rGrad.addColorStop(0, "#0A0A0A");
+        rGrad.addColorStop(1, "#111111");
+        ctx.fillStyle = rGrad;
+        ctx.fillRect(midX + 6, 0, W - midX - 6, H - 100);
+
+        // Senate + APC logos
+        const rx = midX + 6 + (W - midX - 6) / 2;
+        drawLogo(ctx, senateLogo, rx, 60, 80);
+        drawLogo(ctx, adcLogo, rx, 170, 65);
+
+        // Supporter Photo (large, rounded rect)
+        const photoW = W - midX - 106;
+        const photoH = 420;
+        drawRectPhoto(ctx, supporterPhoto, midX + 56, 300, photoW, photoH, 20, "#C9A227", "Your\nPhoto");
+
+        // Supporter text
+        ctx.textAlign = "center";
+        ctx.fillStyle = "rgba(255,255,255,0.4)";
+        ctx.font = "700 16px 'Inter', sans-serif";
+        ctx.letterSpacing = "5px";
+        ctx.fillText("PROUDLY ENDORSED BY", rx, 780);
+        ctx.letterSpacing = "0px";
+
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "800 40px 'Playfair Display', serif";
+        let vY = wrapText(ctx, (userName || "Your Name").toUpperCase(), rx, 830, photoW - 20, 48);
+
+        if (userLocation) {
+            ctx.fillStyle = "rgba(255,255,255,0.6)";
+            ctx.font = "500 18px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, rx, vY + 36);
         }
 
-        drawLogo(ctx, adcLogo, W / 2, 1080, 65);
+        // Decorative gold dots
+        ctx.fillStyle = "rgba(201,162,39,0.3)";
+        for (let i = 0; i < 5; i++) {
+            ctx.beginPath();
+            ctx.arc(rx - 60 + i * 30, vY + 80, 4, 0, Math.PI * 2);
+            ctx.fill();
+        }
     }
 
     /* ── BOTTOM BANNER (all templates) ── */
-    const bannerH = 120;
-    const bannerBg = (id === "nass_prestige" || id === "golden_mandate") ? "#8B0000" : "#000000";
-    ctx.fillStyle = bannerBg;
+    const bannerH = 100;
+    ctx.fillStyle = "#000000";
     ctx.fillRect(0, H - bannerH, W, bannerH);
-    ctx.strokeStyle = id === "nass_prestige" || id === "golden_mandate" ? "#C9A227" : "rgba(255,255,255,0.1)";
-    ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(0, H - bannerH); ctx.lineTo(W, H - bannerH); ctx.stroke();
+    // Gold top line
+    ctx.fillStyle = "#C9A227";
+    ctx.fillRect(0, H - bannerH, W, 3);
 
-    ctx.font = "900 30px 'Inter', sans-serif";
-    ctx.fillStyle = "#FFFFFF";
     ctx.textAlign = "center";
-    ctx.letterSpacing = "4px";
-    ctx.fillText("VOTE APC • KOGI EAST SENATORIAL DISTRICT • 2027", W / 2, H - 72);
+    ctx.fillStyle = "#FFFFFF";
+    ctx.font = "800 24px 'Inter', sans-serif";
+    ctx.letterSpacing = "3px";
+    ctx.fillText("VOTE APC • KOGI EAST SENATE • 2027", W / 2, H - 55);
     ctx.letterSpacing = "0px";
 
-    ctx.font = "500 16px 'Inter', sans-serif";
-    ctx.fillStyle = "rgba(255,255,255,0.5)";
-    ctx.fillText("Powered by HamisNetwork 4 Halims", W / 2, H - 36);
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.font = "500 14px 'Inter', sans-serif";
+    ctx.fillText("Powered by HamisNetwork 4 Halims", W / 2, H - 25);
 }
 
 
