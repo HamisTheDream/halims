@@ -122,7 +122,7 @@ export default function ElectionDayPage() {
             ) : !initialized ? (
                 <div style={{ textAlign: "center", padding: 60, color: "var(--admin-text-muted)" }}>
                     <p style={{ fontSize: 18, marginBottom: 12 }}>📋 Checklist not yet initialized</p>
-                    <p style={{ fontSize: 13 }}>Click &quot;Initialize All PUs&quot; to create checklist entries for all 614 polling units.</p>
+                    <p style={{ fontSize: 13 }}>Click &quot;Initialize All PUs&quot; to create checklist entries for all 1,714 polling units.</p>
                 </div>
             ) : (
                 <>

@@ -379,8 +379,8 @@ export default function RegisterPageClient() {
                                 </div>
                                 <div className={`${styles.sidebarStats} reveal reveal-delay-3`}>
                                     <div className={styles.sidebarStat}><span className={styles.sidebarStatNum}>{totalSupporters > 0 ? totalSupporters.toLocaleString() : "—"}</span><span className={styles.sidebarStatLabel}>Supporters</span></div>
-                                    <div className={styles.sidebarStat}><span className={styles.sidebarStatNum}>3</span><span className={styles.sidebarStatLabel}>LGAs</span></div>
-                                    <div className={styles.sidebarStat}><span className={styles.sidebarStatNum}>34</span><span className={styles.sidebarStatLabel}>Wards</span></div>
+                                    <div className={styles.sidebarStat}><span className={styles.sidebarStatNum}>9</span><span className={styles.sidebarStatLabel}>LGAs</span></div>
+                                    <div className={styles.sidebarStat}><span className={styles.sidebarStatNum}>97</span><span className={styles.sidebarStatLabel}>Wards</span></div>
                                 </div>
                                 <div className={`${styles.sidebarQuote} reveal reveal-delay-4`}>
                                     <p>&ldquo;Every registration is a vote of confidence. Together, we build a stronger, more prosperous constituency.&rdquo;</p>

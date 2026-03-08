@@ -33,8 +33,8 @@ export default function HeroSection() {
                 <div className={styles.stats} ref={counterRef}>
                     <div><div className={styles.statNum}>{count.toLocaleString()}</div><div className={styles.statLabel}>Supporters<br />Registered</div></div>
                     <div><div className={styles.statNum}>9</div><div className={styles.statLabel}>LGAs<br />Covered</div></div>
-                    <div><div className={styles.statNum}>34</div><div className={styles.statLabel}>Wards<br />Reached</div></div>
-                    <div><div className={styles.statNum}>614</div><div className={styles.statLabel}>Polling<br />Units</div></div>
+                    <div><div className={styles.statNum}>97</div><div className={styles.statLabel}>Wards<br />Reached</div></div>
+                    <div><div className={styles.statNum}>1,714</div><div className={styles.statLabel}>Polling<br />Units</div></div>
                 </div>
                 <CountdownTimer />
             </div>
