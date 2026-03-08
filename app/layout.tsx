@@ -33,7 +33,7 @@ const DEFAULTS = {
   description: "Official campaign website for Rt. Hon. Abdullahi Ibrahim Ali (Halims) — contesting for the Ankpa Federal Constituency seat (Ankpa/Omala/Olamaboro) in the 2027 Nigerian General Elections.",
   ogTitle: "Vote Rt. Hon. Abdullahi Ibrahim Ali (Halims) — Ankpa Federal Constituency 2027",
   ogDescription: "A distinguished entrepreneur, philanthropist, and visionary leader bringing enterprise, integrity, and passion for the Igala people to the National Assembly.",
-  ogImage: "/images/halims2.png",
+  ogImage: "/images/halims4.png",
 };
 
 export async function generateMetadata(): Promise<Metadata> {

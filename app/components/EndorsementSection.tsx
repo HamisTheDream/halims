@@ -41,10 +41,10 @@ export default function EndorsementSection() {
                         <div className={styles.flyerMockup} role="img" aria-label="Sample endorsement flyer preview">
                             <div className={styles.flyerTop} style={{ background: '#8B0000', color: 'white' }}>I Support Rt. Hon. (Dr.) Abdullahi Ibrahim Ali · APC</div>
                             <div className={styles.flyerPhotoArea}>
-                                <div className={styles.flyerCandidateWrap}>
+                                <div className={styles.candidatePhoto}>
                                     <Image
-                                        src="/images/halims5.png"
-                                        alt="Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)"
+                                        src="/images/halims4.png"
+                                        alt="Candidate"
                                         width={200}
                                         height={200}
                                         className={styles.flyerCandidateImg}

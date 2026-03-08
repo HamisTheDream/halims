@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <div className={styles.photoContainer}>
                     <div className={styles.photoMain}>
                         <Image
-                            src="/images/halims5.png"
+                            src="/images/halims4.png"
                             alt="Rt. Hon. (Dr.) Abdullahi Ibrahim Ali (Halims)"
                             width={800}
                             height={950}

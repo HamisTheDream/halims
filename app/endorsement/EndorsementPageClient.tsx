@@ -689,7 +689,7 @@ export default function EndorsementPageClient() {
     useEffect(() => {
         const img1 = new Image();
         img1.onload = () => setChiefPhoto(img1);
-        img1.src = "/images/halims2.png";
+        img1.src = "/images/halims4.png";
 
         const img2 = new Image();
         img2.onload = () => setAdcLogo(img2);
