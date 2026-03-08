@@ -178,9 +178,9 @@ function renderFlyer(
         // Candidate name (over the photo)
         ctx.textAlign = "center";
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 60px 'Playfair Display', serif";
+        ctx.font = "900 italic 72px 'Playfair Display', serif";
         ctx.shadowColor = "rgba(0,0,0,0.7)"; ctx.shadowBlur = 20;
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 720, W - 120, 68);
+        wrapText(ctx, "Rt. Hon. Halims", W / 2, 720, W - 120, 80);
         ctx.shadowBlur = 0;
 
         // Gold tagline
@@ -222,93 +222,77 @@ function renderFlyer(
        massive background text, and maximalist overlapping elements.
        ════════════════════════════════════════════════════════════════ */
     else if (id === "nass_prestige") {
-        // Background: Deep Nigerian Green to Light Green Gradient
-        const bgGrad = ctx.createLinearGradient(0, 0, W, H);
-        bgGrad.addColorStop(0, "#004d2e"); // Dark Green
-        bgGrad.addColorStop(1, "#008751"); // Nigerian Flag Green
-        ctx.fillStyle = bgGrad;
+        ctx.fillStyle = "#005a36"; // Deep NASS Green
         ctx.fillRect(0, 0, W, H);
-
-        // Huge background "2027" watermark
-        ctx.textAlign = "center";
-        ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
-        ctx.font = "900 400px 'Inter', sans-serif";
-        ctx.fillText("2027", W / 2, 600);
-
-        ctx.fillStyle = "rgba(255, 255, 255, 0.03)";
-        ctx.font = "900 300px 'Inter', sans-serif";
-        ctx.fillText("HALIMS", W / 2, 850);
-
-        // Sweeping White abstract wave across the bottom half
-        ctx.fillStyle = "#FFFFFF";
+        
+        // Large dark red angular sweep
+        ctx.fillStyle = "#8b0000"; // Deep Senate Red
         ctx.beginPath();
-        ctx.moveTo(0, H * 0.45);
-        ctx.bezierCurveTo(W * 0.3, H * 0.4, W * 0.7, H * 0.6, W, H * 0.35);
+        ctx.moveTo(0, H * 0.4);
+        ctx.lineTo(W, H * 0.1);
         ctx.lineTo(W, H);
         ctx.lineTo(0, H);
         ctx.fill();
+        
+        // White line separator
+        ctx.strokeStyle = "#FFFFFF";
+        ctx.lineWidth = 6;
+        ctx.beginPath();
+        ctx.moveTo(0, H * 0.4);
+        ctx.lineTo(W, H * 0.1);
+        ctx.stroke();
 
-        // Candidate photo placed on the right, large and dominant
-        // Masked to fade seamlessly into the white wave
+        // Overlay candidate on right side
         ctx.save();
         ctx.beginPath();
-        ctx.moveTo(W * 0.3, 0); ctx.lineTo(W, 0); ctx.lineTo(W, H); ctx.lineTo(W * 0.1, H);
+        ctx.moveTo(W * 0.3, 0); ctx.lineTo(W, 0); ctx.lineTo(W, H); ctx.lineTo(W * 0.3, H);
         ctx.clip();
-        drawCoverPhoto(chiefPhoto, W * 0.3, 50, W * 0.7, 800);
-
-        // Fade bottom of candidate into white
-        const fadeCand = ctx.createLinearGradient(0, 600, 0, 850);
-        fadeCand.addColorStop(0, "rgba(255, 255, 255, 0)");
-        fadeCand.addColorStop(1, "rgba(255, 255, 255, 1)");
-        ctx.fillStyle = fadeCand;
-        ctx.fillRect(W * 0.3, 600, W * 0.7, 300);
+        drawCoverPhoto(chiefPhoto, W * 0.3, 100, W * 0.7, 800);
+        
+        const grad = ctx.createLinearGradient(W * 0.3, 0, W * 0.6, 0);
+        grad.addColorStop(0, "rgba(139, 0, 0, 1)");
+        grad.addColorStop(1, "rgba(139, 0, 0, 0)");
+        ctx.fillStyle = grad;
+        ctx.fillRect(W * 0.3, 100, W * 0.7, 800);
         ctx.restore();
 
-        // Logos in top left
         drawLogo(ctx, senateLogo, 100, 60, 80);
-        drawLogo(ctx, adcLogo, 220, 70, 70);
+        drawLogo(ctx, adcLogo, 220, 65, 75);
 
-        // Supporter Photo: A prominent hexagon or circle on the left over the white wave
-        const supX = 250;
-        const supY = 750;
-
-        // decorative rings for supporter
-        ctx.fillStyle = "#E3000F"; // APC Red
-        ctx.beginPath(); ctx.arc(supX, supY, 135, 0, Math.PI * 2); ctx.fill();
-        ctx.fillStyle = accent; // APC Blue
-        ctx.beginPath(); ctx.arc(supX, supY, 125, 0, Math.PI * 2); ctx.fill();
-
-        drawCirclePhoto(ctx, supporterPhoto, supX, supY, 115, "#008751", "Photo");
-
-        // Typography Overlays (Authentic bold Nigerian political slogans)
         ctx.textAlign = "left";
-        ctx.fillStyle = "#E3000F";
-        ctx.font = "900 28px 'Inter', sans-serif";
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 italic 72px 'Playfair Display', serif";
+        wrapText(ctx, "Rt. Hon. Halims", 60, 480, W * 0.6, 80, "left");
+        
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "800 24px 'Inter', sans-serif";
+        ctx.letterSpacing = "6px";
+        ctx.fillText("FOR SENATE 2027", 65, 600);
+        ctx.letterSpacing = "0px";
+
+        // Supporter Card
+        ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+        ctx.lineWidth = 1;
+        roundRect(ctx, 50, 800, W - 100, 250, 20);
+        ctx.fill(); ctx.stroke();
+
+        drawCirclePhoto(ctx, supporterPhoto, 180, 925, 85, "#FFFFFF", "Photo");
+
+        ctx.fillStyle = "rgba(255,255,255,0.7)";
+        ctx.font = "700 16px 'Inter', sans-serif";
         ctx.letterSpacing = "4px";
-        ctx.fillText("FOR SENATE 2027", 50, 300);
+        ctx.fillText("PROUDLY ENDORSED BY", 300, 880);
         ctx.letterSpacing = "0px";
 
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 56px 'Playfair Display', serif";
-        ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 50, 360, W * 0.55, 62);
-        ctx.shadowBlur = 0;
-
-        // Supporter Text
-        ctx.fillStyle = "#008751";
-        ctx.font = "900 22px 'Inter', sans-serif";
-        ctx.letterSpacing = "3px";
-        ctx.fillText("I STAND WITH THE MANDATE", 420, 650);
-        ctx.letterSpacing = "0px";
-
-        ctx.fillStyle = "#0A1628";
-        ctx.font = "900 48px 'Inter', sans-serif";
-        let byY = wrapText(ctx, (userName || "Your Name").toUpperCase(), 420, 700, W - 460, 50, "left");
+        ctx.font = "900 42px 'Inter', sans-serif";
+        wrapText(ctx, (userName || "Your Name").toUpperCase(), 300, 930, W - 400, 48, "left");
 
         if (userLocation) {
-            ctx.fillStyle = "#E3000F";
-            ctx.font = "700 20px 'Inter', sans-serif";
-            ctx.fillText("📍 " + userLocation, 420, byY + 40);
+            ctx.fillStyle = "#C9A227"; // Gold accent for location
+            ctx.font = "600 20px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, 300, 1000);
         }
     }
 
@@ -318,84 +302,54 @@ function renderFlyer(
        Heavy 3D-styled typography behind the candidate.
        ════════════════════════════════════════════════════════════════ */
     else if (id === "golden_mandate") {
-        ctx.fillStyle = "#0A1628"; // Deep Navy
-        ctx.fillRect(0, 0, W, H);
-
-        // Huge glowing text behind candidate
+        // Top half senate red, bottom half NASS green
+        ctx.fillStyle = "#8b0000";
+        ctx.fillRect(0, 0, W, H / 2);
+        ctx.fillStyle = "#005a36";
+        ctx.fillRect(0, H / 2, W, H / 2);
+        
+        // Massive white text overlapping the center
         ctx.textAlign = "center";
-        ctx.font = "900 160px 'Inter', sans-serif";
-        ctx.fillStyle = "rgba(255, 255, 255, 0.04)";
-        ctx.fillText("THE MANDATE", W / 2, 250);
-        ctx.fillText("KOGI EAST", W / 2, 400);
-
-        // Centered candidate photo, massive
-        drawCoverPhoto(chiefPhoto, 0, 100, W, 800);
-
-        // APC Ribbon (Red, Blue, Green, White sweeping angular bands)
-        ctx.save();
-        ctx.translate(0, 650);
-        ctx.rotate(-5 * Math.PI / 180); // slight upward tilt
-
-        ctx.fillStyle = "#008751"; // Green
-        ctx.fillRect(-100, 0, W + 200, 300);
-        ctx.fillStyle = "#FFFFFF"; // White
-        ctx.fillRect(-100, 15, W + 200, 300);
-        ctx.fillStyle = "#0A4BC2"; // Bright Blue
-        ctx.fillRect(-100, 30, W + 200, 300);
-        ctx.fillStyle = "#E3000F"; // Red
-        ctx.fillRect(-100, 45, W + 200, 300);
-
-        ctx.restore();
-
-        // Dark gradient covering the bottom for text
-        const botGrad = ctx.createLinearGradient(0, 750, 0, H);
-        botGrad.addColorStop(0, "rgba(10, 22, 40, 0)");
-        botGrad.addColorStop(0.3, "rgba(10, 22, 40, 0.95)");
-        botGrad.addColorStop(1, "rgba(10, 22, 40, 1)");
-        ctx.fillStyle = botGrad;
-        ctx.fillRect(0, 700, W, H);
-
-        // Top Header
-        drawLogo(ctx, senateLogo, 120, 60, 80);
-        drawLogo(ctx, adcLogo, W - 120, 65, 75);
-
-        // Beautiful candidate title wrapped in gold
-        ctx.textAlign = "center";
-        ctx.fillStyle = "#C9A227";
-        ctx.font = "900 24px 'Inter', sans-serif";
-        ctx.letterSpacing = "6px";
-        ctx.shadowColor = "rgba(0,0,0,0.8)"; ctx.shadowBlur = 15;
-        ctx.fillText("OFFICIAL APC CANDIDATE", W / 2, 630);
-
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 54px 'Playfair Display', serif";
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 690, W - 100, 60);
+        ctx.font = "900 120px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 15;
+        ctx.fillText("HALIMS", W / 2, H / 2 + 20);
         ctx.shadowBlur = 0;
 
-        // Supporter Card overlapping the ribbon and dark base
-        ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
-        ctx.lineWidth = 1;
-        roundRect(ctx, 40, 850, W - 80, 200, 16);
-        ctx.fill(); ctx.stroke();
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "800 24px 'Inter', sans-serif";
+        ctx.letterSpacing = "8px";
+        ctx.fillText("FOR SENATE 2027", W / 2, H / 2 + 80);
 
-        drawCirclePhoto(ctx, supporterPhoto, 150, 950, 80, "#FFFFFF", "Photo");
+        // Candidate photo top center
+        drawCoverPhoto(chiefPhoto, W / 2 - 250, 50, 500, H / 2 - 100);
+        // Fade the photo smoothly into the red
+        const ov = ctx.createLinearGradient(0, H / 2 - 200, 0, H / 2 - 50);
+        ov.addColorStop(0, "rgba(139, 0, 0, 0)");
+        ov.addColorStop(1, "rgba(139, 0, 0, 1)");
+        ctx.fillStyle = ov;
+        ctx.fillRect(0, H / 2 - 200, W, 150);
 
-        ctx.textAlign = "left";
+        drawLogo(ctx, senateLogo, 120, 80, 80);
+        drawLogo(ctx, adcLogo, W - 120, 85, 75);
+
+        // Supporter Card bottom center
+        drawCirclePhoto(ctx, supporterPhoto, W / 2, H / 2 + 260, 100, "#FFFFFF", "Photo");
+
         ctx.fillStyle = "rgba(255,255,255,0.7)";
         ctx.font = "700 16px 'Inter', sans-serif";
         ctx.letterSpacing = "4px";
-        ctx.fillText("PROUDLY SUPPORTED BY", 260, 920);
+        ctx.fillText("I STAND WITH THE MANDATE", W / 2, H / 2 + 410);
         ctx.letterSpacing = "0px";
 
         ctx.fillStyle = "#FFFFFF";
         ctx.font = "900 38px 'Inter', sans-serif";
-        wrapText(ctx, (userName || "Your Name").toUpperCase(), 260, 960, W - 320, 42, "left");
+        let snY = wrapText(ctx, (userName || "Your Name").toUpperCase(), W / 2, H / 2 + 460, W - 200, 44);
 
         if (userLocation) {
-            ctx.fillStyle = "#E3000F";
-            ctx.font = "600 18px 'Inter', sans-serif";
-            ctx.fillText("📍 " + userLocation, 260, 1020);
+            ctx.fillStyle = "#C9A227";
+            ctx.font = "600 20px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, W / 2, snY + 40);
         }
     }
 
@@ -418,7 +372,7 @@ function renderFlyer(
         }
 
         // Giant Red Brush Stroke for candidate name background
-        ctx.fillStyle = "#E3000F";
+        ctx.fillStyle = "#C4000C"; // Use precise red
         ctx.beginPath();
         ctx.moveTo(-50, 550); ctx.lineTo(W + 50, 520); ctx.lineTo(W + 50, 720); ctx.lineTo(-50, 680);
         ctx.fill();
@@ -427,16 +381,16 @@ function renderFlyer(
         ctx.save();
         ctx.translate(W / 2 + 100, 280);
         ctx.rotate(4 * Math.PI / 180);
-
+        
         ctx.shadowColor = "rgba(0,0,0,0.3)"; ctx.shadowBlur = 25; ctx.shadowOffsetY = 15;
         ctx.fillStyle = "#FFFFFF";
         ctx.fillRect(-320, -220, 640, 700);
         ctx.shadowColor = "transparent";
-
+        
         drawCoverPhoto(chiefPhoto, -300, -200, 600, 600);
-
+        
         // "VOTE" stamped on polaroid
-        ctx.fillStyle = "#0A1628";
+        ctx.fillStyle = "#005a36"; // NASS Green instead of navy
         ctx.font = "900 60px 'Inter', sans-serif";
         ctx.fillText("HALIMS", 0, 450);
         ctx.restore();
@@ -448,37 +402,37 @@ function renderFlyer(
         // Bold Typography over the red brush stroke
         ctx.textAlign = "left";
         ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 58px 'Playfair Display', serif";
+        ctx.font = "900 italic 72px 'Playfair Display', serif";
         ctx.shadowColor = "rgba(0,0,0,0.4)"; ctx.shadowBlur = 10;
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", 60, 600, W - 120, 64, "left");
+        wrapText(ctx, "Halims for Senate", 60, 610, W - 120, 76, "left");
         ctx.shadowColor = "transparent";
 
         // Supporter Section overlapping from bottom left
         ctx.save();
         ctx.translate(220, 950);
         ctx.rotate(-3 * Math.PI / 180);
-
+        
         ctx.shadowColor = "rgba(0,0,0,0.2)"; ctx.shadowBlur = 20; ctx.shadowOffsetY = 10;
         ctx.fillStyle = "#FFFFFF";
         ctx.fillRect(-160, -180, 320, 380);
         ctx.shadowColor = "transparent";
-
+        
         drawCoverPhoto(supporterPhoto, -140, -160, 280, 280);
         ctx.restore();
 
         // Stamped Supporter Text on the right
-        ctx.fillStyle = "#0A1628";
+        ctx.fillStyle = "#005a36"; // Green Text
         ctx.font = "900 20px 'Inter', sans-serif";
         ctx.letterSpacing = "4px";
         ctx.fillText("VETTED BY THE GRASSROOTS:", 420, 880);
         ctx.letterSpacing = "0px";
 
-        ctx.fillStyle = "#E3000F";
+        ctx.fillStyle = "#C4000C"; // Red Text
         ctx.font = "900 44px 'Inter', sans-serif";
         let snY = wrapText(ctx, (userName || "Your Name").toUpperCase(), 420, 930, W - 460, 48, "left");
 
         if (userLocation) {
-            ctx.fillStyle = "#0A1628";
+            ctx.fillStyle = "#005a36";
             ctx.font = "700 22px 'Inter', sans-serif";
             ctx.fillText(userLocation.toUpperCase() + " WARD", 420, snY + 40);
         }
@@ -490,89 +444,70 @@ function renderFlyer(
        Elegant serif typography, gold foil accents, massive negative space.
        ════════════════════════════════════════════════════════════════ */
     else {
-        // Deep Navy Base
-        ctx.fillStyle = "#0A1628";
+        // Deep Green Base with subtle texture
+        ctx.fillStyle = "#004d2e";
         ctx.fillRect(0, 0, W, H);
-
-        // Enormous Gold Senate Seal Watermark
-        ctx.save();
-        ctx.globalAlpha = 0.04;
-        drawCoverPhoto(senateLogo, W / 2 - 400, H / 2 - 400, 800, 800);
-        ctx.restore();
-
-        // Elegant Gold Borders
-        ctx.strokeStyle = "#C9A227";
+        
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
         ctx.lineWidth = 2;
-        ctx.strokeRect(40, 40, W - 80, H - 180);
-        ctx.lineWidth = 1;
-        ctx.strokeRect(50, 50, W - 100, H - 200);
-
-        // Clean, prominent candidate photo at the bottom
-        // We'll mask him cleanly with a gradient fade into the navy background
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(0, 400); ctx.lineTo(W, 400); ctx.lineTo(W, H); ctx.lineTo(0, H);
-        ctx.clip();
-        drawCoverPhoto(chiefPhoto, W / 2 - 400, 400, 800, 800);
-        const fadeCand = ctx.createLinearGradient(0, 400, 0, 700);
-        fadeCand.addColorStop(0, "rgba(10, 22, 40, 1)");
-        fadeCand.addColorStop(0.5, "rgba(10, 22, 40, 0)");
-        ctx.fillStyle = fadeCand;
-        ctx.fillRect(0, 400, W, 400);
-
-        const fadeCandBot = ctx.createLinearGradient(0, 900, 0, H);
-        fadeCandBot.addColorStop(0, "rgba(10, 22, 40, 0)");
-        fadeCandBot.addColorStop(1, "rgba(10, 22, 40, 1)");
-        ctx.fillStyle = fadeCandBot;
-        ctx.fillRect(0, 900, W, H);
-        ctx.restore();
-
-        // Top Header: Centered, extremely elegant
-        drawLogo(ctx, adcLogo, W / 2, 80, 80);
-
-        ctx.textAlign = "center";
-        ctx.fillStyle = "#C9A227";
-        ctx.font = "700 16px 'Inter', sans-serif";
-        ctx.letterSpacing = "10px";
-        ctx.fillText("FOR KOGI EAST SENATORIAL DISTRICT", W / 2, 220);
-
-        ctx.fillStyle = "#FFFFFF";
-        ctx.font = "900 italic 56px 'Playfair Display', serif";
-        wrapText(ctx, "Rt. Hon. (Dr.) Abdullahi Ibrahim Ali", W / 2, 290, W - 200, 64);
-
-        // Supporter Badge (Elegant Gold Ring)
-        const supX = W - 200;
-        const supY = 250;
-
-        ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 20;
-        drawCirclePhoto(ctx, supporterPhoto, supX, supY, 90, "#C9A227", "Photo");
-        ctx.shadowColor = "transparent";
-        ctx.strokeStyle = "rgba(201,162,39,0.3)";
-        ctx.lineWidth = 1;
-        ctx.beginPath(); ctx.arc(supX, supY, 105, 0, Math.PI * 2); ctx.stroke();
-
-        ctx.textAlign = "center";
-        ctx.fillStyle = "rgba(255,255,255,0.6)";
-        ctx.font = "500 14px 'Inter', sans-serif";
-        ctx.letterSpacing = "4px";
-        ctx.fillText("ENDORSED BY", supX, supY + 135);
-        ctx.letterSpacing = "0px";
-
-        ctx.fillStyle = "#C9A227";
-        ctx.font = "800 24px 'Playfair Display', serif";
-        wrapText(ctx, (userName || "Your Name").toUpperCase(), supX, supY + 165, 200, 28);
-
-        if (userLocation) {
-            ctx.fillStyle = "#FFFFFF";
-            ctx.font = "500 14px 'Inter', sans-serif";
-            ctx.fillText("📍 " + userLocation, supX, supY + 220);
+        for (let i = 0; i < W; i += 30) {
+            ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(0, i); ctx.stroke();
         }
 
-        // Bottom Left Decoration
+        // Thick Red glowing borders
+        ctx.strokeStyle = "#C4000C";
+        ctx.lineWidth = 15;
+        ctx.strokeRect(30, 30, W - 60, H - 160); // Leaves room for banner
+        
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#FFFFFF";
+        ctx.strokeRect(50, 50, W - 100, H - 200);
+
+        ctx.textAlign = "center";
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 italic 80px 'Playfair Display', serif";
+        ctx.shadowColor = "rgba(0,0,0,0.8)"; ctx.shadowBlur = 15;
+        ctx.fillText("Halims for Senate", W / 2, 180);
+        ctx.shadowBlur = 0;
+
+        ctx.fillStyle = "#C9A227";
+        ctx.font = "700 20px 'Inter', sans-serif";
+        ctx.letterSpacing = "8px";
+        ctx.fillText("2027 OFFICIAL DECLARATION", W / 2, 240);
+
+        // Candidate photo
+        drawCoverPhoto(chiefPhoto, W / 2 - 350, 280, 700, 650);
+        const grad = ctx.createLinearGradient(0, 750, 0, 930);
+        grad.addColorStop(0, "rgba(0, 77, 46, 0)");
+        grad.addColorStop(1, "rgba(0, 77, 46, 1)");
+        ctx.fillStyle = grad;
+        ctx.fillRect(W / 2 - 350, 750, 700, 180);
+
+        drawLogo(ctx, senateLogo, 100, 90, 80);
+        drawLogo(ctx, adcLogo, W - 100, 95, 75);
+
+        // Small supporter floating badge
+        const supX = 180;
+        const supY = 880;
+        
+        drawCirclePhoto(ctx, supporterPhoto, supX, supY, 80, "#C4000C", "Photo");
+        
         ctx.textAlign = "left";
-        ctx.fillStyle = "rgba(201,162,39,0.2)";
-        ctx.font = "900 100px 'Playfair Display', serif";
-        ctx.fillText("2027", 80, 1000);
+        ctx.fillStyle = "rgba(255,255,255,0.7)";
+        ctx.font = "600 16px 'Inter', sans-serif";
+        ctx.letterSpacing = "4px";
+        ctx.fillText("ENDORSED BY", 280, 850);
+        ctx.letterSpacing = "0px";
+
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "900 32px 'Inter', sans-serif";
+        wrapText(ctx, (userName || "Your Name").toUpperCase(), 280, 890, W - 400, 36, "left");
+
+        if (userLocation) {
+            ctx.fillStyle = "#C9A227";
+            ctx.font = "500 18px 'Inter', sans-serif";
+            ctx.fillText("📍 " + userLocation, 280, 940);
+        }
     }
 
     /* ── BOTTOM BANNER (all templates) ── */
