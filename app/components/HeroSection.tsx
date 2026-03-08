@@ -46,11 +46,10 @@ export default function HeroSection() {
                         <Image
                             src="/images/halims2.png"
                             alt="Rt. Hon. Abdullahi Ibrahim Ali (Halims)"
-                            width={480}
-                            height={600}
+                            fill
                             className={styles.candidatePhoto}
                             priority
-                            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                     <div className={styles.photoFrame} aria-hidden="true" />
